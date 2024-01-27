@@ -3,7 +3,7 @@
 ;; About your weblog
 ;; -----------------
 
-Weblog title: laurel omg lol
+Weblog title: laurel.omg.lol
 Weblog description: 
 Author: laurel
 Canonical domain: laurel.omg.lol

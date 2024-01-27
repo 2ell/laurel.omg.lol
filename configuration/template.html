@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <title>{weblog-title}{separator}{post-title}</title>
 <meta charset="utf-8">
@@ -13,20 +13,99 @@
 @import url('https://static.omg.lol/type/font-md-io.css');
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 
-:root {
-	--foreground: #212529;
-	--background: #f8f9fa;
-	--link: #0b7285;
-	--accent: #868e96;
+
+
+/* .-------------------. */
+/* |     VARIABLES     | */
+/* '-------------------' */
+
+
+ :root {
+    --grid-unit: 1em;
+    --background: hsl(56, 100%, 94%);
+    --text: hsl(230, 17%, 14%);
+    --toggle: hsl(54, 30%, 39%);
+    --link: 
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--foreground: #eee;
-		--background: #222;
-		--link: #99e9f2;
-		--accent: #ced4da;
-	}
+.dark-mode {
+    --background: hsl(230, 17%, 14%);
+    --text: hsl(56, 100%, 94%);
+    --toggle: hsl(241, 32%, 29%);
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+
+
+
+/* .----------------. */
+/* |     TOGGLE     | */
+/* '----------------' */
+
+
+.toggle {
+    width: 3%;
+}
+
+.label{
+    width: 2.5em;
+    height: 1em;
+    border-radius: 30px;
+    background: var(--toggle);
+    position: absolute;
+    cursor: pointer;
+}
+.label:before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+}
+
+.label:after {
+    content: '';
+    font-size: 1.5rem;
+    position: absolute;
+    display: inline-block;
+}
+
+#checkbox:checked ~ .ball {
+    transform: translateX(1.2em);
+}
+
+#checkbox {
+    display: none;
+}
+
+
+.ball {
+    width: 1em;
+    height: 1em;
+    background-color: var(--background);
+    position: absolute;
+    border-radius: 50%;
+    margin-top: -0.3px;
+    margin-left: 3px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+
+
+/* .-------------------. */
+/* |     ALIGNMENT     | */
+/* '-------------------' */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -9rem;
 }
 
 * {
@@ -36,25 +115,14 @@
 body {
 	font-family: 'Lato', sans-serif;
 	font-size: 120%;
-	color: var(--foreground);
+	color: var(--text);
 	background: var(--background);
 }
 
-header nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
 
-header nav li {
-	display: inline-block;
-}
-
-header nav li a {
-	display: block;
-	text-decoration: none;
-	margin-right: 1em;
-}
+/* .--------------. */
+/* |     TEXT     | */
+/* '--------------' */
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'VC Honey Deck', serif;
@@ -65,9 +133,41 @@ p, li {
 	line-height: 160%;
 }
 
+a:link { color: var(--link); }
+a:visited { color: var(--link); }
+a:hover { color: var(--link); }
+a:active { color: var(--link); }
+
+
+/* .------------------. */
+/* |     HEADINGS     | */
+/* '------------------' */
+
+.weblog-title a {
+	text-decoration: none;
+	color: var(--text);
+}
+
+/* .----------------. */
+/* |     IMAGES     | */
+/* '----------------' */
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* .------------------. */
+/* |     SECTIONS     | */
+/* '------------------' */
+
 header, main, footer {
 	max-width: 60em;
-	margin: 2em auto;
+	margin: 1em auto;
 	padding: 0 1em;
 }
 
@@ -75,16 +175,34 @@ header {
 	margin-top: 4em;
 }
 
-footer p {
+    header nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav li {
+        display: inline-block;
+    }
+
+    header nav li a {
+        display: block;
+        text-decoration: none;
+        margin-right: 1em;
+    }
+
+footer {
 	margin-top: 5em;
 	font-size: 90%;
 	text-align: center;
 }
 
-a:link { color: var(--link); }
-a:visited { color: var(--link); }
-a:hover { color: var(--link); }
-a:active { color: var(--link); }
+
+/* .---------------. */
+/* |     POSTS     | */
+/* '---------------' */
+
+
 
 .post-info, .post-tags {
 	font-size: 85%;
@@ -108,8 +226,8 @@ a:active { color: var(--link); }
 
 hr {
 	border: 0;
-	height: 1px;
-	background: #333;
+	height: 0.1em;
+	background: var(--text);
 	margin: 2em 0;
 }
 
@@ -134,9 +252,6 @@ pre code {
 	word-wrap: break-word;   
 }
 
-img {
-	max-width: 100%;
-}
 
 table {
 	border-collapse: collapse;
@@ -147,19 +262,42 @@ td, th {
 	text-align: left;
 	border: 1px solid var(--accent);
 }
-	
-.weblog-title a {
-	text-decoration: none;
-	color: var(--foreground);
+
+
+
+/* .-------------------. */
+/* |     DARK MODE     | */
+/* '-------------------' */
+
+
+.dark-mode img {
+    opacity: 0.7;
+    transition: all 0.4s ease-in-out;
+}
+
+.dark-mode img:hover {
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
 }
 
 </style>
+
 </head>
 <body>
 
+    <div class="toggle">
+        <div class="darkmode">
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="label"></label>
+            <div class="ball"></div>
+          </label>
+        </div>
+      </div>
+
+
 <header>
 	<h1 class="weblog-title"><a href="{base-path}">{weblog-title}</a></h1>
-	{navigation}
+	{navigation} 
 </header>
 
 <main>
@@ -176,15 +314,37 @@ td, th {
 
 <hr>
 
-<h2>Recent posts</h2>
+<h2>the latest</h2>
 
 {recent-posts}
 
 </main>
 
 <footer>
-	<p>Made with <a href="https://weblog.lol">weblog.lol</a>.</p>
+    <p>created with <i class="fas fa-heart"></i> by laurel
+        <br>
+    <i class="fas fas fa-plug"></i> powered by <a href="https://omg.lol">omg.lol</a></p>
 </footer>
+<script>
+    const checkbox =document.getElementById('checkbox')
 
+checkbox.addEventListener('click',checkMode)
+
+function checkMode(){
+    if(checkbox.checked){
+        darkModeOn()
+    }else{
+        darkModeOff()
+    }
+}
+
+function darkModeOn(){
+    document.body.classList.add('dark-mode')
+}
+
+function darkModeOff(){
+    document.body.classList.remove('dark-mode')
+}
+</script>
 </body>
 </html>
