@@ -14,7 +14,6 @@
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 
 
-
 /* .-------------------. */
 /* |     VARIABLES     | */
 /* '-------------------' */
@@ -38,61 +37,6 @@ body {
     background-color: var(--background);
     color: var(--text);
 }
-
-
-
-
-/* .----------------. */
-/* |     TOGGLE     | */
-/* '----------------' */
-
-
-.toggle {
-    width: 3%;
-}
-
-.label{
-    width: 2.5em;
-    height: 1em;
-    border-radius: 30px;
-    background: var(--toggle);
-    position: absolute;
-    cursor: pointer;
-}
-.label:before{
-    content: '';
-    position: absolute;
-    display: inline-block;
-}
-
-.label:after {
-    content: '';
-    font-size: 1.5rem;
-    position: absolute;
-    display: inline-block;
-}
-
-#checkbox:checked ~ .ball {
-    transform: translateX(1.2em);
-}
-
-#checkbox {
-    display: none;
-}
-
-
-.ball {
-    width: 1em;
-    height: 1em;
-    background-color: var(--background);
-    position: absolute;
-    border-radius: 50%;
-    margin-top: -0.3px;
-    margin-left: 3px;
-    cursor: pointer;
-    transition: all 250ms ease-in-out;
-}
-
 
 
 /* .-------------------. */
@@ -173,6 +117,7 @@ header, main, footer {
 
 header {
 	margin-top: 4em;
+    margin-bottom: 3em;
 }
 
     header nav ul {
@@ -192,17 +137,17 @@ header {
     }
 
 footer {
-	margin-top: 5em;
+    background-color: var(--text);
+    color: var(--background);
+	margin-top: 8em;
+    padding: 1em;
 	font-size: 90%;
 	text-align: center;
 }
 
-
 /* .---------------. */
 /* |     POSTS     | */
 /* '---------------' */
-
-
 
 .post-info, .post-tags {
 	font-size: 85%;
@@ -264,7 +209,6 @@ td, th {
 }
 
 
-
 /* .-------------------. */
 /* |     DARK MODE     | */
 /* '-------------------' */
@@ -279,6 +223,62 @@ td, th {
     opacity: 1;
     transition: all 0.4s ease-in-out;
 }
+
+
+/* .----------------. */
+/* |     TOGGLE     | */
+/* '----------------' */
+
+
+.toggle {
+    width: 3%;
+    top: 1rem;
+    right: 4rem;
+    position: absolute;
+    margin-bottom: 1rem;
+}
+
+.label{
+    width: 2.5em;
+    height: 1em;
+    border-radius: 30px;
+    background: var(--toggle);
+    position: absolute;
+    cursor: pointer;
+}
+.label:before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+}
+
+.label:after {
+    content: '';
+    font-size: 1.5rem;
+    position: absolute;
+    display: inline-block;
+}
+
+#checkbox:checked ~ .ball {
+    transform: translateX(1.2em);
+}
+
+#checkbox {
+    display: none;
+}
+
+.ball {
+    width: 1em;
+    height: 1em;
+    background-color: var(--background);
+    position: absolute;
+    border-radius: 50%;
+    margin-top: -0.3px;
+    margin-left: 3px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
 
 </style>
 
