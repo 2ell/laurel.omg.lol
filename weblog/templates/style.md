@@ -51,7 +51,6 @@ body {
     font-family: 'Iosevka Web', monospace;
 }
 
-
 /* .--------------. */
 /* |     TEXT     | */
 /* '--------------' */
@@ -190,7 +189,7 @@ main a:hover {
 */
 
 .post-image {
-  max-width: 100%;
+  max-width: 60em;
   max-height: 300px;
   background-image: url('{image}');
   background-size: cover;
@@ -368,4 +367,3 @@ td, th {
 .large {
     font-size: 400%;
 }
-
