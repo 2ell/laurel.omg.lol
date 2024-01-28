@@ -69,23 +69,16 @@ p, li {
 	line-height: 160%;
 }
 
-header a:link { 
+header a { 
     color: var(--text);
-    font-weight: 100;
+    font-weight: 300;
     text-decoration: none;
-    transition: color .3s;
-    transition-property: color;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
+    transition: color .3s ease-in-out;
 }
 
 header a:hover { 
     color: var(--link-hov); 
-}
-
-header a:active, header a:visited { 
-    color: var(--text); 
+    transition: color .3s ease-in-out;
 }
 
 
@@ -146,9 +139,9 @@ footer {
     border-top: 1px solid var(--text);
 }
 
-footer a:link { 
+footer a { 
     color: var(--text);
-    font-weight: 100;
+    font-weight: 700;
     text-decoration: none;
     transition: color .3s;
     transition-property: color;
@@ -161,16 +154,12 @@ footer a:hover {
     color: var(--link-hov); 
 }
 
-footer a:active, footer a:visited { 
-    color: var(--text); 
-}
-
 /* .---------------. */
 /* |     POSTS     | */
 /* '---------------' */
 
 
-main a:link { 
+main a { 
     color: var(--text);
     text-decoration: underline;
     text-decoration-color: currentcolor;
@@ -187,10 +176,6 @@ main a:link {
 }
 main a:hover { 
     text-decoration-color: var(--link-hov); 
-}
-
-main a:active, main a:visited { 
-    color: var(--text); 
 }
 
 /*
