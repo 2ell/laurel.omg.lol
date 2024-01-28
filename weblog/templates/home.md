@@ -27,21 +27,14 @@ Title: Landing Page Template
 
 <main>
 
-<article>
-	{body}
-	<aside class="post-info">
-		<i class="fa-solid fa-clock"></i> {date}
-	</aside>
-	<aside class="post-tags">
-		{tags}
-	</aside>
-</article>
+{body}
 
 <hr>
 
-<h2>Recent posts</h2>
-
-{recent-posts}
+<div class="pagination">
+{previous-page}
+{next-page}
+</div>
 
 </main>
 

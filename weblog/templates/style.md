@@ -4,6 +4,7 @@ Title: Stylesheet
 Location: /style.css
 
 
+
 /* .-------------------. */
 /* |     VARIABLES     | */
 /* '-------------------' */
@@ -112,6 +113,7 @@ header, main, footer {
 .content {
     max-width: 60em;
     margin: auto;
+    min-height: 60vh;
 }
 
 header {
@@ -191,7 +193,7 @@ main a:active, main a:visited {
     color: var(--link); 
 }
 
-
+/*
 .post-header {
   display: flex;
   justify-content: flex-start;
@@ -200,32 +202,29 @@ main a:active, main a:visited {
   gap: 1em;
   width: 100%;
 }
+*/
 
 .post-image {
-  flex-shrink: 2;
-  padding: 0;
-  margin: 0;
+  display: block;
+  float: left;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  max-width: 50%;
 }
-
     .post-image img {
         max-width: 100%;
     }
 
 .post-title {
-    width: 80%;
-    flex-grow: 2;
-    padding: 0;
+    padding-top: 0.8em;
+    line-height: 1.2em;
 }
 
 .post-info {
 	font-size: 75%;
-	color: var(--accent);
+	color: var(--text);
     padding: 0;
     margin: 0;
-}
-
-.post-info i:nth-child(2) {
-	margin-right: 0.3em;
 }
 
 .post-tags {
@@ -296,6 +295,81 @@ td, th {
     flex-direction: column;
     gap: 0;
   }
+}
+
+/* .-------------------. */
+/* |     DARK MODE     | */
+/* '-------------------' */
+
+
+.dark-mode img {
+    opacity: 0.7;
+    transition: all 0.4s ease-in-out;
+}
+
+.dark-mode img:hover {
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+
+/* .----------------. */
+/* |     TOGGLE     | */
+/* '----------------' */
+
+
+.toggle {
+    width: 3%;
+    top: 1rem;
+    right: 4rem;
+    position: absolute;
+    margin-bottom: 1rem;
+}
+
+.label {
+    width: 2.5em;
+    height: 1em;
+    border-radius: 30px;
+    background: var(--accent);
+    position: absolute;
+    cursor: pointer;
+}
+
+.label:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+}
+
+.label:after {
+    content: '';
+    font-size: 1.5rem;
+    position: absolute;
+    display: inline-block;
+}
+
+#checkbox:checked ~ .ball {
+    transform: translateX(1.4em);
+}
+
+#checkbox {
+    display: none;
+}
+
+.ball {
+    width: 0.8em;
+    height: 0.8em;
+    background-color: var(--background);
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-left: 3px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+.large {
+    font-size: 300%;
 }
 
 /* .-------------------. */
