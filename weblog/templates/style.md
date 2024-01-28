@@ -4,7 +4,6 @@ Title: Stylesheet
 Location: /style.css
 
 
-
 /* .-------------------. */
 /* |     VARIABLES     | */
 /* '-------------------' */
@@ -189,19 +188,10 @@ main a:hover {
   width: 100%;
 }
 */
-.post-image-th {
-    float: left;
-    height: 200px;
-    width: 200px;
-    padding: 1em;
-    background-image: url('{image}') no-repeat center fixed;
-    background-size: cover;
-    border: 1px solid var(--text);
-}
 
 .post-image {
   max-width: 100%;
-  height: 300px;
+  max-height: 300px;
   background-image: url('{image}');
   background-size: cover;
 }
@@ -378,3 +368,4 @@ td, th {
 .large {
     font-size: 400%;
 }
+
