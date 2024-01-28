@@ -101,15 +101,6 @@ a:active, a:visited {
 /* |     IMAGES     | */
 /* '----------------' */
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
 /* .------------------. */
 /* |     SECTIONS     | */
 /* '------------------' */
@@ -204,32 +195,37 @@ main a:active, main a:visited {
 .post-header {
   display: flex;
   justify-content: flex-start;
-  align-items: stretch;
+  align-items: flex-start;
+  flex-direction: row;
   gap: 1em;
   width: 100%;
 }
 
 .post-image {
-  flex-shrink: 4;
+  flex-shrink: 2;
+  padding: 0;
+  margin: 0;
 }
 
     .post-image img {
-        width: 100%;
+        max-width: 100%;
     }
 
 .post-title {
-    flex-grow: 6;
+    width: 80%;
+    flex-grow: 2;
+    padding: 0;
 }
 
 .post-info {
 	font-size: 75%;
 	color: var(--accent);
-    padding: 0.2em;
-    width: fit-content;
+    padding: 0;
+    margin: 0;
 }
 
 .post-info i:nth-child(2) {
-	margin-left: 0.6em;
+	margin-right: 0.3em;
 }
 
 .post-tags {
@@ -292,6 +288,13 @@ td, th {
   /* For mobile phones: */
   body {
     font-size: 100%;
+  }
+  .content {
+    max-width: 100%;
+  }
+  .post-header {
+    flex-direction: column;
+    gap: 0;
   }
 }
 
@@ -364,4 +367,8 @@ td, th {
     margin-left: 3px;
     cursor: pointer;
     transition: all 250ms ease-in-out;
+}
+
+.large {
+    font-size: 300%;
 }
