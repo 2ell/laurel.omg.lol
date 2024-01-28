@@ -3,7 +3,6 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
-
 /* .-------------------. */
 /* |     VARIABLES     | */
 /* '-------------------' */
@@ -22,6 +21,8 @@ Location: /style.css
     --background: hsl(230, 17%, 14%);
     --text: hsl(56, 100%, 94%);
     --accent: hsl(241, 26%, 51%);
+    --link: hsl(242, 53%, 74%);
+    --link-hov: hsl(241, 26%, 51%);
 }
 
 /* .-------------------. */
@@ -77,7 +78,7 @@ a:hover {
     color: var(--link-hov); 
 }
 
-a:active, main a:visited { 
+a:active, a:visited { 
     color: var(--text); 
 }
 
