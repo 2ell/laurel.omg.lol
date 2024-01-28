@@ -20,6 +20,15 @@ Title: Landing Page Template
 </head>
 <body>
 
+    <div class="toggle">
+        <div class="darkmode">
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="label"></label>
+            <div class="ball"></div>
+          </label>
+        </div>
+      </div>
+
 <header>
 	<h1 class="weblog-title"><a href="{base-path}">{weblog-title}</a></h1>
 	{navigation}
@@ -39,8 +48,31 @@ Title: Landing Page Template
 </main>
 
 <footer>
-	<p>Made with <a href="https://weblog.lol">weblog.lol</a>.</p>
+    <p>created with <i class="fas fa-heart"></i> by laurel
+        <br>
+    <i class="fas fas fa-plug"></i> powered by <a href="https://omg.lol">omg.lol</a></p>
 </footer>
 
+<script>
+      const checkbox =document.getElementById('checkbox')
+
+checkbox.addEventListener('click',checkMode)
+
+function checkMode(){
+    if(checkbox.checked){
+        darkModeOn()
+    }else{
+        darkModeOff()
+    }
+}
+
+function darkModeOn(){
+    document.body.classList.add('dark-mode')
+}
+
+function darkModeOff(){
+    document.body.classList.remove('dark-mode')
+}
+</script>
 </body>
 </html>

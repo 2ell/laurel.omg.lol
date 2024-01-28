@@ -5,6 +5,7 @@ Location: /style.css
 
 
 
+
 /* .-------------------. */
 /* |     VARIABLES     | */
 /* '-------------------' */
@@ -69,7 +70,7 @@ p, li {
 	line-height: 160%;
 }
 
-a:link { 
+header a:link { 
     color: var(--text);
     font-weight: 100;
     text-decoration: none;
@@ -80,11 +81,11 @@ a:link {
     transition-delay: 0s;
 }
 
-a:hover { 
+header a:hover { 
     color: var(--link-hov); 
 }
 
-a:active, a:visited { 
+header a:active, header a:visited { 
     color: var(--text); 
 }
 
@@ -173,12 +174,12 @@ footer a:active, footer a:visited {
 main a:link { 
     color: var(--text);
     text-decoration: underline;
-    text-decoration-color: currentcolor;
-    text-decoration-thickness: auto;
+    /*text-decoration-color: currentcolor;
+    text-decoration-thickness: auto;*/
     text-decoration-color: var(--link);
     text-decoration-skip-ink: none;
-    text-decoration-thickness: .3rem;
-    text-underline-offset: -.15rem;
+    text-decoration-thickness: .2rem;
+    text-underline-offset: -.12rem;
     transition: text-decoration .3s;
     transition-property: text-decoration;
     transition-duration: 0.3s;
@@ -252,6 +253,15 @@ main a:active, main a:visited {
 	border-radius: .5em;
 	text-decoration: none;
 	display: inline-block;
+}
+
+.recent a {
+    color: var(text);
+    text-decoration: none;
+}
+
+.recent a:hover {
+    color: var(--link);
 }
 
 hr {
