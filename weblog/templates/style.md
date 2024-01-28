@@ -4,7 +4,6 @@ Title: Stylesheet
 Location: /style.css
 
 
-
 /* .-------------------. */
 /* |     VARIABLES     | */
 /* '-------------------' */
@@ -287,7 +286,7 @@ td, th {
     font-size: 100%;
   }
   p, li {
-	line-height: 120%;
+	line-height: 150%;
 }
   .post-header {
     flex-direction: column;
