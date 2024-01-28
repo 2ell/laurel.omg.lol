@@ -4,7 +4,6 @@ Title: Stylesheet
 Location: /style.css
 
 
-
 /* .-------------------. */
 /* |     VARIABLES     | */
 /* '-------------------' */
@@ -190,7 +189,7 @@ main a:hover {
 }
 
 main a:active, main a:visited { 
-    color: var(--link); 
+    color: var(--text); 
 }
 
 /*
@@ -203,6 +202,13 @@ main a:active, main a:visited {
   width: 100%;
 }
 */
+.post-image-th {
+    display: block;
+  float: left;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  max-width: 25%;
+}
 
 .post-image {
   display: block;
@@ -295,81 +301,6 @@ td, th {
     flex-direction: column;
     gap: 0;
   }
-}
-
-/* .-------------------. */
-/* |     DARK MODE     | */
-/* '-------------------' */
-
-
-.dark-mode img {
-    opacity: 0.7;
-    transition: all 0.4s ease-in-out;
-}
-
-.dark-mode img:hover {
-    opacity: 1;
-    transition: all 0.4s ease-in-out;
-}
-
-
-/* .----------------. */
-/* |     TOGGLE     | */
-/* '----------------' */
-
-
-.toggle {
-    width: 3%;
-    top: 1rem;
-    right: 4rem;
-    position: absolute;
-    margin-bottom: 1rem;
-}
-
-.label {
-    width: 2.5em;
-    height: 1em;
-    border-radius: 30px;
-    background: var(--accent);
-    position: absolute;
-    cursor: pointer;
-}
-
-.label:before {
-    content: '';
-    position: absolute;
-    display: inline-block;
-}
-
-.label:after {
-    content: '';
-    font-size: 1.5rem;
-    position: absolute;
-    display: inline-block;
-}
-
-#checkbox:checked ~ .ball {
-    transform: translateX(1.4em);
-}
-
-#checkbox {
-    display: none;
-}
-
-.ball {
-    width: 0.8em;
-    height: 0.8em;
-    background-color: var(--background);
-    position: absolute;
-    border-radius: 50%;
-    margin-top: 2px;
-    margin-left: 3px;
-    cursor: pointer;
-    transition: all 250ms ease-in-out;
-}
-
-.large {
-    font-size: 300%;
 }
 
 /* .-------------------. */
