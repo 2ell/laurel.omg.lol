@@ -48,6 +48,7 @@ body {
 	font-size: 120%;
 	color: var(--text);
 	background: var(--background);
+    font-family: 'Iosevka Web', monospace;
 }
 
 
@@ -56,7 +57,7 @@ body {
 /* '--------------' */
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'VC Honey Deck', serif;
+	font-family: 'Iosevka Web', monospace;
 	margin: 1rem 0;
 }
 

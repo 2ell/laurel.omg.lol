@@ -9,11 +9,7 @@ Title: Landing Page Template
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {feeds}
 <style>
-@import url('https://static.omg.lol/type/font-honey.css');
-@import url('https://static.omg.lol/type/font-lato-regular.css');
-@import url('https://static.omg.lol/type/font-lato-bold.css');
-@import url('https://static.omg.lol/type/font-lato-italic.css');
-@import url('https://static.omg.lol/type/font-md-io.css');
+@import url('https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css');
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 </style>
 <link rel="stylesheet" href="https://laurel.omg.lol/style.css">
