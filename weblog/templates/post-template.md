@@ -6,10 +6,10 @@ Title: Post Template
     float: left;
     height: 200px;
     width: 200px;
-    padding: 1em;
-    margin-right: 2em;
-    background-image: url('{image}') no-repeat center fixed;
+    background-image: url('{image}');
     background-size: cover;
+    background-position: top center;
+    margin-right: 2em;
     border: 1px solid var(--text);
 }
 </style>
