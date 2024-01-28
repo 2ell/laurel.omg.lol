@@ -8,7 +8,7 @@ Title: Post Template
 <article>
         <div class="post-image-th">
     </div>
-    <div class="post-title-hm">
+    <div class="post-title">
     <h1 class="large">{title}</h1>
     </div>
 <p>{description}</p>

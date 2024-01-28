@@ -4,6 +4,7 @@ Title: Stylesheet
 Location: /style.css
 
 
+
 /* .-------------------. */
 /* |     VARIABLES     | */
 /* '-------------------' */
@@ -193,7 +194,7 @@ main a:hover {
     height: 200px;
     width: 200px;
     padding: 1em;
-    background-image: url('{image}');
+    background-image: url('{image}') no-repeat center fixed;
     background-size: cover;
     border: 1px solid var(--text);
 }
@@ -207,11 +208,7 @@ main a:hover {
 
 .post-title {
     padding-top: 0.8em;
-    line-height: 1.2em;
-}
-
-.post-title-hm {
-    float: right;
+    line-height: 2em;
 }
 
 .clearfix::after {
