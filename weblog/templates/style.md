@@ -204,14 +204,14 @@ main a:active, main a:visited {
 */
 .post-image-th {
     display: block;
-  float: left;
-  margin-bottom: 2%;
-  margin-right: 2%;
-  max-width: 25%;
+    float: left;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    max-width: 25%;
 }
 
 .post-image-th img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .post-image {
@@ -232,7 +232,6 @@ main a:active, main a:visited {
 
 .post-info {
 	font-size: 75%;
-	color: var(--text);
     padding: 0;
     margin: 0;
 }
@@ -256,10 +255,12 @@ main a:active, main a:visited {
 .recent a {
     color: var(--text);
     text-decoration: none;
+    transition: color .3s ease;
 }
 
 .recent a:hover {
-    color: var(--link);
+    color: var(--link-hov);
+    transition: color .3s ease;
 }
 
 hr {
