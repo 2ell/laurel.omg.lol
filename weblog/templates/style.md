@@ -13,25 +13,24 @@ Location: /style.css
     --grid-unit: 1em;
     --background: hsl(56, 100%, 94%);
     --text: hsl(230, 17%, 14%);
-    --toggle: hsl(54, 30%, 39%);
-    --link: 
+    --accent: hsl(54, 30%, 39%);
+    --link: hsl(54, 47%, 76%); 
+    --link-hov: hsl(54, 30%, 39%);
 }
 
 .dark-mode {
     --background: hsl(230, 17%, 14%);
     --text: hsl(56, 100%, 94%);
-    --toggle: hsl(241, 32%, 29%);
+    --accent: hsl(241, 26%, 51%);
 }
-
-body {
-    background-color: var(--background);
-    color: var(--text);
-}
-
 
 /* .-------------------. */
-/* |     ALIGNMENT     | */
+/* |        BASE       | */
 /* '-------------------' */
+
+* {
+	box-sizing: border-box;
+}
 
 .container {
     display: flex;
@@ -40,10 +39,6 @@ body {
     justify-content: center;
     position: relative;
     top: -9rem;
-}
-
-* {
-	box-sizing: border-box;
 }
 
 body {
@@ -67,10 +62,24 @@ p, li {
 	line-height: 160%;
 }
 
-a:link { color: var(--link); }
-a:visited { color: var(--link); }
-a:hover { color: var(--link); }
-a:active { color: var(--link); }
+a:link { 
+    color: var(--text);
+    font-weight: 100;
+    text-decoration: none;
+    transition: color .3s;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+a:hover { 
+    color: var(--link-hov); 
+}
+
+a:active, main a:visited { 
+    color: var(--text); 
+}
 
 
 /* .------------------. */
@@ -108,6 +117,7 @@ header, main, footer {
 header {
 	margin-top: 4em;
     margin-bottom: 3em;
+    border-bottom: 1px solid var(--text);
 }
 
     header nav ul {
@@ -127,17 +137,60 @@ header {
     }
 
 footer {
-    background-color: var(--text);
-    color: var(--background);
+    color: var(--text);
 	margin-top: 8em;
     padding: 1em;
 	font-size: 90%;
 	text-align: center;
+    border-top: 1px solid var(--text);
+}
+
+footer a:link { 
+    color: var(--text);
+    font-weight: 100;
+    text-decoration: none;
+    transition: color .3s;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+footer a:hover { 
+    color: var(--link-hov); 
+}
+
+footer a:active, footer a:visited { 
+    color: var(--background); 
 }
 
 /* .---------------. */
 /* |     POSTS     | */
 /* '---------------' */
+
+
+main a:link { 
+    color: var(--text);
+    text-decoration: underline;
+    text-decoration-color: currentcolor;
+    text-decoration-thickness: auto;
+    text-decoration-color: var(--link);
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: .3rem;
+    text-underline-offset: -.15rem;
+    transition: text-decoration .3s;
+    transition-property: text-decoration;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+main a:hover { 
+    text-decoration-color: var(--link-hov); 
+}
+
+main a:active, main a:visited { 
+    color: var(--link); 
+}
 
 .post-info, .post-tags {
 	font-size: 85%;
@@ -161,7 +214,7 @@ footer {
 
 hr {
 	border: 0;
-	height: 0.1em;
+	height: 0.08em;
 	background: var(--text);
 	margin: 2em 0;
 }
@@ -228,15 +281,16 @@ td, th {
     margin-bottom: 1rem;
 }
 
-.label{
+.label {
     width: 2.5em;
     height: 1em;
     border-radius: 30px;
-    background: var(--toggle);
+    background: var(--accent);
     position: absolute;
     cursor: pointer;
 }
-.label:before{
+
+.label:before {
     content: '';
     position: absolute;
     display: inline-block;
