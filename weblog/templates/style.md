@@ -4,7 +4,6 @@ Title: Stylesheet
 Location: /style.css
 
 
-
 /* .-------------------. */
 /* |     VARIABLES     | */
 /* '-------------------' */
@@ -61,6 +60,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 1rem 0;
 }
 
+h1 {
+    font-size: 200%;
+}
+
 p, li {
 	line-height: 160%;
 }
@@ -112,15 +115,17 @@ img {
 /* '------------------' */
 
 header, main, footer {
-	max-width: 60em;
-	margin: 1em auto;
 	padding: 0 1em;
+}
+
+.content {
+    max-width: 60em;
+    margin: auto;
 }
 
 header {
 	margin-top: 4em;
-    margin-bottom: 3em;
-    border-bottom: 1px solid var(--text);
+    margin-bottom: 5em;
 }
 
     header nav ul {
@@ -195,14 +200,42 @@ main a:active, main a:visited {
     color: var(--link); 
 }
 
-.post-info, .post-tags {
-	font-size: 85%;
+
+.post-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1em;
+  width: 100%;
+}
+
+.post-image {
+  flex-shrink: 4;
+}
+
+    .post-image img {
+        width: 100%;
+    }
+
+.post-title {
+    flex-grow: 6;
+}
+
+.post-info {
+	font-size: 75%;
 	color: var(--accent);
-	text-align: right;
+    padding: 0.2em;
+    width: fit-content;
 }
 
 .post-info i:nth-child(2) {
-	margin-left: .75em;
+	margin-left: 0.6em;
+}
+
+.post-tags {
+	font-size: 75%;
+	color: var(--accent);
+    margin-top: 2em;
 }
 
 .tag {
@@ -217,9 +250,9 @@ main a:active, main a:visited {
 
 hr {
 	border: 0;
-	height: 0.08em;
+	height: 0.06rem;
 	background: var(--text);
-	margin: 2em 0;
+	margin: 4em 0;
 }
 
 code {
@@ -235,8 +268,8 @@ pre, code {
 }
 
 pre code {
-	background:  #000;
-	color:  #eee;
+	background: #000;
+	color: #eee;
 	display: inline-block;
 	padding: 1em;
 	white-space: pre-wrap;
@@ -254,6 +287,13 @@ td, th {
 	border: 1px solid var(--accent);
 }
 
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  body {
+    font-size: 100%;
+  }
+}
 
 /* .-------------------. */
 /* |     DARK MODE     | */
@@ -307,7 +347,7 @@ td, th {
 }
 
 #checkbox:checked ~ .ball {
-    transform: translateX(1.2em);
+    transform: translateX(1.4em);
 }
 
 #checkbox {
@@ -315,12 +355,12 @@ td, th {
 }
 
 .ball {
-    width: 1em;
-    height: 1em;
+    width: 0.8em;
+    height: 0.8em;
     background-color: var(--background);
     position: absolute;
     border-radius: 50%;
-    margin-top: -0.3px;
+    margin-top: 2px;
     margin-left: 3px;
     cursor: pointer;
     transition: all 250ms ease-in-out;
