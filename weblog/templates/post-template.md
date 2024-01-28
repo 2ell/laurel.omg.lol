@@ -7,6 +7,7 @@ Title: Post Template
     height: 200px;
     width: 200px;
     padding: 1em;
+    margin-right: 2em;
     background-image: url('{image}') no-repeat center fixed;
     background-size: cover;
     border: 1px solid var(--text);
