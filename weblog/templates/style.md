@@ -3,6 +3,8 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
+
+
 /* .-------------------. */
 /* |     VARIABLES     | */
 /* '-------------------' */
@@ -162,7 +164,7 @@ footer a:hover {
 }
 
 footer a:active, footer a:visited { 
-    color: var(--background); 
+    color: var(--text); 
 }
 
 /* .---------------. */
