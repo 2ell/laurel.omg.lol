@@ -10,6 +10,7 @@ Title: Post Template
     background-size: cover;
     background-position: top center;
     margin-right: 2em;
+    margin-bottom: 2em;
     border: 1px solid var(--text);
 }
 </style>
