@@ -189,31 +189,35 @@ main a:hover {
 }
 */
 .post-image-th {
-    display: block;
     float: left;
-    margin-bottom: 1em;
-    margin-right: 1em;
-    max-width: 25%;
-}
-
-.post-image-th img {
-    max-width: 100%;
+    height: 200px;
+    width: 200px;
+    padding: 1em;
+    background-image: url('{image}');
+    background-size: cover;
+    border: 1px solid var(--text);
 }
 
 .post-image {
-  display: block;
-  float: left;
-  margin-bottom: 2%;
-  margin-right: 2%;
-  max-width: 50%;
+  max-width: 100%;
+  height: 300px;
+  background-image: url('{image}');
+  background-size: cover;
 }
-    .post-image img {
-        max-width: 100%;
-    }
 
 .post-title {
     padding-top: 0.8em;
     line-height: 1.2em;
+}
+
+.post-title-hm {
+    float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .post-info {
@@ -375,5 +379,5 @@ td, th {
 }
 
 .large {
-    font-size: 300%;
+    font-size: 400%;
 }
