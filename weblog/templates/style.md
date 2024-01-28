@@ -4,6 +4,7 @@ Title: Stylesheet
 Location: /style.css
 
 
+
 /* .-------------------. */
 /* |     VARIABLES     | */
 /* '-------------------' */
@@ -208,6 +209,10 @@ main a:active, main a:visited {
   margin-bottom: 2%;
   margin-right: 2%;
   max-width: 25%;
+}
+
+.post-image-th img {
+  max-width: 100%;
 }
 
 .post-image {
