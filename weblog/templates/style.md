@@ -4,8 +4,6 @@ Title: Stylesheet
 Location: /style.css
 
 
-
-
 /* .-------------------. */
 /* |     VARIABLES     | */
 /* '-------------------' */
@@ -174,8 +172,8 @@ footer a:active, footer a:visited {
 main a:link { 
     color: var(--text);
     text-decoration: underline;
-    /*text-decoration-color: currentcolor;
-    text-decoration-thickness: auto;*/
+    text-decoration-color: currentcolor;
+    text-decoration-thickness: auto;
     text-decoration-color: var(--link);
     text-decoration-skip-ink: none;
     text-decoration-thickness: .2rem;
@@ -256,7 +254,7 @@ main a:active, main a:visited {
 }
 
 .recent a {
-    color: var(text);
+    color: var(--text);
     text-decoration: none;
 }
 
