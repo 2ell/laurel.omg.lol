@@ -4,6 +4,7 @@ Title: Stylesheet
 Location: /style.css
 
 
+
 /* .-------------------. */
 /* |     VARIABLES     | */
 /* '-------------------' */
@@ -33,7 +34,7 @@ Location: /style.css
 * {
 	box-sizing: border-box;
 }
-
+/*
 .container {
     display: flex;
     flex-direction: column;
@@ -42,7 +43,7 @@ Location: /style.css
     position: relative;
     top: -9rem;
 }
-
+*/
 body {
 	font-family: 'Lato', sans-serif;
 	font-size: 120%;
@@ -103,9 +104,8 @@ header, main, footer {
 }
 
 .content {
-    max-width: 60em;
     margin: auto;
-    min-height: 60vh;
+    max-width: 60em;
 }
 
 header {
@@ -190,9 +190,10 @@ main a:hover {
 
 .post-image {
   max-width: 60em;
-  max-height: 300px;
+  height: 20em;
   background-image: url('{image}');
   background-size: cover;
+  background-position: top center;
 }
 
 .post-title {
@@ -244,6 +245,7 @@ hr {
 	height: 0.06rem;
 	background: var(--text);
 	margin: 4em 0;
+    max-width: 100%;
 }
 
 code {
@@ -284,9 +286,9 @@ td, th {
   body {
     font-size: 100%;
   }
-  .content {
-    max-width: 100%;
-  }
+  p, li {
+	line-height: 120%;
+}
   .post-header {
     flex-direction: column;
     gap: 0;
