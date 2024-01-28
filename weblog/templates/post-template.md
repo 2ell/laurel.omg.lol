@@ -7,15 +7,12 @@ Title: Post Template
 
 <article>
         <div class="post-image">
-        <img src="https://cdn.some.pics/laurel/65b5be9800b22.jpg">
+        <img src="{image}">
     </div>
     <div class="post-title">
     <h1>{title}</h1>
     </div>
-<div class="img">
-<img src="{image}">
-</div>
-{description}
+<p>{description}</p>
 </article>
 </div>
 </div>
