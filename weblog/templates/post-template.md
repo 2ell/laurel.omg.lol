@@ -3,7 +3,7 @@ Title: Post Template
 
 <style>
     .post-image-th {
-    max-height: 50%;
+    max-height: 20em;
     width: auto;
     background-image: url('{image}');
     background-size: cover;
