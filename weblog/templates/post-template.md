@@ -4,8 +4,8 @@ Title: Post Template
 <style>
     .post-image-th {
     float: left;
-    height: 200px;
-    width: 200px;
+    height: 2em;
+    width: 2em;
     background-image: url('{image}');
     background-size: cover;
     background-position: top center;
