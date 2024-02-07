@@ -3,15 +3,14 @@ Title: Post Template
 
 <style>
     .post-image-th {
-    float: left;
-    max-height: 20em; 
+    max-height: 50%;
     width: auto;
     background-image: url('{image}');
     background-size: cover;
     background-position: center;
-    margin-right: 2em;
     margin-bottom: 2em;
     border: 1px solid var(--text);
+    background-repeat: no-repeat;
 }
 </style>
 
