@@ -4,11 +4,11 @@ Title: Post Template
 <style>
     .post-image-th {
     float: left;
-    height: 2em;
-    width: 2em;
+    max-height: 20em; 
+    width: auto;
     background-image: url('{image}');
     background-size: cover;
-    background-position: top center;
+    background-position: center;
     margin-right: 2em;
     margin-bottom: 2em;
     border: 1px solid var(--text);
