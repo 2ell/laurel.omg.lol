@@ -38,14 +38,14 @@ Location: /style.css
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     position: relative;
     top: -9rem;
 }
 */
 body {
 	font-family: 'Lato', sans-serif;
-	font-size: 120%;
+	font-size: 1.2em;
 	color: var(--text);
 	background: var(--background);
     font-family: 'Iosevka Web', monospace;
@@ -61,11 +61,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 200%;
+    font-size: 2rem;
 }
 
 p, li {
-	line-height: 160%;
+	line-height: 1.5rem;
 }
 
 header a { 
@@ -99,12 +99,9 @@ header a:hover {
 /* '------------------' */
 
 header, main, footer {
-	padding: 0 1em;
-}
-
-.content {
-    margin: auto;
+	padding: 0;
     max-width: 60em;
+    margin: auto;
 }
 
 header {
@@ -156,6 +153,10 @@ footer a:hover {
 /* |     POSTS     | */
 /* '---------------' */
 
+.content {
+    max-width: 60em;
+    margin: auto;
+}
 
 main a { 
     color: var(--text);
@@ -189,15 +190,14 @@ main a:hover {
 
 .post-image {
   max-width: 60em;
-  height: 20em;
+  height: 30vh;
+  margin: auto;
   background-image: url('{image}');
-  background-size: cover;
-  background-position: top center;
+  background-position: center;
 }
 
 .post-title {
-    padding-top: 0.8em;
-    line-height: 2em;
+    padding: 0;
 }
 
 .clearfix::after {
@@ -208,8 +208,9 @@ main a:hover {
 
 .post-info {
 	font-size: 75%;
+    text-align: right;
     padding: 0;
-    margin: 0;
+    margin-bottom: 0.5rem;
 }
 
 .post-tags {
@@ -280,7 +281,7 @@ td, th {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 580px) {
   /* For mobile phones: */
   body {
     font-size: 100%;
@@ -288,9 +289,8 @@ td, th {
   p, li {
 	line-height: 150%;
 }
-  .post-header {
-    flex-direction: column;
-    gap: 0;
+  .large {
+    font-size: 100%;
   }
 }
 
@@ -318,7 +318,7 @@ td, th {
 .toggle {
     width: 3%;
     top: 1rem;
-    right: 4rem;
+    left: 1rem;
     position: absolute;
     margin-bottom: 1rem;
 }
@@ -366,5 +366,5 @@ td, th {
 }
 
 .large {
-    font-size: 400%;
+    font-size: 3em;
 }
