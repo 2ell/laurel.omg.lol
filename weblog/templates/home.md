@@ -13,7 +13,22 @@ Title: Landing Page Template
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 </style>
 <link rel="stylesheet" href="https://laurel.omg.lol/style.css">
+
+<head>
+
+<div class="top">
+    <div class="toggle">
+        <div class="darkmode">
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="label"></label>
+            <div class="ball"></div>
+          </label>
+        </div>
+      </div>
+      <div class="nav">{navigation}</div>
+</div>
 </head>
+
 <body>
 
     <div class="toggle">
