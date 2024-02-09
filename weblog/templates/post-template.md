@@ -22,7 +22,7 @@ Title: Post Template
         <div class="post-image-th">
     </div>
     <div class="post-title">
-    <h1 class="large">{title}</h1>
+    <h1 class="large"><a href="{permalink}">{title}</a></h1>
     </div>
 <p>{description}</p>
 <br>
