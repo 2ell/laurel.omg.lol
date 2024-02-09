@@ -30,19 +30,8 @@ Title: Landing Page Template
 </head>
 
 <body>
-
-    <div class="toggle">
-        <div class="darkmode">
-          <input type="checkbox" class="checkbox" id="checkbox">
-          <label for="checkbox" class="label"></label>
-            <div class="ball"></div>
-          </label>
-        </div>
-      </div>
-
 <header>
 	<h1 class="weblog-title"><a href="{base-path}">{weblog-title}</a></h1>
-	{navigation}
 </header>
 
 <main>
