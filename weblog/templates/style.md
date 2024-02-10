@@ -367,6 +367,7 @@ td, th {
 .content {
     padding-left: 1rem;
     padding-right: 1rem;
+    max-width: 100%;
 }
     .post-image {
         height: 10em;
@@ -394,4 +395,3 @@ td, th {
     opacity: 1;
     transition: all 0.4s ease-in-out;
 }
-
