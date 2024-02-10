@@ -4,24 +4,31 @@ Title: Stylesheet
 Location: /style.css
 
 
+
 /* .-------- VARIABLES --------. */
 
 
  :root {
     --grid-unit: 1em;
-    --background: hsl(56, 100%, 94%);
-    --text: hsl(230, 17%, 14%);
-    --accent: hsl(54, 30%, 39%);
-    --link: hsl(54, 47%, 76%); 
-    --link-hov: hsl(54, 30%, 39%);
+    --background: hsl(227, 68%, 88%);
+    --text: hsl(232, 23%, 18%);
+    --subtext: hsl(230, 19%, 26%);
+    --subtext2: hsl(230, 14%, 41%);
+    --accent:hsl(230, 14%, 41%);
+    --base: hsl(171, 47%, 69%);
+    --link: hsl(233, 23%, 15%);
+    --link-hov: hsl(171, 47%, 69%);
 }
 
 .dark-mode {
-    --background: hsl(230, 17%, 14%);
-    --text: hsl(56, 100%, 94%);
-    --accent: hsl(241, 26%, 51%);
-    --link: hsl(242, 53%, 74%);
-    --link-hov: hsl(241, 26%, 51%);
+    --background: hsl(232, 23%, 18%);
+    --text: hsl(227, 68%, 88%);
+    --subtext: hsl(228, 39%, 80%);
+    --subtext2: hsl(230, 14%, 41%);
+    --accent: hsl(172, 39%, 65%);
+    --base: hsl(233, 23%, 15%);
+    --link: hsl(230, 14%, 41%);
+    --link-hov: hsl(170, 23%, 45%);
 }
 
 /* .-------- BASE --------. */
@@ -32,7 +39,6 @@ Location: /style.css
 }
 
 body {
-	font-family: 'Lato', sans-serif;
 	font-size: 1.2em;
 	color: var(--text);
 	background: var(--background);
@@ -48,8 +54,9 @@ body {
     padding: 1em;
     margin: 0;
     position: sticky;
-    background-color: var(--link);
+    background-color: var(--base);
     display: flex;
+    z-index: 1000,
 }
 
 /* .-------- nav links --------. */
@@ -146,10 +153,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Iosevka Web', monospace;
 	margin: 1rem 0;
+    font-weight: 500;
 }
 
 h1 {
     font-size: 2rem;
+}
+
+h3 {
+    color: var(--subtext);
 }
 
 .large {
@@ -167,6 +179,26 @@ p, li {
 .weblog-title a {
 	text-decoration: none;
 	color: var(--text);
+    font-weight: 700;
+}
+
+.weblog-title a { 
+    color: var(--text);
+    text-decoration: underline;
+    text-decoration-color: currentcolor;
+    text-decoration-thickness: auto;
+    text-decoration-color: var(--background);
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: .6rem;
+    text-underline-offset: -.12rem;
+    transition: text-decoration .3s;
+    transition-property: text-decoration;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.weblog-title a:hover { 
+    text-decoration-color: var(--link-hov); 
 }
 
 /* .----------------. */
