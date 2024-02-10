@@ -39,9 +39,6 @@ Title: Post Template
 }
 </style>
 
-
-<article>
-
 <div class="home-post">
         <div class="home-post-image">
         </div>
@@ -58,5 +55,3 @@ Title: Post Template
             </div>
 </div>
 <p>{description}</p>
-		
-    </article>
