@@ -15,7 +15,7 @@ Title: Post Template
 
     .home-post-header {
         text-align: left;
-        padding: 0.5rem;
+        padding: 1rem;
         flex-grow: 1;
     }
 
