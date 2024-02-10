@@ -22,9 +22,9 @@ Title: Post Template
     .home-post-image {
         flex-shrink: 1;
         padding: 1em;
-        align-self: flex-start;
+        align-self: center;
         height: 10em;
-        width: 20em;
+        width: 22em;
         background-image: url('{image}');
         background-size: cover;
         background-position: center;
