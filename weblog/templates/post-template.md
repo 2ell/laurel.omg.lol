@@ -2,24 +2,24 @@ Type: Template
 Title: Post Template
 
 <style>
-    .post {
+    .home-post {
         display: flex;
         align-content: stretch;
         gap: 1em;
         background-color: var(--accent);
     }
 
-    .post > div {
+    .home-post > div {
         background-color: #00f;
     }
 
-    .post-header {
+    .home-post-header {
         text-align: left;
         width: 100%;
         flex-grow: 4;
     }
 
-    .post-image-th {
+    .home-post-image {
         flex-shrink: 2;
         height: 10em;
         width: 20em;
@@ -29,11 +29,11 @@ Title: Post Template
         border: 1px solid #000;
 }
 
-.post-title {
+.home-post-title {
     padding: 0;
 }
 
-.post-info {
+.home-post-info {
     font-size: 0.9em;
     margin-bottom: 0.5rem;
 }
@@ -42,15 +42,15 @@ Title: Post Template
 
 <article>
 
-<div class="post">
-        <div class="post-image">
+<div class="home-post">
+        <div class="home-post-image">
         </div>
 
 <div>
-    <div class="post-header">
-        <div class="post-info">
+    <div class="home-post-header">
+        <div class="home-post-info">
             <i class="fa-solid fa-clock"></i> <a href="{permalink}">{date}</a>
-        <div class="post-title">
+        <div class="home-post-title">
             <h1 class="large">{title}</h1>
             </div>
             </div>
@@ -59,3 +59,4 @@ Title: Post Template
 </div>
 <p>{description}</p>
 		
+    </article>

@@ -240,21 +240,28 @@ main a:hover {
     text-decoration-color: var(--link-hov); 
 }
 
-/*
-.post-header {
+.post {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: row;
+  align-content: stretch;
   gap: 1em;
-  width: 100%;
+  background-color: var(--accent);
+  margin-bottom: 1rem;
 }
-*/
+
+.post > div {
+  padding: 0.2rem;
+}
+
+.post-header {
+    text-align: left;
+    width: 100%;
+    flex-grow: 4;
+}
 
 .post-image {
-    height: 20em;
-    width: auto;
-    margin: auto;
+    flex-shrink: 2;
+    height: 10em;
+    width: 20em;
     background-image: url('{image}');
     background-size: cover;
     background-position: center;
@@ -264,16 +271,8 @@ main a:hover {
     padding: 0;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 .post-info {
-	font-size: 75%;
-    text-align: right;
-    padding: 0;
+    font-size: 0.9em;
     margin-bottom: 0.5rem;
 }
 
@@ -321,7 +320,7 @@ code {
 
 pre, code {
 	font-family: 'MD IO 0.4';
-	font-size: 90%;
+	font-size: 0.9em;
 }
 
 pre code {
@@ -348,10 +347,13 @@ td, th {
 @media only screen and (max-width: 580px) {
   /* For mobile phones: */
   body {
-    font-size: 100%;
+    font-size: 1em;
   }
   p, li {
-	line-height: 150%;
+	line-height: 1.2em;
+}
+    .post {
+    flex-direction: column;
 }
   .large {
     font-size: 3em;
