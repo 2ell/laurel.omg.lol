@@ -189,7 +189,7 @@ header, main, footer {
 }
 
 header {
-	margin-top: 4em;
+	margin-top: 0em;
     margin-bottom: 5em;
 }
 
@@ -224,6 +224,7 @@ footer a:hover {
 .content {
     max-width: 60em;
     margin: auto;
+    padding: 2em;
 }
 
 main a { 
@@ -259,6 +260,7 @@ main a:hover {
 .post-header {
     text-align: left;
     width: 100%;
+    max-width: 60em;
     flex-grow: 4;
 }
 
@@ -359,6 +361,10 @@ td, th {
     .post {
     flex-direction: column;
 }
+    .post-image {
+        height: 10em;
+        width: 20em;
+    }
   .large {
     font-size: 3em;
   }
@@ -401,7 +407,6 @@ td, th {
 </head>
 
 <body>
-<div class="content">
 <header>
 	<h1 class="weblog-title"><a href="{base-path}">{weblog-title}</a></h1>
 </header>

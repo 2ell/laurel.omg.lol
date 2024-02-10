@@ -22,6 +22,7 @@ Title: Post Template
 
     .home-post-image {
         flex-shrink: 1;
+        align-self: center;
         height: 10em;
         width: 20em;
         background-image: url('{image}');
@@ -37,6 +38,17 @@ Title: Post Template
     font-size: 0.9em;
     margin-bottom: 0.5rem;
 }
+
+@media only screen and (max-width: 580px) {
+  /* For mobile phones: */
+  .home-post {
+    flex-direction: column;
+  }
+  .home-post-image {
+    height: 10em;
+    width: 20em;
+    margin: auto;
+  }
 </style>
 
 <div class="home-post">
