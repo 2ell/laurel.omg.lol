@@ -22,7 +22,8 @@ Title: Post Template
 
     .home-post-image {
         flex-shrink: 1;
-        align-self: center;
+        padding: 1em;
+        align-self: flex-start;
         height: 10em;
         width: 20em;
         background-image: url('{image}');
