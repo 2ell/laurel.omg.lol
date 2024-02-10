@@ -93,7 +93,7 @@ body {
 .toggle {
     width: 3%;
     top: 0.1rem;
-    left: 1rem;
+    left: 0rem;
     position: relative;
     margin-bottom: 1rem;
     flex-shrink: 1;
@@ -184,7 +184,7 @@ header, main, footer {
 }
 
 header {
-	margin-top: 4em;
+	margin-top: 0em;
     margin-bottom: 5em;
 }
 
@@ -219,6 +219,10 @@ footer a:hover {
 .content {
     max-width: 60em;
     margin: auto;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 main a { 
@@ -253,7 +257,6 @@ main a:hover {
 
 .post-header {
     text-align: left;
-    width: 100%;
     flex-grow: 4;
 }
 
@@ -354,6 +357,10 @@ td, th {
     .post {
     flex-direction: column;
 }
+    .post-image {
+        height: 10em;
+        width: 20em;
+    }
   .large {
     font-size: 3em;
   }
@@ -376,3 +383,4 @@ td, th {
     opacity: 1;
     transition: all 0.4s ease-in-out;
 }
+
