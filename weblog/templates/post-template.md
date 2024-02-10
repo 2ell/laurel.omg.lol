@@ -10,7 +10,7 @@ Title: Post Template
     }
 
     .home-post > div {
-        background-color: #00f;
+        padding: 0.2rem;
     }
 
     .home-post-header {
