@@ -17,6 +17,7 @@ Title: Page Template
 </head>
 <body>
 
+<div class="top">
     <div class="toggle">
         <div class="darkmode">
           <input type="checkbox" class="checkbox" id="checkbox">
@@ -25,10 +26,13 @@ Title: Page Template
           </label>
         </div>
       </div>
+      <div class="nav">{navigation}</div>
+</div>
+</head>
 
+<body>
 <header>
 	<h1 class="weblog-title"><a href="{base-path}">{weblog-title}</a></h1>
-	{navigation}
 </header>
 
 <main>

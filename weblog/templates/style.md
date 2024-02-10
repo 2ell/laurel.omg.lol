@@ -4,7 +4,6 @@ Title: Stylesheet
 Location: /style.css
 
 
-
 /* .-------- VARIABLES --------. */
 
 
@@ -29,6 +28,7 @@ Location: /style.css
 
 * {
 	box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -177,7 +177,7 @@ p, li {
 /* |     SECTIONS     | */
 /* '------------------' */
 
-header, main, footer {
+header, main {
 	padding: 0;
     max-width: 60em;
     margin: auto;
@@ -194,7 +194,7 @@ footer {
     padding: 1em;
 	font-size: 90%;
 	text-align: center;
-    border-top: 1px solid var(--text);
+    border-top: 1px solid var(--accent);
 }
 
 footer a { 
@@ -294,6 +294,11 @@ main a:hover {
 	display: inline-block;
 }
 
+.recent {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 .recent a {
     color: var(--text);
     text-decoration: none;
@@ -307,8 +312,8 @@ main a:hover {
 
 hr {
 	border: 0;
-	height: 0.06rem;
-	background: var(--text);
+	height: 0.04rem;
+	background: var(--accent);
 	margin: 4em 0;
     max-width: 100%;
 }
@@ -356,6 +361,7 @@ td, th {
 }
     .post {
     flex-direction: column;
+    justify-content: center;
 }
     .post-image {
         height: 10em;
