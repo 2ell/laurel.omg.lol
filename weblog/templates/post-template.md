@@ -7,6 +7,7 @@ Title: Post Template
         align-content: stretch;
         gap: 1em;
         background-color: var(--accent);
+        width: 100%;
     }
 
     .home-post > div {

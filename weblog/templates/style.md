@@ -244,7 +244,6 @@ main a:hover {
   display: flex;
   align-content: stretch;
   gap: 1em;
-  background-color: var(--accent);
   margin-bottom: 1rem;
 }
 
@@ -260,8 +259,8 @@ main a:hover {
 
 .post-image {
     flex-shrink: 2;
-    height: 10em;
-    width: 20em;
+    height: 200px;
+    width: 580px;
     background-image: url('{image}');
     background-size: cover;
     background-position: center;
