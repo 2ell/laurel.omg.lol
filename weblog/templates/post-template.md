@@ -6,7 +6,6 @@ Title: Post Template
         display: flex;
         align-content: stretch;
         gap: 1em;
-        background-color: var(--accent);
         width: 100%;
     }
 
@@ -16,7 +15,7 @@ Title: Post Template
 
     .home-post-header {
         text-align: left;
-        width: 100%;
+        padding: 0.5rem;
         flex-grow: 1;
     }
 
