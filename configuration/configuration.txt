@@ -15,9 +15,9 @@ Landing page template: Landing Page Template
 ;; --------------------
 
 Separator:  · 
-Navigation: <a href="/about">about</a>, <a href="/noww">now</a>, <a href="/linkroll">linkroll</a>, <a href="/colophon">colophon</a>, <a href="/archive">archive</a>
+Navigation: <a href="/about">about</a>, <a href="/noww">now</a>, <a href="/links">linkroll</a>, <a href="/kudos">kudos</a>, <a href="/archive">archive</a>
 Files path: /files/
-Landing page post count: 2
+Landing page post count: 10
 Post template: Post Template
 
 
