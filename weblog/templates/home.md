@@ -4,7 +4,7 @@ Title: Landing Page Template
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>{weblog-title}{separator}</title>
+<title>laurel{separator}</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {feeds}
@@ -31,7 +31,7 @@ Title: Landing Page Template
 
 <body>
 <header>
-	<h1 class="weblog-title"><a href="{base-path}">{weblog-title}</a></h1>
+	<h1 class="weblog-title"><a href="{base-path}">laurel ◦</a></h1>
 </header>
 
 <main>

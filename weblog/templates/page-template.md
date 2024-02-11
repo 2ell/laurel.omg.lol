@@ -5,7 +5,7 @@ Title: Page Template
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>{weblog-title}{separator}{post-title}</title>
+<title>laurel{separator}{post-title}</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {feeds}
@@ -32,7 +32,7 @@ Title: Page Template
 
 <body>
 <header>
-	<h1 class="weblog-title"><a href="{base-path}">{weblog-title}</a>/<span style="text-transform: lowercase;">{post-title}</span></h1>
+	<h1 class="weblog-title"><a href="{base-path}">laurel ◦ {post-title}</a>/<span style="text-transform: lowercase;">{post-title}</span></h1>
 </header>
 
 <main>
