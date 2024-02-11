@@ -32,7 +32,7 @@ Title: Page Template
 
 <body>
 <header>
-	<h1 class="weblog-title"><a href="{base-path}">laurel</a> ◦<span style="text-transform: lowercase;">{post-title}</span></h1>
+	<h1 class="weblog-title"><a href="{base-path}">laurel</a>/<span style="text-transform: lowercase;">{post-title}</span></h1>
 </header>
 
 <main>
