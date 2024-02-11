@@ -1,6 +1,4 @@
 Type: Page
-Title: now
+Title: links
 Template: Page Template
-Location: /now
-
-{now}
+Location: /links

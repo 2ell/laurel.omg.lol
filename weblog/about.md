@@ -1,6 +1,4 @@
 Type: Page
-Title: now
+Title: about
 Template: Page Template
-Location: /now
-
-{now}
+Location: /about
