@@ -31,7 +31,7 @@ Title: Landing Page Template
 
 <body>
 <header>
-	<h1 class="weblog-title"><a href="{base-path}">laurel ◦</a></h1>
+	<h1 class="weblog-title"><a href="{base-path}">laurel</a></h1>
 </header>
 
 <main>
