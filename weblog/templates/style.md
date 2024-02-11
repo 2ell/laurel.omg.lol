@@ -4,7 +4,6 @@ Title: Stylesheet
 Location: /style.css
 
 
-
 /* .-------- VARIABLES --------. */
 
 
@@ -12,11 +11,11 @@ Location: /style.css
     --grid-unit: 1em;
     --background: hsl(227, 68%, 88%);
     --text: hsl(232, 23%, 18%);
-    --subtext: hsl(230, 19%, 26%);
+    --subtext: hsl(170, 23%, 45%);
     --subtext2: hsl(230, 14%, 41%);
-    --accent:hsl(230, 14%, 41%);
-    --base: hsl(171, 47%, 69%);
-    --link: hsl(233, 23%, 15%);
+    --accent:hsl(171, 31%, 28%);
+    --base:  hsl(170, 23%, 45%);
+    --link: hsl(171, 47%, 69%);
     --link-hov: hsl(171, 47%, 69%);
 }
 
@@ -56,7 +55,7 @@ body {
     position: sticky;
     background-color: var(--base);
     display: flex;
-    z-index: 1000;
+    z-index: 1000,
 }
 
 /* .-------- nav links --------. */
@@ -230,7 +229,7 @@ footer {
 }
 
 footer a { 
-    color: var(--text);
+    color: var(--subtext);
     font-weight: 700;
     text-decoration: none;
     transition: color .3s;
@@ -241,7 +240,7 @@ footer a {
 }
 
 footer a:hover { 
-    color: var(--link-hov); 
+    color: var(--base); 
 }
 
 /* .---------------. */
@@ -251,7 +250,6 @@ footer a:hover {
 .content {
     max-width: 60em;
     margin: auto;
-    padding-left: 1rem;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -293,8 +291,9 @@ main a:hover {
 
 .post-image {
     flex-shrink: 2;
-    height: 200px;
-    width: 580px;
+    height: 20em;
+    width: 100%;
+    margin: auto;
     background-image: url('{image}');
     background-size: cover;
     background-position: center;
