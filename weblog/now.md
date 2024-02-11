@@ -1,6 +1,6 @@
 Type: Page
 Title: now
 Template: Page Template
-Location: /now
+Location: /noww
 
 {now}
