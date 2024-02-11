@@ -4,30 +4,31 @@ Title: Stylesheet
 Location: /style.css
 
 
+
 /* .-------- VARIABLES --------. */
 
 
  :root {
     --grid-unit: 1em;
-    --background: hsl(227, 68%, 88%);
+    --background: hsl(226, 64%, 88%);
     --text: hsl(232, 23%, 18%);
-    --subtext: hsl(170, 23%, 45%);
+    --subtext: hsl(233, 12%, 39%);
     --subtext2: hsl(230, 14%, 41%);
-    --accent:hsl(171, 31%, 28%);
-    --base:  hsl(170, 23%, 45%);
-    --link: hsl(171, 47%, 69%);
-    --link-hov: hsl(171, 47%, 69%);
+    --accent: hsl(232, 97%, 85%);
+    --base: hsl(115, 54%, 76%);
+    --link: hsl(232, 97%, 85%);
+    --link-hov: hsl(115, 54%, 76%);
 }
 
 .dark-mode {
     --background: hsl(232, 23%, 18%);
     --text: hsl(227, 68%, 88%);
-    --subtext: hsl(228, 39%, 80%);
+    --subtext: hsl(115, 54%, 76%);
     --subtext2: hsl(230, 14%, 41%);
-    --accent: hsl(172, 39%, 65%);
+    --accent: hsl(115, 54%, 76%);
     --base: hsl(233, 23%, 15%);
-    --link: hsl(230, 14%, 41%);
-    --link-hov: hsl(170, 23%, 45%);
+    --link: hsla(232, 97%, 85%, 0.4);
+    --link-hov: hsla(115, 54%, 76%, 0.6);
 }
 
 /* .-------- BASE --------. */
@@ -55,7 +56,7 @@ body {
     position: sticky;
     background-color: var(--base);
     display: flex;
-    z-index: 1000,
+    z-index: 1000;
 }
 
 /* .-------- nav links --------. */
@@ -178,7 +179,7 @@ p, li {
 .weblog-title a {
 	text-decoration: none;
 	color: var(--text);
-    font-weight: 700;
+    margin-left: 1rem;
 }
 
 .weblog-title a { 
@@ -229,7 +230,7 @@ footer {
 }
 
 footer a { 
-    color: var(--subtext);
+    color: var(--text);
     font-weight: 700;
     text-decoration: none;
     transition: color .3s;
@@ -240,7 +241,7 @@ footer a {
 }
 
 footer a:hover { 
-    color: var(--base); 
+    color: var(--accent); 
 }
 
 /* .---------------. */
@@ -261,8 +262,8 @@ main a {
     text-decoration-thickness: auto;
     text-decoration-color: var(--link);
     text-decoration-skip-ink: none;
-    text-decoration-thickness: .2rem;
-    text-underline-offset: -.12rem;
+    text-decoration-thickness: .4rem;
+    text-underline-offset: -.18rem;
     transition: text-decoration .3s;
     transition-property: text-decoration;
     transition-duration: 0.3s;
