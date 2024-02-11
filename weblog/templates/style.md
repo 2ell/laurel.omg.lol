@@ -4,31 +4,30 @@ Title: Stylesheet
 Location: /style.css
 
 
-
 /* .-------- VARIABLES --------. */
 
 
  :root {
     --grid-unit: 1em;
-    --background: hsl(226, 64%, 88%);
+    --background: #feeafa;
     --text: hsl(232, 23%, 18%);
-    --subtext: hsl(233, 12%, 39%);
-    --subtext2: hsl(230, 14%, 41%);
-    --accent: hsl(232, 97%, 85%);
-    --base: hsl(115, 54%, 76%);
-    --link: hsl(232, 97%, 85%);
-    --link-hov: hsl(115, 54%, 76%);
+    --subtext: #8e9aaf;
+    --subtext2: #8e9aaf;
+    --accent: #cbc0d3;
+    --base: #efd3d7;
+    --link: #dee2ff;
+    --link-hov: #cbc0d3;
 }
 
 .dark-mode {
-    --background: hsl(232, 23%, 18%);
-    --text: hsl(227, 68%, 88%);
-    --subtext: hsl(115, 54%, 76%);
+    --background: #22223b;
+    --text: #f2e9e4;
+    --subtext: #cbc0d3;
     --subtext2: hsl(230, 14%, 41%);
-    --accent: hsl(115, 54%, 76%);
-    --base: hsl(233, 23%, 15%);
-    --link: hsla(232, 97%, 85%, 0.4);
-    --link-hov: hsla(115, 54%, 76%, 0.6);
+    --accent: #dee2ff;
+    --base: #4a4e69;
+    --link: #c9ada744;
+    --link-hov: #cbc0d399;
 }
 
 /* .-------- BASE --------. */
@@ -166,6 +165,10 @@ h3 {
 
 .large {
     font-size: 3em;
+}
+
+.small {
+    font-size: 0.8em;
 }
 
 p, li {
