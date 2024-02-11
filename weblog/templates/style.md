@@ -56,7 +56,7 @@ body {
     position: sticky;
     background-color: var(--base);
     display: flex;
-    z-index: 1000,
+    z-index: 1000;
 }
 
 /* .-------- nav links --------. */
