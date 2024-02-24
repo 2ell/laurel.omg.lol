@@ -257,7 +257,9 @@ p, li {
 /* █▌                ▐█ */
 /* ████████████████████ */
 
-
+.post-image-sm {
+    display: none;
+}
 
 
 
@@ -478,9 +480,10 @@ td, th {
         padding-right: 1rem;
         max-width: 100%;
     }
-    .post-image {
+    .post-image-sm {
         height: 80%;
         width: 100%;
+        display: flex;
     }
     .large {
         font-size: 3em;
@@ -543,6 +546,7 @@ td, th {
     <div class="post">
 
         <div class="post-image">
+            <img class="post-image-sm" src="{image}">
         </div>
 
 <div>
