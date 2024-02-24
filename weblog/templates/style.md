@@ -3,8 +3,11 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
-
-/* .-------- VARIABLES --------. */
+/* ███████████████████████ */
+/* █▌                   ▐█ */
+/* █▌     VARIABLES     ▐█ */
+/* █▌                   ▐█ */
+/* ███████████████████████ */
 
 
  :root {
@@ -30,7 +33,15 @@ Location: /style.css
     --link-hov: #cbc0d399;
 }
 
-/* .-------- BASE --------. */
+
+
+/* ██████████████████ */
+/* █▌              ▐█ */
+/* █▌     BASE     ▐█ */
+/* █▌              ▐█ */
+/* ██████████████████ */
+
+
 
 * {
 	box-sizing: border-box;
@@ -44,7 +55,15 @@ body {
     font-family: 'Iosevka Web', monospace;
 }
 
-/* .-------- NAVIGATION --------. */
+
+
+/* ████████████████████████ */
+/* █▌                    ▐█ */
+/* █▌     NAVIGATION     ▐█ */
+/* █▌                    ▐█ */
+/* ████████████████████████ */
+
+
 
 .top {
     top: 0;
@@ -58,7 +77,7 @@ body {
     z-index: 1000;
 }
 
-/* .-------- nav links --------. */
+/* . nav links --------. */
 
 .nav {
     text-align: right;
@@ -94,7 +113,7 @@ body {
     }
 
 
-/* .-------- toggle --------. */
+/* . toggle --------. */
 
 .toggle {
     width: 3%;
@@ -147,7 +166,15 @@ body {
     transition: all 250ms ease-in-out;
 }
 
-/* .-------- typography --------. */
+
+
+/* ████████████████████████ */
+/* █▌                    ▐█ */
+/* █▌     TYPOGRAPHY     ▐█ */
+/* █▌                    ▐█ */
+/* ████████████████████████ */
+
+
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Iosevka Web', monospace;
@@ -163,6 +190,8 @@ h3 {
     color: var(--subtext);
 }
 
+/* . type classes --------. */
+
 .large {
     font-size: 3em;
 }
@@ -171,13 +200,22 @@ h3 {
     font-size: 0.8em;
 }
 
+/* . body type --------. */
+
 p, li {
 	line-height: 1.5rem;
+    margin-bottom: 1em;
 }
 
-/* .------------------. */
-/* |     HEADINGS     | */
-/* '------------------' */
+
+
+/* ███████████████████ */
+/* █▌               ▐█ */
+/* █▌     TITLE     ▐█ */
+/* █▌               ▐█ */
+/* ███████████████████ */
+
+
 
 .weblog-title a {
 	text-decoration: none;
@@ -193,24 +231,36 @@ p, li {
     text-decoration-color: var(--background);
     text-decoration-skip-ink: none;
     text-decoration-thickness: .6rem;
-    text-underline-offset: -.12rem;
+    text-underline-offset: -.8rem;
     transition: text-decoration .3s;
     transition-property: text-decoration;
     transition-duration: 0.3s;
-    transition-timing-function: ease;
+    transition-timing-function: ease-in-out;
     transition-delay: 0s;
 }
 .weblog-title a:hover { 
     text-decoration-color: var(--link-hov); 
 }
 
-/* .----------------. */
-/* |     IMAGES     | */
-/* '----------------' */
 
-/* .------------------. */
-/* |     SECTIONS     | */
-/* '------------------' */
+
+/* ████████████████████ */
+/* █▌                ▐█ */
+/* █▌     IMAGES     ▐█ */
+/* █▌                ▐█ */
+/* ████████████████████ */
+
+
+
+
+
+/* ██████████████████████ */
+/* █▌                  ▐█ */
+/* █▌     SECTIONS     ▐█ */
+/* █▌                  ▐█ */
+/* ██████████████████████ */
+
+
 
 header, main {
 	padding: 0;
@@ -256,6 +306,9 @@ footer a:hover {
     margin: auto;
     text-align: justify;
     text-justify: inter-word;
+    overflow-wrap: break-word;
+    hyphens: manual;
+    hyphenate-character: '-';
 }
 
 main a { 
@@ -294,7 +347,7 @@ main a:hover {
 }
 
 .post-image {
-    flex-shrink: 2;
+    flex-shrink: 3;
     height: 20em;
     width: 100%;
     margin: auto;
@@ -373,7 +426,6 @@ pre code {
 	word-wrap: break-word;   
 }
 
-
 table {
 	border-collapse: collapse;
 }
@@ -385,41 +437,68 @@ td, th {
 }
 
 
-@media only screen and (max-width: 580px) {
+
+
+/* ███████████████████████████ */
+/* █▌                       ▐█ */
+/* █▌     SMALL SCREENS     ▐█ */
+/* █▌                       ▐█ */
+/* ███████████████████████████ */
+
+@media only screen and (max-width: 1080px) {
   /* For mobile phones: */
-  body {
-    font-size: 1em;
-  }
-  p, li {
-	line-height: 1.2em;
-}
-    .post {
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-.content {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    max-width: 100%;
-}
-    .post-image {
-        height: 10em;
-        width: 20em;
+    body {
+        font-size: 1em;
     }
-  .large {
-    font-size: 3em;
-  }
-  .nav {
-    font-size: 0.8em;
-  }
+    .weblog-title {
+        font-size: 1em;
+    }
+
+    p, li {
+	    line-height: 1.4em;
+    }
+
+    .post {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-left: 0.5rem;
+        padding-right: 1rem;
+    }
+    .content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        max-width: 100%;
+    }
+    .post-image {
+        height: 80%;
+        width: 100%;
+    }
+    .large {
+        font-size: 3em;
+    }
+    .nav {
+        font-size: 0.8em;
+    }
 }
 
-/* .-------------------. */
-/* |     DARK MODE     | */
-/* '-------------------' */
 
+
+@media only screen and (max-width: 540px) {
+    .content {
+        text-align: left;
+        text-justify: newspaper;
+        hyphens: manual;
+        hyphenate-character: '-';
+    }
+}
+
+/* ███████████████████████ */
+/* █▌                   ▐█ */
+/* █▌     DARK MODE     ▐█ */
+/* █▌                   ▐█ */
+/* ███████████████████████ */
 
 .dark-mode img {
     opacity: 0.7;

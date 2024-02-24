@@ -4,13 +4,17 @@ Title: Landing Page Template
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>laurel{separator}</title>
+<title>laurel{separator}omg{seperator}lol</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {feeds}
 <style>
 @import url('https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css');
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
+.pagination {
+    text-align: center;
+}
+
 </style>
 <link rel="stylesheet" href="https://laurel.omg.lol/style.css">
 
@@ -41,8 +45,7 @@ Title: Landing Page Template
 <hr>
 
 <div class="pagination">
-{previous-page}
-{next-page}
+{previous-page} {seperator} {next-page}
 </div>
 
 </main>
