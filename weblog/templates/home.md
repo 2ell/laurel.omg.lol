@@ -4,7 +4,7 @@ Title: Landing Page Template
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>laurel{separator}omg{seperator}lol</title>
+<title>laurel{separator}omg{separator}lol</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {feeds}
@@ -45,7 +45,7 @@ Title: Landing Page Template
 <hr>
 
 <div class="pagination">
-{previous-page} {seperator} {next-page}
+{previous-page} {separator} {next-page}
 </div>
 
 </main>
