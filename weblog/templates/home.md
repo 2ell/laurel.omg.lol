@@ -26,7 +26,15 @@ Title: Landing Page Template
           </label>
         </div>
       </div>
-      <div class="nav">{navigation}</div>
+
+      <div class="nav"><span class="weblog-title-sm"><a href="/">laurel.omg.lol</a></span>
+        <ul class="nav">
+            <li><a href="/">home</a></li> 
+            <li><a href="/about">about</a></li>
+            <li><a href="/noww">now</a></li>
+            <li><a href="/kudos">kudos</a></li>
+        </ul>
+    </div>
 </div>
 </head>
 

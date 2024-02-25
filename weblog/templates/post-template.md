@@ -52,7 +52,7 @@ Title: Post Template
 </style>
 
 <div class="home-post">
-        <div class="home-post-image">
+        <div class="home-post-image" href="{permalink}">
         </div>
 
 <div>

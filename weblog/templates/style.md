@@ -20,37 +20,38 @@ Location: /style.css
     --purple: #D6AFFD;
     --pink: #FDAFD6;
     --orange: #FDD6AF;
-    --heading: 'Lily Script One';
     --base: #debc99ff;
     --base2: #8483a6ff;
 
     --grid-unit: 1em;
+    --heading: 'Lily Script One';
 
     --background: #e2e2df;
     --text: #333246ff;
     --subtext: #676784;
     --subtext2: #c5dedd;
     --accent: #ead4beff;
-    --base1:  #D6FDAF;
-    --link: #676784;
+    --link: #debc99ff;
+    --nav-link: #debc99ff;
     --link-hov: #676784;
 }
 
 .dark-mode {
+    --teal: #05838b;
+    --purple: rgb(25, 20, 116);
 
-    --teal: #086369;
-    --purple: #3a316d;
-    --background: #22223b;
-    --text: #f2e9e4;
-    --subtext: #cbc0d3;
-    --subtext2: hsl(230, 14%, 41%);
-    --accent: #8483a6ff;
-    --base: #4a4e69;
-    --base2: #debc99ff;
+    --background: #161644;
+    --text: #e2e2df;
+    --subtext: #debc99ff;
+    --subtext2: rgb(73, 72, 114);
+    --accent: rgb(65, 63, 105);
+    --base: #444c83;
+    --base2: #ead4beff;
     --link: #c9ada744;
-    --link-hov: #cbc0d399;
-}
+    --nav-link: #22223b;
+    --link-hov: #444c83;
 
+}
 
 
 /* ██████████████████ */
@@ -102,8 +103,14 @@ body {
     flex-grow: 1;
 }
 
+.nav .weblog-title-sm a {
+    font-family: var(--heading);
+    font-size: 1.5em;
+    color: var(--accent);
+}
+
 .nav a { 
-    color: var(--text);
+    color: var(--nav-link);
     font-weight: 300;
     text-decoration: none;
     transition: color .3s ease-in-out;
@@ -127,7 +134,7 @@ body {
     .nav li a {
         display: block;
         text-decoration: none;
-        margin-right: 1em;
+        margin-left: 1em;
     }
 
 
@@ -135,7 +142,7 @@ body {
 
 .toggle {
     width: 3%;
-    top: 0.1rem;
+    top: 0.3rem;
     left: 0rem;
     position: relative;
     margin-bottom: 1rem;
@@ -143,8 +150,8 @@ body {
 }
 
 .label {
-    width: 2.5em;
-    height: 1em;
+    width: 2.5rem;
+    height: 1rem;
     border-radius: 30px;
     background: var(--accent);
     position: absolute;
@@ -173,8 +180,8 @@ body {
 }
 
 .ball {
-    width: 0.8em;
-    height: 0.8em;
+    width: 0.8rem;
+    height: 0.8rem;
     background-color: var(--base2);
     position: absolute;
     border-radius: 50%;
@@ -200,12 +207,33 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 
+.heading {
+    font-family: var(--heading);
+}
+
 h1 {
-    font-size: 2rem;
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
 }
 
 h3 {
+    font-size: 2.8rem;
     color: var(--subtext);
+}
+
+h4 {
+    font-size: 2.3rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.5rem;
 }
 
 /* . type classes --------. */
@@ -302,7 +330,7 @@ header {
 
 footer {
     color: var(--text);
-	margin-top: 8em;
+    margin-top: 1rem;
     padding: 1em;
 	font-size: 90%;
 	text-align: center;
@@ -321,7 +349,7 @@ footer a {
 }
 
 footer a:hover { 
-    color: var(--accent); 
+    color: var(--link-hov); 
 }
 
 .div-1 {
@@ -344,21 +372,18 @@ footer a:hover {
 /* |     POSTS     | */
 /* '---------------' */
 
-.content {
-    max-width: 60em;
-    margin: auto;
-    text-align: justify;
-    text-justify: inter-word;
-    overflow-wrap: break-word;
-    hyphens: manual;
-    hyphenate-character: '-';
+.post-header {
+    margin: 0rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: var(--base);
 }
 
 .pagination {
     text-align: center;
 }
 
-main a { 
+a { 
     color: var(--text);
     text-decoration: underline;
     text-decoration-color: currentcolor;
@@ -373,7 +398,7 @@ main a {
     transition-timing-function: ease;
     transition-delay: 0s;
 }
-main a:hover { 
+a:hover { 
     text-decoration-color: var(--link-hov); 
 }
 
@@ -428,20 +453,14 @@ main a:hover {
 	display: inline-block;
 }
 
-.recent {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.recent a {
-    color: var(--text);
-    text-decoration: none;
-    transition: color .3s ease;
-}
-
-.recent a:hover {
-    color: var(--link-hov);
-    transition: color .3s ease;
+.content {
+    max-width: 30em;
+    margin: auto;
+    text-align: justify;
+    text-justify: inter-word;
+    overflow-wrap: break-word;
+    hyphens: manual;
+    hyphenate-character: '-';
 }
 
 hr {
@@ -495,7 +514,7 @@ td, th {
 @media only screen and (max-width: 1080px) {
   /* For mobile phones: */
     body {
-        font-size: 1em;
+        font-size: 0.9em;
     }
     .weblog-title {
         font-size: 6em;
@@ -512,9 +531,8 @@ td, th {
         padding-right: 1rem;
     }
     .content {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        max-width: 100%;
+        max-width: 30em;
+        margin: auto;
     }
     .post-image-sm {
         height: 80%;
@@ -524,16 +542,22 @@ td, th {
     .large {
         font-size: 3em;
     }
+    .post-title {
+        font-size: 3rem;
+    }
+    .post-subtitle {
+        font-size: 2em;
+    }
     .nav {
         font-size: 0.8em;
     }
 }
 
-
-
 @media only screen and (max-width: 540px) {
     .content {
         text-align: left;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
         text-justify: newspaper;
         hyphens: manual;
         hyphenate-character: '-';
@@ -547,10 +571,10 @@ td, th {
         padding-right: 0.5rem;
     }
     .head-img {
-    max-width: 15em;
-    flex-shrink: 1;
-    height: auto;
-    margin: auto;
+        max-width: 15em;
+        flex-shrink: 1;
+        height: auto;
+        margin: auto;
     }
     .title {
         margin-top: -5em;
