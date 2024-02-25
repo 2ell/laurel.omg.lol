@@ -45,8 +45,8 @@ Title: Post Template
     flex-direction: column;
   }
   .home-post-image {
-    height: 10em;
-    width: 20em;
+    height: auto;
+    max-width: 25em;
     margin: auto;
   }
 </style>
