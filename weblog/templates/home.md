@@ -11,9 +11,6 @@ Title: Landing Page Template
 <style>
 @import url('https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css');
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
-.pagination {
-    text-align: center;
-}
 
 </style>
 <link rel="stylesheet" href="https://laurel.omg.lol/style.css">
@@ -35,7 +32,25 @@ Title: Landing Page Template
 
 <body>
 <header>
-	<h1 class="weblog-title"><a href="{base-path}">laurel</a></h1>
+    <div class="head-div">
+        <div class="head-img">
+    <img class="head-img" src="https://2ell.b-cdn.net/laureldark300.png">
+</div>
+<div class="title">
+	<h1 class="weblog-title">laurel</h1>
+        <p>Literary Artist. Dreamer. YIMBY.</p>
+    </div>
+</div>
+<div class="div-1">
+    <h1 style="text-align: right;">connect with me elsewhere</h1>
+    <ul class="connect">
+        <li>Mastodon</li>
+        <li>Discord</li>
+        <li>Pixey</li>
+        <li>last.fm</li>
+        <li>Bookwyrm</li>
+    </ul>
+</div>
 </header>
 
 <main>
@@ -53,7 +68,7 @@ Title: Landing Page Template
 <footer>
     <p>created with <i class="fas fa-heart"></i> by laurel
         <br>
-    <i class="fas fas fa-plug"></i> powered by <a href="https://omg.lol">omg.lol</a></p>
+    <i class="fas fas fa-plug"></i> powered by the wonderous <a href="https://omg.lol">omg.lol</a></p>
 </footer>
 
 <script>

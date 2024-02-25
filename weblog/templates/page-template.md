@@ -44,7 +44,7 @@ Title: Page Template
 <footer>
     <p>created with <i class="fas fa-heart"></i> by laurel
         <br>
-    <i class="fas fas fa-plug"></i> powered by <a href="https://omg.lol">omg.lol</a></p>
+    <i class="fas fas fa-plug"></i> powered by the wonderous  <a href="https://omg.lol">omg.lol</a> <i class="omg-icon omg-prami" style="color: var(--accent);"></i> </p>
 </footer>
 
 <script>

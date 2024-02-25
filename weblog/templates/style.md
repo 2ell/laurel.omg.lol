@@ -3,6 +3,7 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
+
 /* ███████████████████████ */
 /* █▌                   ▐█ */
 /* █▌     VARIABLES     ▐█ */
@@ -10,25 +11,41 @@ Location: /style.css
 /* ███████████████████████ */
 
 
+
  :root {
+    --green: #D6FDAF;
+    --teal: #AFFDD6;
+    --blue: #AFD6FD;
+    --purple: #D6AFFD;
+    --pink: #FDAFD6;
+    --orange: #FDD6AF;
+
+    --base: #debc99ff;
+    --base2: #8483a6ff;
+
     --grid-unit: 1em;
-    --background: #feeafa;
-    --text: hsl(232, 23%, 18%);
-    --subtext: #8e9aaf;
-    --subtext2: #8e9aaf;
-    --accent: #cbc0d3;
-    --base: #efd3d7;
-    --link: #dee2ff;
-    --link-hov: #cbc0d3;
+
+    --background: #e2e2df;
+    --text: #333246ff;
+    --subtext: #676784;
+    --subtext2: #c5dedd;
+    --accent: #ead4beff;
+    --base1:  #D6FDAF;
+    --link: #676784;
+    --link-hov: #676784;
 }
 
 .dark-mode {
+
+    --teal: #262233;
+    
     --background: #22223b;
     --text: #f2e9e4;
     --subtext: #cbc0d3;
     --subtext2: hsl(230, 14%, 41%);
-    --accent: #dee2ff;
+    --accent: #8483a6ff;
     --base: #4a4e69;
+    --base2: #debc99ff;
     --link: #c9ada744;
     --link-hov: #cbc0d399;
 }
@@ -72,7 +89,7 @@ body {
     padding: 1em;
     margin: 0;
     position: sticky;
-    background-color: var(--base);
+    background-color: var(--base2);
     display: flex;
     z-index: 1000;
 }
@@ -157,7 +174,7 @@ body {
 .ball {
     width: 0.8em;
     height: 0.8em;
-    background-color: var(--background);
+    background-color: var(--base2);
     position: absolute;
     border-radius: 50%;
     margin-top: 2px;
@@ -215,34 +232,16 @@ p, li {
 /* █▌               ▐█ */
 /* ███████████████████ */
 
+.title {
+    flex-grow: 1;
+    margin-top: 4rem;
+}
 
-
-.weblog-title a {
+.weblog-title {
 	text-decoration: none;
 	color: var(--text);
-    margin-left: 1rem;
+    font-size: 3rem;
 }
-
-.weblog-title a { 
-    color: var(--text);
-    text-decoration: underline;
-    text-decoration-color: currentcolor;
-    text-decoration-thickness: auto;
-    text-decoration-color: var(--background);
-    text-decoration-skip-ink: none;
-    text-decoration-thickness: .6rem;
-    text-underline-offset: -.8rem;
-    transition: text-decoration .3s;
-    transition-property: text-decoration;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s;
-}
-.weblog-title a:hover { 
-    text-decoration-color: var(--link-hov); 
-}
-
-
 
 /* ████████████████████ */
 /* █▌                ▐█ */
@@ -250,7 +249,17 @@ p, li {
 /* █▌                ▐█ */
 /* ████████████████████ */
 
+.head-img, .dark-mode .head-img {
+    opacity: 1;
+}
 
+.head-img:hover, .dark-mode .head-img:hover {
+    opacity: 1;
+}
+
+.post-image-sm {
+    display: none;
+}
 
 
 
@@ -271,6 +280,13 @@ header, main {
 header {
 	margin-top: 0em;
     margin-bottom: 5em;
+}
+
+.head-div {
+    overflow: visible;
+    max-height: 60vh;
+    background-color: var(--base);
+    display: flex;
 }
 
 footer {
@@ -297,6 +313,16 @@ footer a:hover {
     color: var(--accent); 
 }
 
+.div-1 {
+    background-color: var(--teal);
+    min-height: 10em;
+    padding: 1rem 2rem;
+}
+
+.connect {
+    list-style: none;
+}
+
 /* .---------------. */
 /* |     POSTS     | */
 /* '---------------' */
@@ -309,6 +335,10 @@ footer a:hover {
     overflow-wrap: break-word;
     hyphens: manual;
     hyphenate-character: '-';
+}
+
+.pagination {
+    text-align: center;
 }
 
 main a { 
@@ -451,13 +481,11 @@ td, th {
         font-size: 1em;
     }
     .weblog-title {
-        font-size: 1em;
+        font-size: 3em;
     }
-
     p, li {
 	    line-height: 1.4em;
     }
-
     .post {
         flex-direction: column;
         justify-content: center;
@@ -471,9 +499,10 @@ td, th {
         padding-right: 1rem;
         max-width: 100%;
     }
-    .post-image {
+    .post-image-sm {
         height: 80%;
         width: 100%;
+        display: flex;
     }
     .large {
         font-size: 3em;
@@ -492,7 +521,28 @@ td, th {
         hyphens: manual;
         hyphenate-character: '-';
     }
+    .head-div {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .head-img {
+    max-width: 15em;
+    height: auto;
+    margin: auto;
+    }
+    .title {
+        margin-top: -5em;
+        margin-left: 1rem;
+    }
+    .weblog-title {
+        font-size: 3em;
+    }
 }
+
 
 /* ███████████████████████ */
 /* █▌                   ▐█ */
