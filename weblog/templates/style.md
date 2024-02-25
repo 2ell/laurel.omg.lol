@@ -12,7 +12,7 @@ Location: /style.css
 
 
 
- :root {
+:root {
     --green: #D6FDAF;
     --teal: #AFFDD6;
     --blue: #AFD6FD;
@@ -236,6 +236,7 @@ p, li {
     flex-grow: 3;
     margin-top: 4rem;
     margin-left: -3rem;
+    margin-right: 2rem;
 }
 
 .weblog-title {
@@ -276,13 +277,13 @@ p, li {
 
 
 header, main {
-	padding: 0;
     max-width: 60em;
     margin: auto;
 }
 
 main {
     margin-left: 1rem;
+    padding-left: 1rem;
     max-width: 60em;
     margin: auto;
 }
@@ -553,21 +554,4 @@ td, th {
     .weblog-title {
         font-size: 3em;
     }
-}
-
-
-/* ███████████████████████ */
-/* █▌                   ▐█ */
-/* █▌     DARK MODE     ▐█ */
-/* █▌                   ▐█ */
-/* ███████████████████████ */
-
-.dark-mode img {
-    opacity: 0.7;
-    transition: all 0.4s ease-in-out;
-}
-
-.dark-mode img:hover {
-    opacity: 1;
-    transition: all 0.4s ease-in-out;
 }
