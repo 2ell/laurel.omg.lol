@@ -284,7 +284,6 @@ header, main {
 }
 
 main {
-    padding-left: 1rem;
     max-width: 60em;
     margin: auto;
 }
