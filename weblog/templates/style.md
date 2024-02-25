@@ -251,6 +251,8 @@ p, li {
 
 .head-img, .dark-mode .head-img {
     opacity: 1;
+    flex-shrink: 1;
+    max-width: 90%;
 }
 
 .head-img:hover, .dark-mode .head-img:hover {
@@ -530,7 +532,7 @@ td, th {
         padding-right: 0.5rem;
     }
     .head-img {
-    max-width: 12em;
+    max-width: 15em;
     flex-shrink: 1;
     height: auto;
     margin: auto;
