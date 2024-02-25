@@ -38,11 +38,11 @@ Title: Landing Page Template
 </div>
 <div class="title">
 	<h1 class="weblog-title">laurel</h1>
-        <p>Literary Artist. Dreamer. YIMBY.</p>
+        <p>Literary Artist. Dreamer. YIMBY. Deeply & unashamedly pedestrian. </p>
     </div>
 </div>
 <div class="div-1">
-    <h1 style="font-family: var(--heading);">connect with me elsewhere</h1>
+    <h1 style="font-family: var(--heading);">connect with me</h1>
     <ul class="connect">
         <li>Mastodon</li>
         <li>Discord</li>
@@ -54,15 +54,11 @@ Title: Landing Page Template
 </header>
 
 <main>
-    <h1 style="font-family: var(--heading);">latest posts</h1>
+<div class="div2">
+    <h1 style="font-family: var(--heading);">read my mind</h1>
 {body}
-
 <hr>
-
-<div class="pagination">
-{previous-page} {separator} {next-page}
 </div>
-
 </main>
 
 <footer>

@@ -332,6 +332,11 @@ footer a:hover {
     text-align: right;
 }
 
+.div-2 {
+    padding: 2rem 2rem;
+    background-color: var(--purple);
+}
+
 .connect {
     list-style: none;
 }
