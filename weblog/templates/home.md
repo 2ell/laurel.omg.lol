@@ -38,7 +38,7 @@ Title: Landing Page Template
 </div>
 <div class="title">
 	<h1 class="weblog-title">laurel</h1>
-        <p>Literary Artist. Dreamer. YIMBY. Deeply & unashamedly pedestrian. </p>
+        <p>Literary Artist. Dreamer. YIMBY. Deeply and unapolegtically pedestrian. Hopeful.</p>
     </div>
 </div>
 <div class="div-1">

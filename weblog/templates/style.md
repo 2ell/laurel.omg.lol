@@ -283,7 +283,6 @@ header, main {
 }
 
 main {
-    margin-left: 1rem;
     padding-left: 1rem;
     max-width: 60em;
     margin: auto;
@@ -296,7 +295,7 @@ header {
 
 .head-div {
     overflow: visible;
-    max-height: 38em;
+    max-height: 34em;
     background-color: var(--base);
     display: flex;
 }
