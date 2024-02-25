@@ -286,7 +286,7 @@ header {
 
 .head-div {
     overflow: visible;
-    max-height: 60vh;
+    max-height: 35em;
     background-color: var(--base);
     display: flex;
 }
