@@ -43,7 +43,7 @@ Title: Landing Page Template
     </div>
 </div>
 <div class="div-1">
-    <h1>connect with me elsewhere</h1>
+    <h1 style="font-family: var(--heading);">connect with me elsewhere</h1>
     <ul class="connect">
         <li>Mastodon</li>
         <li>Discord</li>
@@ -55,7 +55,7 @@ Title: Landing Page Template
 </header>
 
 <main>
-
+    <h1 style="font-family: var(--heading);">latest posts</h1>
 {body}
 
 <hr>

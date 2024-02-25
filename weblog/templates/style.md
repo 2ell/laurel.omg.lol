@@ -19,7 +19,7 @@ Location: /style.css
     --purple: #D6AFFD;
     --pink: #FDAFD6;
     --orange: #FDD6AF;
-
+    --heading: 'Lily Script One';
     --base: #debc99ff;
     --base2: #8483a6ff;
 
@@ -233,7 +233,7 @@ p, li {
 /* ███████████████████ */
 
 .title {
-    flex-grow: 1;
+    flex-grow: 2;
     margin-top: 4rem;
 }
 
@@ -319,7 +319,7 @@ footer a:hover {
 .div-1 {
     background-color: var(--teal);
     min-height: 10em;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
     text-align: right;
 }
 
