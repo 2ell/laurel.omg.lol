@@ -319,6 +319,7 @@ footer a:hover {
     background-color: var(--teal);
     min-height: 10em;
     padding: 1rem 2rem;
+    text-align: right;
 }
 
 .connect {

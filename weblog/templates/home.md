@@ -42,7 +42,7 @@ Title: Landing Page Template
     </div>
 </div>
 <div class="div-1">
-    <h1 style="text-align: right;">connect with me elsewhere</h1>
+    <h1>connect with me elsewhere</h1>
     <ul class="connect">
         <li>Mastodon</li>
         <li>Discord</li>
