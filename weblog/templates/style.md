@@ -235,6 +235,7 @@ p, li {
 .title {
     flex-grow: 2;
     margin-top: 4rem;
+    margin-left: -1rem;
 }
 
 .weblog-title {
@@ -242,7 +243,6 @@ p, li {
     font-family: 'Lily Script One';
 	color: var(--accent);
     font-size: 8em;
-    margin-left: 1rem;
 }
 
 /* ████████████████████ */
