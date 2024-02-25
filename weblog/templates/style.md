@@ -242,6 +242,7 @@ p, li {
     font-family: 'Lily Script One';
 	color: var(--accent);
     font-size: 8em;
+    margin-left: 1rem;
 }
 
 /* ████████████████████ */
@@ -489,7 +490,7 @@ td, th {
         font-size: 1em;
     }
     .weblog-title {
-        font-size: 3em;
+        font-size: 6em;
     }
     p, li {
 	    line-height: 1.4em;
