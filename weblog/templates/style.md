@@ -586,7 +586,7 @@ td, th {
         margin-bottom: 1rem;
     }
     .weblog-title {
-        font-size: 4em;
+        font-size: 5em;
         margin-left: 0em;
     }
 }
