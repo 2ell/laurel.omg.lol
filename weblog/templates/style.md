@@ -581,12 +581,13 @@ td, th {
         margin: auto;
     }
     .title {
-        margin-top: -5em;
+        margin-top: -10em;
         margin-left: 1rem;
         margin-bottom: 1rem;
     }
     .weblog-title {
         font-size: 5em;
+        text-align: center;
         margin-left: 0em;
     }
 }
