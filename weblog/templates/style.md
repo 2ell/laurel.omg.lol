@@ -549,7 +549,7 @@ td, th {
         font-size: 2em;
     }
     .nav {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 }
 
@@ -561,6 +561,9 @@ td, th {
         text-justify: newspaper;
         hyphens: manual;
         hyphenate-character: '-';
+    }
+    .nav {
+        font-size: 0.8em;
     }
     .head-div {
         flex-direction: column;
