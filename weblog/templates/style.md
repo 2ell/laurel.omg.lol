@@ -530,7 +530,8 @@ td, th {
         padding-right: 0.5rem;
     }
     .head-img {
-    max-width: 15em;
+    max-width: 12em;
+    flex-shrink: 1;
     height: auto;
     margin: auto;
     }
