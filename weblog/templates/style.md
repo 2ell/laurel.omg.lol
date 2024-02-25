@@ -4,6 +4,7 @@ Title: Stylesheet
 Location: /style.css
 
 
+
 /* ███████████████████████ */
 /* █▌                   ▐█ */
 /* █▌     VARIABLES     ▐█ */
@@ -558,5 +559,6 @@ td, th {
     }
     .weblog-title {
         font-size: 3em;
+        margin-left: 0em;
     }
 }
