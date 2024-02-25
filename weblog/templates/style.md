@@ -15,9 +15,9 @@ Location: /style.css
 
 :root {
     --green: #D6FDAF;
-    --teal: #AFFDD6;
+    --teal: #b2cabe;
     --blue: #AFD6FD;
-    --purple: #D6AFFD;
+    --purple: #bea8d4;
     --pink: #FDAFD6;
     --orange: #FDD6AF;
     --base: #debc99ff;
@@ -322,6 +322,7 @@ header {
 }
 
 .head-div {
+    margin-top: 2em;
     overflow: visible;
     max-height: 30em;
     background-color: var(--base);
