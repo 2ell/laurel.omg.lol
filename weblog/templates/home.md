@@ -12,7 +12,6 @@ Title: Landing Page Template
 @import url('https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css');
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 @import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
-
 </style>
 <link rel="stylesheet" href="https://laurel.omg.lol/style.css">
 
