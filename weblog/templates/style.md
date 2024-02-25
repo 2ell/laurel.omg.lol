@@ -38,8 +38,8 @@ Location: /style.css
 
 .dark-mode {
 
-    --teal: #262233;
-    
+    --teal: #086369;
+    --purple: #3a316d;
     --background: #22223b;
     --text: #f2e9e4;
     --subtext: #cbc0d3;
@@ -290,7 +290,7 @@ main {
 
 header {
 	margin-top: 0em;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
 }
 
 .head-div {
