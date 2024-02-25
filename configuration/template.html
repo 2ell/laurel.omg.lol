@@ -37,26 +37,25 @@
     --subtext: #676784;
     --subtext2: #c5dedd;
     --accent: #ead4beff;
-    --base1:  #D6FDAF;
     --link: #debc99ff;
     --nav-link: #debc99ff;
     --link-hov: #676784;
 }
 
 .dark-mode {
+    --teal: #05838b;
+    --purple: rgb(25, 20, 116);
 
-    --teal: #086369;
-    --purple: #3a316d;
-    --background: #22223b;
+    --background: #161644;
     --text: #e2e2df;
-    --subtext: #cbc0d3;
+    --subtext: #debc99ff;
     --subtext2: rgb(73, 72, 114);
-    --accent: #8483a6ff;
-    --base: #4a4e69;
-    --base2: #debc99ff;
+    --accent: rgb(65, 63, 105);
+    --base: #444c83;
+    --base2: #ead4beff;
     --link: #c9ada744;
     --nav-link: #22223b;
-    --link-hov: rgb(73, 72, 114);
+    --link-hov: #444c83;
 
 }
 
@@ -111,7 +110,7 @@ body {
     flex-grow: 1;
 }
 
-.nav .weblog-title-sm {
+.nav .weblog-title-sm a {
     font-family: var(--heading);
     font-size: 1.5em;
     color: var(--accent);
@@ -338,7 +337,7 @@ header {
 
 footer {
     color: var(--text);
-	margin-top: 8em;
+    margin-top: 1rem;
     padding: 1em;
 	font-size: 90%;
 	text-align: center;
@@ -381,8 +380,10 @@ footer a:hover {
 /* '---------------' */
 
 .post-header {
-    margin: 0.5rem;
+    margin: 0rem;
+    padding: 1rem;
     margin-bottom: 2rem;
+    background-color: var(--base);
 }
 
 .pagination {
@@ -532,8 +533,7 @@ td, th {
     }
     .content {
         max-width: 30em;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        margin: auto;
     }
     .post-image-sm {
         height: 80%;
@@ -557,6 +557,8 @@ td, th {
 @media only screen and (max-width: 540px) {
     .content {
         text-align: left;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
         text-justify: newspaper;
         hyphens: manual;
         hyphenate-character: '-';
@@ -597,7 +599,7 @@ td, th {
         </div>
       </div>
 
-      <div class="nav"><span class="weblog-title-sm">laurel.omg.lol</span>
+      <div class="nav"><span class="weblog-title-sm"><a href="/">laurel.omg.lol</a></span>
         <ul class="nav">
             <li><a href="/">home</a></li> 
             <li><a href="/about">about</a></li>
@@ -616,7 +618,7 @@ td, th {
     <div class="post">
 
         <div class="post-image">
-            <img src="https://2ell.b-cdn.net/31.png">
+            <img src="{image}">
         </div>
 
 
@@ -633,17 +635,16 @@ td, th {
     <div class="content">
         {body}
     </div>
-
+</div>
 </article>
 
-
 <hr>
-
-    <div class="recent">
+<div class="div-2">
+<div class="recent">
         <h2 class="heading">the latest</h2>
             {recent-posts}
     </div>
-
+</div>
 </main>
 
 <footer>
