@@ -281,12 +281,12 @@ header, main {
 }
 
 main {
-    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 header {
 	margin-top: 0em;
-    margin-bottom: 5em;
+    margin-bottom: 1em;
 }
 
 .head-div {
