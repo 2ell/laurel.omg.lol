@@ -555,9 +555,10 @@ td, th {
     .title {
         margin-top: -5em;
         margin-left: 1rem;
+        margin-bottom: 1rem;
     }
     .weblog-title {
-        font-size: 3em;
+        font-size: 4em;
         margin-left: 0em;
     }
 }
