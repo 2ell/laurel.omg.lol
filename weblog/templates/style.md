@@ -235,7 +235,7 @@ p, li {
 .title {
     flex-grow: 3;
     margin-top: 4rem;
-    margin-left: -1rem;
+    margin-left: -3rem;
 }
 
 .weblog-title {
