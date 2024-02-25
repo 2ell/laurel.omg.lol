@@ -239,6 +239,7 @@ p, li {
 
 .weblog-title {
 	text-decoration: none;
+    font-family: 'Lily Script One';
 	color: var(--text);
     font-size: 3rem;
 }
