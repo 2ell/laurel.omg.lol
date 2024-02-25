@@ -241,7 +241,7 @@ p, li {
 	text-decoration: none;
     font-family: 'Lily Script One';
 	color: var(--accent);
-    font-size: 5rem;
+    font-size: 5em;
 }
 
 /* ████████████████████ */
