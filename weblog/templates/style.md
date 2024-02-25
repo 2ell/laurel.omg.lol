@@ -280,6 +280,10 @@ header, main {
     margin: auto;
 }
 
+main {
+    margin-right: 1rem;
+}
+
 header {
 	margin-top: 0em;
     margin-bottom: 5em;
