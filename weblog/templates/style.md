@@ -233,7 +233,7 @@ p, li {
 /* ███████████████████ */
 
 .title {
-    flex-grow: 2;
+    flex-grow: 3;
     margin-top: 4rem;
     margin-left: -1rem;
 }
@@ -253,8 +253,8 @@ p, li {
 
 .head-img, .dark-mode .head-img {
     opacity: 1;
-    flex-shrink: 1;
-    max-width: 90%;
+    flex-shrink: 2;
+    max-width: 80%;
 }
 
 .head-img:hover, .dark-mode .head-img:hover {
