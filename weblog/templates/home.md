@@ -34,7 +34,7 @@ Title: Landing Page Template
 <header>
     <div class="head-div">
         <div class="head-img">
-    <img class="head-img" src="https://2ell.b-cdn.net/2elldark.png">
+    <img class="head-img" src="https://2ell.b-cdn.net/2ell2dark.png">
 </div>
 <div class="title">
 	<h1 class="weblog-title">laurel</h1>
