@@ -54,6 +54,7 @@ Location: /style.css
 }
 
 
+
 /* ██████████████████ */
 /* █▌              ▐█ */
 /* █▌     BASE     ▐█ */
@@ -88,12 +89,14 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1em;
+    padding: 0.5em;
+    padding-bottom: 0;
     margin: 0;
     position: sticky;
     background-color: var(--base2);
     display: flex;
     z-index: 1000;
+    max-height: fit-content;
 }
 
 /* . nav links --------. */
@@ -123,8 +126,8 @@ body {
 
 .nav ul {
         list-style-type: none;
-        margin: 0;
-        padding: 0;
+        margin: 0em;
+        padding: 0em;
     }
 
     .nav li {
@@ -190,7 +193,6 @@ body {
     cursor: pointer;
     transition: all 250ms ease-in-out;
 }
-
 
 
 /* ████████████████████████ */
@@ -515,7 +517,7 @@ td, th {
 @media only screen and (max-width: 1080px) {
   /* For mobile phones: */
     body {
-        font-size: 0.9em;
+        font-size: 1em;
     }
     .weblog-title {
         font-size: 6em;
@@ -554,6 +556,7 @@ td, th {
     }
 }
 
+
 @media only screen and (max-width: 540px) {
     .content {
         text-align: left;
@@ -562,9 +565,6 @@ td, th {
         text-justify: newspaper;
         hyphens: manual;
         hyphenate-character: '-';
-    }
-    .nav {
-        font-size: 0.8em;
     }
     .head-div {
         flex-direction: column;
