@@ -9,6 +9,8 @@
 @import url('https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css');
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 
+
+
 /* ███████████████████████ */
 /* █▌                   ▐█ */
 /* █▌     VARIABLES     ▐█ */
@@ -17,14 +19,14 @@
 
 
 
- :root {
+:root {
     --green: #D6FDAF;
     --teal: #AFFDD6;
     --blue: #AFD6FD;
     --purple: #D6AFFD;
     --pink: #FDAFD6;
     --orange: #FDD6AF;
-
+    --heading: 'Lily Script One';
     --base: #debc99ff;
     --base2: #8483a6ff;
 
@@ -238,14 +240,16 @@ p, li {
 /* ███████████████████ */
 
 .title {
-    flex-grow: 1;
+    flex-grow: 3;
     margin-top: 4rem;
+    margin-left: -3rem;
 }
 
 .weblog-title {
 	text-decoration: none;
-	color: var(--text);
-    font-size: 3rem;
+    font-family: 'Lily Script One';
+	color: var(--accent);
+    font-size: 8em;
 }
 
 /* ████████████████████ */
@@ -256,6 +260,8 @@ p, li {
 
 .head-img, .dark-mode .head-img {
     opacity: 1;
+    flex-shrink: 2;
+    max-width: 80%;
 }
 
 .head-img:hover, .dark-mode .head-img:hover {
@@ -282,14 +288,20 @@ header, main {
     margin: auto;
 }
 
+main {
+    margin-left: 1rem;
+    max-width: 60em;
+    margin: auto;
+}
+
 header {
 	margin-top: 0em;
-    margin-bottom: 5em;
+    margin-bottom: 1em;
 }
 
 .head-div {
     overflow: visible;
-    max-height: 60vh;
+    max-height: 38em;
     background-color: var(--base);
     display: flex;
 }
@@ -321,7 +333,8 @@ footer a:hover {
 .div-1 {
     background-color: var(--teal);
     min-height: 10em;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
+    text-align: right;
 }
 
 .connect {
@@ -486,7 +499,7 @@ td, th {
         font-size: 1em;
     }
     .weblog-title {
-        font-size: 3em;
+        font-size: 6em;
     }
     p, li {
 	    line-height: 1.4em;
@@ -536,6 +549,7 @@ td, th {
     }
     .head-img {
     max-width: 15em;
+    flex-shrink: 1;
     height: auto;
     margin: auto;
     }
@@ -547,25 +561,6 @@ td, th {
         font-size: 3em;
     }
 }
-
-
-/* ███████████████████████ */
-/* █▌                   ▐█ */
-/* █▌     DARK MODE     ▐█ */
-/* █▌                   ▐█ */
-/* ███████████████████████ */
-
-.dark-mode img {
-    opacity: 0.7;
-    transition: all 0.4s ease-in-out;
-}
-
-.dark-mode img:hover {
-    opacity: 1;
-    transition: all 0.4s ease-in-out;
-}
-
-
 </style>
 
 <div class="top">

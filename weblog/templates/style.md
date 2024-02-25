@@ -283,6 +283,8 @@ header, main {
 
 main {
     margin-left: 1rem;
+    max-width: 60em;
+    margin: auto;
 }
 
 header {
