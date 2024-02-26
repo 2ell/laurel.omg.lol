@@ -52,8 +52,6 @@ Location: /style.css
 
 }
 
-
-
 /* ██████████████████ */
 /* █▌              ▐█ */
 /* █▌     BASE     ▐█ */
@@ -184,7 +182,7 @@ body {
 .ball {
     width: 0.8rem;
     height: 0.8rem;
-    background-color: var(--base2);
+    background-color: var(--accent2);
     position: absolute;
     border-radius: 50%;
     margin-top: 2px;
@@ -273,8 +271,7 @@ p, li {
 	text-decoration: none;
     font-family: 'Lily Script One';
 	color: var(--accent);
-    font-size: 8em;
-    margin-left: -2rem;
+    font-size: 10em;
 }
 
 /* ████████████████████ */
