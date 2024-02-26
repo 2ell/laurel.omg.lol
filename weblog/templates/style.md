@@ -3,14 +3,6 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
-
-
-/* ███████████████████████ */
-/* █▌                   ▐█ */
-/* █▌     VARIABLES     ▐█ */
-/* █▌                   ▐█ */
-/* ███████████████████████ */
-
 :root {
     --base:  #FDD6AF;
     --background: #f5eee6;
@@ -26,30 +18,20 @@ Location: /style.css
 
     --grid-unit: 1em;
     --heading: 'Lily Script One';
-
-    --background1: 
-    --subtext1: #676784;
-    --subtext21: #c5dedd;
-    --accent1: #ead4beff;
-    --lin1k: #debc99ff;
-    --nav-link1: #debc99ff;
-    --link-hov1: #676784;
 }
 
 .dark-mode {
-    --teal: #05838b;
-    --purple: rgb(25, 20, 116);
-    --background: #161644;
-    --text: #e2e2df;
+    --background: #333246ff;
+    --text: #f5eee6;
     --subtext: #debc99ff;
     --subtext2: rgb(73, 72, 114);
-    --accent: rgb(65, 63, 105);
-    --base: #444c83;
+    --accent: rgb(112, 109, 175);
+    --accent2: #debc99ff;
+    --base: #48465a;
     --base2: #ead4beff;
     --link: #c9ada744;
     --nav-link: #22223b;
     --link-hov: #444c83;
-
 }
 
 /* ██████████████████ */
