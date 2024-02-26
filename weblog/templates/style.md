@@ -4,6 +4,7 @@ Title: Stylesheet
 Location: /style.css
 
 
+
 /* ███████████████████████ */
 /* █▌                   ▐█ */
 /* █▌     VARIABLES     ▐█ */
@@ -253,7 +254,12 @@ h6 {
     .title {
         flex-grow: 2;
         margin-top: 3rem;
-        margin-right: 2rem;
+        margin-right: 1rem;
+    }
+
+    .title p {
+        margin-top: 0;
+        padding-top: 0;
     }
 
     .weblog-title {
@@ -261,6 +267,8 @@ h6 {
         font-family: 'Lily Script One';
         color: var(--text);
         font-size: 8em;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
 /* ████████████████████ */
@@ -521,6 +529,7 @@ td, th {
         margin-left: 0em;
     }
 }
+
 
 
 

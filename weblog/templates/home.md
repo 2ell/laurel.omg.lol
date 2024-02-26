@@ -49,7 +49,7 @@ Title: Landing Page Template
 	<h1 class="weblog-title">laurel <i style="color: var(--accent);" class="fas fa-badge-check"></i></h1>
     <br><i class="fa-solid fa-location-dot"></i> Moh'kinsstis, Earth
     <br><i class="fa-solid fa-graduation-cap"></i> School of Peer Support 2024
-    <br>
+    <br><br>
         <p>Plan[e]t-lovin' visionary type. Literary artist. YIMBY. Unashamedly & unapologetically <i>pedestrian</i>. Grateful to (still) be here.</p>
     </div>
 </div>
