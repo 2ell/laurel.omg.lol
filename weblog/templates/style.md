@@ -272,6 +272,7 @@ h6 {
     .head-img, .dark-mode .head-img {
         opacity: 1;
         flex-shrink: 1;
+        margin-left: 1rem;
         max-width: 80%;
     }
 
