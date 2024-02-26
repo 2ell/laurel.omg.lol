@@ -506,9 +506,10 @@ td, th {
         flex-direction: column;
         justify-content: center;
         margin-bottom: 0;
-        padding-bottom: 0;
+        padding-bottom: 2rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
+        max-height: fit-content;
     }
     .head-img {
         max-width: 15em;
@@ -523,9 +524,7 @@ td, th {
     }
     .weblog-title {
         text-align: center;
-        color: var(--text);
-        -webkit-text-stroke: 4px var(--accent);
-        text-stroke: 4px var(--accent);
+        color: var(--background);
         margin-left: 0em;
     }
 }
