@@ -524,6 +524,7 @@ td, th {
     .weblog-title {
         font-size: 5em;
         text-align: center;
+        color: var(--accent);
         margin-left: 0em;
     }
 }
