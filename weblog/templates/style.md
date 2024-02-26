@@ -11,8 +11,6 @@ Location: /style.css
 /* █▌                   ▐█ */
 /* ███████████████████████ */
 
-
-
 :root {
     --base:  #FDD6AF;
     --background: #f5eee6;
@@ -94,7 +92,7 @@ body {
     padding-bottom: 0;
     margin: 0;
     position: sticky;
-    background-color: var(--base2);
+    background-color: var(--accent2);
     display: flex;
     z-index: 1000;
     max-height: fit-content;
@@ -300,7 +298,6 @@ p, li {
 }
 
 
-
 /* ██████████████████████ */
 /* █▌                  ▐█ */
 /* █▌     SECTIONS     ▐█ */
@@ -366,8 +363,7 @@ footer a:hover {
 
 .div-2 {
     padding: 2rem 2rem;
-    background-color: var(--color2);
-    color: var(--accent);
+    color: var(--text);
 }
 
 .connect {
