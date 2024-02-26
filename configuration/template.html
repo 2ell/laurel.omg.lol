@@ -20,32 +20,32 @@
 
 
 :root {
-    --green: #D6FDAF;
-    --teal: #b2cabe;
-    --blue: #AFD6FD;
-    --purple: #bea8d4;
-    --pink: #FDAFD6;
-    --orange: #FDD6AF;
-    --base: #debc99ff;
-    --base2: #8483a6ff;
+    --base:  #FDD6AF;
+    --background: #f5eee6;
+    --text: #333246ff;
+    --accent2: #797897;
+    --accent: #ffe5cc;
+    --link: #ffe5cce3;
+    --nav-link: #ffe5cc;
+    --nav-link-hov: #b1a8b9;
+    --color1: #6b9e85;
+    --color2: #695783;
 
     --grid-unit: 1em;
     --heading: 'Lily Script One';
 
-    --background: #e2e2df;
-    --text: #333246ff;
-    --subtext: #676784;
-    --subtext2: #c5dedd;
-    --accent: #ead4beff;
-    --link: #debc99ff;
-    --nav-link: #debc99ff;
-    --link-hov: #676784;
+    --background1: 
+    --subtext1: #676784;
+    --subtext21: #c5dedd;
+    --accent1: #ead4beff;
+    --lin1k: #debc99ff;
+    --nav-link1: #debc99ff;
+    --link-hov1: #676784;
 }
 
 .dark-mode {
     --teal: #05838b;
     --purple: rgb(25, 20, 116);
-
     --background: #161644;
     --text: #e2e2df;
     --subtext: #debc99ff;
@@ -99,7 +99,7 @@ body {
     padding-bottom: 0;
     margin: 0;
     position: sticky;
-    background-color: var(--base2);
+    background-color: var(--accent2);
     display: flex;
     z-index: 1000;
     max-height: fit-content;
@@ -126,7 +126,7 @@ body {
 }
 
 .nav a:hover { 
-    color: var(--link-hov); 
+    color: var(--nav-link-hov); 
     transition: color .3s ease-in-out;
 }
 
@@ -191,7 +191,7 @@ body {
 .ball {
     width: 0.8rem;
     height: 0.8rem;
-    background-color: var(--base2);
+    background-color: var(--accent2);
     position: absolute;
     border-radius: 50%;
     margin-top: 2px;
@@ -645,9 +645,9 @@ td, th {
 </main>
 
 <footer>
-    <p>created with <i class="fas fa-heart" style="color: var(--accent);""></i> by laurel
+    <p>created with <i class="fas fa-heart" style="color: var(--accent2);""></i> by laurel
         <br>
-    <i class="fas fas fa-plug"></i> powered by the wonderous <a href="https://omg.lol">omg.lol</a></p>
+    <i class="fas fas fa-plug" style="color: var(--color1)"></i> powered by the wonderous <a href="https://omg.lol">omg.lol</a></p>
 </footer>
 
 <script>
