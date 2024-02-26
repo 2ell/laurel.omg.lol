@@ -4,7 +4,6 @@ Title: Stylesheet
 Location: /style.css
 
 
-
 /* ███████████████████████ */
 /* █▌                   ▐█ */
 /* █▌     VARIABLES     ▐█ */
@@ -252,7 +251,7 @@ h6 {
 /* ███████████████████ */
 
     .title {
-        flex-grow: 2;
+        flex-grow: 1;
         margin-top: 3rem;
         margin-right: 1rem;
     }
@@ -279,7 +278,6 @@ h6 {
 
     .head-img, .dark-mode .head-img {
         opacity: 1;
-        flex-shrink: 1;
         margin-left: 1rem;
         max-width: 80%;
     }
