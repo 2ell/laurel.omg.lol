@@ -251,8 +251,8 @@ h6 {
 /* ███████████████████ */
 
     .title {
-        flex-grow: 1;
-        margin-top: 3rem;
+        flex-grow: 0;
+        margin-top: 2rem;
         margin-right: 1rem;
     }
 
@@ -321,6 +321,7 @@ header {
     max-height: 35em;
     background-color: var(--base);
     display: flex;
+    padding-bottom: 2rem;
 }
 
 footer {
