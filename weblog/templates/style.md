@@ -522,9 +522,10 @@ td, th {
         margin-bottom: 1rem;
     }
     .weblog-title {
-        font-size: 5em;
         text-align: center;
-        color: var(--accent);
+        color: var(--text);
+        -webkit-text-stroke: 4px var(--accent);
+        text-stroke: 4px var(--accent);
         margin-left: 0em;
     }
 }
