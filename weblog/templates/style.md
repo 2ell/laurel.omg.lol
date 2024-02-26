@@ -3,6 +3,15 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
+
+/* ███████████████████████ */
+/* █▌                   ▐█ */
+/* █▌     VARIABLES     ▐█ */
+/* █▌                   ▐█ */
+/* ███████████████████████ */
+
+
+
 :root {
     --base:  #FDD6AF;
     --background: #f5eee6;
@@ -34,13 +43,13 @@ Location: /style.css
     --link-hov: #444c83;
 }
 
+
+
 /* ██████████████████ */
 /* █▌              ▐█ */
 /* █▌     BASE     ▐█ */
 /* █▌              ▐█ */
 /* ██████████████████ */
-
-
 
 * {
 	box-sizing: border-box;
@@ -54,15 +63,11 @@ body {
     font-family: 'Iosevka Web', monospace;
 }
 
-
-
 /* ████████████████████████ */
 /* █▌                    ▐█ */
 /* █▌     NAVIGATION     ▐█ */
 /* █▌                    ▐█ */
 /* ████████████████████████ */
-
-
 
 .top {
     top: 0;
@@ -85,39 +90,41 @@ body {
     flex-grow: 1;
 }
 
-.nav .weblog-title-sm a {
-    font-family: var(--heading);
-    font-size: 1.5em;
-    color: var(--accent);
-}
-
-.nav a { 
-    color: var(--nav-link);
-    font-weight: 300;
-    text-decoration: none;
-    transition: color .3s ease-in-out;
-}
-
-.nav a:hover { 
-    color: var(--link-hov); 
-    transition: color .3s ease-in-out;
-}
-
-.nav ul {
-        list-style-type: none;
-        margin: 0em;
-        padding: 0em;
+    .nav .weblog-title-sm a {
+        font-family: var(--heading);
+        font-size: 1.5em;
+        color: var(--accent);
+        margin-right: 0.5rem;
     }
 
-    .nav li {
-        display: inline-block;
-    }
-
-    .nav li a {
-        display: block;
+    .nav a { 
+        color: var(--nav-link);
+        font-weight: 300;
         text-decoration: none;
-        margin-left: 1em;
+        transition: color .3s ease-in-out;
     }
+
+    .nav a:hover { 
+        color: var(--link-hov); 
+        transition: color .3s ease-in-out;
+    }
+
+        .nav ul {
+                list-style-type: none;
+                margin: 0em;
+                margin-right: 0.5rem;
+                padding: 0em;
+            }
+
+            .nav li {
+                display: inline-block;
+            }
+
+            .nav li a {
+                display: block;
+                text-decoration: none;
+                margin-left: 1em;
+            }
 
 
 /* . toggle --------. */
@@ -174,6 +181,7 @@ body {
 }
 
 
+
 /* ████████████████████████ */
 /* █▌                    ▐█ */
 /* █▌     TYPOGRAPHY     ▐█ */
@@ -219,20 +227,20 @@ h6 {
 
 /* . type classes --------. */
 
-.large {
-    font-size: 3em;
-}
+    .large {
+        font-size: 3em;
+    }
 
-.small {
-    font-size: 0.8em;
-}
+    .small {
+        font-size: 0.8em;
+    }
 
 /* . body type --------. */
 
-p, li {
-	line-height: 1.5rem;
-    margin-bottom: 1em;
-}
+    p, li {
+        line-height: 1.5rem;
+        margin-bottom: 1em;
+    }
 
 
 
@@ -242,19 +250,18 @@ p, li {
 /* █▌               ▐█ */
 /* ███████████████████ */
 
-.title {
-    flex-grow: 2;
-    margin-top: 3rem;
-    margin-left: -3rem;
-    margin-right: 2rem;
-}
+    .title {
+        flex-grow: 2;
+        margin-top: 3rem;
+        margin-right: 2rem;
+    }
 
-.weblog-title {
-	text-decoration: none;
-    font-family: 'Lily Script One';
-	color: var(--text);
-    font-size: 10em;
-}
+    .weblog-title {
+        text-decoration: none;
+        font-family: 'Lily Script One';
+        color: var(--text);
+        font-size: 8em;
+    }
 
 /* ████████████████████ */
 /* █▌                ▐█ */
@@ -262,19 +269,20 @@ p, li {
 /* █▌                ▐█ */
 /* ████████████████████ */
 
-.head-img, .dark-mode .head-img {
-    opacity: 1;
-    flex-shrink: 1;
-    max-width: 80%;
-}
+    .head-img, .dark-mode .head-img {
+        opacity: 1;
+        flex-shrink: 1;
+        max-width: 80%;
+    }
 
-.head-img:hover, .dark-mode .head-img:hover {
-    opacity: 1;
-}
+    .head-img:hover, .dark-mode .head-img:hover {
+        opacity: 1;
+    }
 
-.post-image-sm {
-    display: none;
-}
+    .post-image-sm {
+        display: none;
+    }
+
 
 
 /* ██████████████████████ */
@@ -303,13 +311,14 @@ header {
 .head-div {
     margin-top: 2em;
     overflow: visible;
-    max-height: 30em;
+    max-height: 35em;
     background-color: var(--base);
     display: flex;
 }
 
 footer {
-    color: var(--text);
+    background: var(--accent2);
+    color: var(--accent);
     margin-top: 1rem;
     padding: 1em;
 	font-size: 90%;
@@ -364,7 +373,7 @@ footer a:hover {
     text-align: center;
 }
 
-a { 
+main a { 
     color: var(--text);
     text-decoration: underline;
     text-decoration-color: currentcolor;
@@ -379,59 +388,9 @@ a {
     transition-timing-function: ease;
     transition-delay: 0s;
 }
+
 a:hover { 
     text-decoration-color: var(--link-hov); 
-}
-
-.post {
-  display: flex;
-  align-content: stretch;
-  gap: 1em;
-  margin-bottom: 1rem;
-}
-
-.post > div {
-  padding: 0.2rem;
-}
-
-.post-header {
-    text-align: left;
-    flex-grow: 4;
-}
-
-.post-image {
-    flex-shrink: 3;
-    height: 20em;
-    width: 100%;
-    margin: auto;
-    background-image: url('{image}');
-    background-size: cover;
-    background-position: center;
-}
-
-.post-title {
-    padding: 0;
-}
-
-.post-info {
-    font-size: 0.9em;
-    margin-bottom: 0.5rem;
-}
-
-.post-tags {
-	font-size: 75%;
-	color: var(--accent);
-    margin-top: 2em;
-}
-
-.tag {
-	background: var(--accent);
-	color: var(--background) !important;
-	padding: .3em .4em;
-	margin: .8em 0 0 .4em;
-	border-radius: .5em;
-	text-decoration: none;
-	display: inline-block;
 }
 
 .content {
@@ -483,14 +442,6 @@ td, th {
 	border: 1px solid var(--accent);
 }
 
-
-
-
-/* ███████████████████████████ */
-/* █▌                       ▐█ */
-/* █▌     SMALL SCREENS     ▐█ */
-/* █▌                       ▐█ */
-/* ███████████████████████████ */
 
 @media only screen and (max-width: 1080px) {
   /* For mobile phones: */
@@ -568,4 +519,69 @@ td, th {
         text-align: center;
         margin-left: 0em;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.post {
+  display: flex;
+  align-content: stretch;
+  gap: 1em;
+  margin-bottom: 1rem;
+}
+
+.post > div {
+  padding: 0.2rem;
+}
+
+.post-header {
+    text-align: left;
+    flex-grow: 4;
+}
+
+.post-image {
+    flex-shrink: 3;
+    height: 20em;
+    width: 100%;
+    margin: auto;
+    background-image: url('{image}');
+    background-size: cover;
+    background-position: center;
+}
+
+.post-title {
+    padding: 0;
+}
+
+.post-info {
+    font-size: 0.9em;
+    margin-bottom: 0.5rem;
+}
+
+.post-tags {
+	font-size: 75%;
+	color: var(--accent);
+    margin-top: 2em;
+}
+
+.tag {
+	background: var(--accent);
+	color: var(--background) !important;
+	padding: .3em .4em;
+	margin: .8em 0 0 .4em;
+	border-radius: .5em;
+	text-decoration: none;
+	display: inline-block;
 }
