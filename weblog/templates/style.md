@@ -14,32 +14,33 @@ Location: /style.css
 
 
 :root {
-    --green: #D6FDAF;
-    --teal: #b2cabe;
-    --blue: #AFD6FD;
-    --purple: #bea8d4;
-    --pink: #FDAFD6;
-    --orange: #FDD6AF;
-    --base: #debc99ff;
-    --base2: #8483a6ff;
+    --base:  #FDD6AF;
+    --background: #f5eee6;
+    --text: #333246ff;
+    --accent2: #797897;
+    --accent: #ffe5cc;
+    --link: #ffe5cc;
+    --link-hov:  #FDD6AF;
+    --nav-link: #ffe5cc;
+    --nav-link-hov: #b1a8b9;
+    --color1: #6b9e85;
+    --color2: #695783;
 
     --grid-unit: 1em;
     --heading: 'Lily Script One';
 
-    --background: #e2e2df;
-    --text: #333246ff;
-    --subtext: #676784;
-    --subtext2: #c5dedd;
-    --accent: #ead4beff;
-    --link: #debc99ff;
-    --nav-link: #debc99ff;
-    --link-hov: #676784;
+    --background1: 
+    --subtext1: #676784;
+    --subtext21: #c5dedd;
+    --accent1: #ead4beff;
+    --lin1k: #debc99ff;
+    --nav-link1: #debc99ff;
+    --link-hov1: #676784;
 }
 
 .dark-mode {
     --teal: #05838b;
     --purple: rgb(25, 20, 116);
-
     --background: #161644;
     --text: #e2e2df;
     --subtext: #debc99ff;
@@ -356,7 +357,8 @@ footer a:hover {
 }
 
 .div-1 {
-    background-color: var(--teal);
+    color: var(--accent);
+    background-color: var(--color1);
     min-height: 10em;
     padding: 2rem 2rem;
     text-align: right;
@@ -364,7 +366,8 @@ footer a:hover {
 
 .div-2 {
     padding: 2rem 2rem;
-    background-color: var(--purple);
+    background-color: var(--color2);
+    color: var(--accent);
 }
 
 .connect {
