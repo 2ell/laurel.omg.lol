@@ -12,6 +12,7 @@ Location: /style.css
 
 
 
+
 :root {
     --base:  #FDD6AF;
     --background: #f5eee6;
@@ -23,27 +24,27 @@ Location: /style.css
     --nav-link: #ffe5cc;
     --nav-link-hov: #b1a8b9;
     --color1: #6b9e85;
-    --color2: #695783;
+    --color2: #414055;
 
     --grid-unit: 1em;
     --heading: 'Lily Script One';
 }
 
 .dark-mode {
-    --background: #333246ff;
+    --background: rgb(7, 6, 22);
     --text: #f5eee6;
     --subtext: #debc99ff;
     --subtext2: rgb(73, 72, 114);
-    --accent: rgb(112, 109, 175);
-    --accent2: #debc99ff;
-    --base: #48465a;
-    --base2: #ead4beff;
-    --link: #c9ada744;
-    --nav-link: #22223b;
+    --accent: rgb(231, 219, 187);
+    --accent2: rgb(23, 35, 139);
+    --base: rgb(12, 20, 85);
+    --base2: rgb(255, 222, 190);
+    --link: #2229af6c;
+    --nav-link: #acacff;
     --link-hov: #444c83;
+    --color1: #0d383b;
+    --color2: rgb(5, 8, 37);
 }
-
-
 
 /* ██████████████████ */
 /* █▌              ▐█ */
@@ -86,6 +87,8 @@ body {
 /* . nav links --------. */
 
 .nav {
+    max-width: 60em;
+    margin: auto;
     text-align: right;
     flex-grow: 1;
 }
@@ -161,7 +164,7 @@ body {
 }
 
 #checkbox:checked ~ .ball {
-    transform: translateX(1.4em);
+    transform: translateX(1.4rem);
 }
 
 #checkbox {
@@ -325,7 +328,7 @@ header {
 }
 
 footer {
-    background: var(--accent2);
+    background: var(--color2);
     color: var(--accent);
     margin-top: 1rem;
     padding: 1em;
@@ -335,7 +338,7 @@ footer {
 }
 
 footer a { 
-    color: var(--text);
+    color: var(--accent);
     font-weight: 700;
     text-decoration: none;
     transition: color .3s;
@@ -346,7 +349,7 @@ footer a {
 }
 
 footer a:hover { 
-    color: var(--link-hov); 
+    color: var(--nav-link-hov); 
 }
 
 .div-1 {
@@ -529,6 +532,7 @@ td, th {
         margin-left: 0em;
     }
 }
+
 
 
 
