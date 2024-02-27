@@ -17,7 +17,7 @@ Title: Landing Page Template
 <link rel="stylesheet" href="https://laurel.omg.lol/style.css">
 
 <head>
-
+<span class="hide">proven.lol/8ab7de</span>
 <div class="top">
     <div class="toggle">
         <div class="darkmode">

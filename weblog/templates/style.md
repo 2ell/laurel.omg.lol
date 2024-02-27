@@ -64,6 +64,11 @@ body {
     font-family: 'Iosevka Web', monospace;
 }
 
+.hide {
+    display: none;
+}
+
+
 /* ████████████████████████ */
 /* █▌                    ▐█ */
 /* █▌     NAVIGATION     ▐█ */
