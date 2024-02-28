@@ -68,22 +68,8 @@ Title: Landing Page Template
 
 <div class="section">
 <h4 style="font-family: var(--heading); color: var(--text);">connect with me</h4>
-<div class="box-connect">
-  
-    <ul class="connect">
-             <li>
-                <i class="fa-brands fa-lastfm"></i> <a rel="me" href="https://www.last.fm/user/laurel___">Last.fm</a>
-              <li>
-                <i class="fa-brands fa-discord"></i> <a rel="me" href="https://discordapp.com/users/susurrance">Discord</a>
-              </li>
-              <li>
-                <i class="fa-brands fa-steam"></i> <a rel="me" href="https://steamcommunity.com/id/2tongued/">Steam</a>
-              </li><br>
-            </ul>
-            </div>
-
-    <div class="box-connect">
-    <ul class="connect">
+<div class="box-connect-1">
+<ul class="connect">
               <li>
                 <i class="fa-brands fa-mastodon"></i> <a rel="me" href="https://social.lol/@laurel">Mastodon</a>
               </li>
@@ -94,6 +80,19 @@ Title: Landing Page Template
               <li>
                 <i class="fa-solid fa-envelope"></i> <a rel="me" href="mailto:laurel@omg.lol">Email</a>
               </li>
+            </ul>
+            </div>
+
+    <div class="box-connect-2">
+    <ul class="connect">
+             <li>
+                <i class="fa-brands fa-lastfm"></i> <a rel="me" href="https://www.last.fm/user/laurel___">Last.fm</a>
+              <li>
+                <i class="fa-brands fa-discord"></i> <a rel="me" href="https://discordapp.com/users/susurrance">Discord</a>
+              </li>
+              <li>
+                <i class="fa-brands fa-steam"></i> <a rel="me" href="https://steamcommunity.com/id/2tongued/">Steam</a>
+              </li><br>
             </ul>
             </div>
 

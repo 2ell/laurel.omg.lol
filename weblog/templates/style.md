@@ -384,19 +384,23 @@ footer a:hover {
 }
 
 .section {
-        padding: 2rem;
+        margin: 2rem;
         gap: 1rem;
         display: flex;
         max-width: 100%;
     }
 
-.box-connect {
+.box-connect-1 {
     flex: 1;
     }
 
+.box-connect-2 {
+    flex: 1;
+}
+
 
 .box-connect ul {
-    margin-left: 0.5rem;
+    margin-left: 0.2rem;
 }
 
 
