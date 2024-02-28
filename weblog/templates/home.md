@@ -64,9 +64,9 @@ Title: Landing Page Template
         <p class="small">Plan[e]t-lovin' visionary type. Literary artist. YIMBY. Unashamedly & unapologetically <i>pedestrian</i>. Grateful to (still) be here.</p>
     </div>
 </div>
-
+<h2>i am...</h2>
         <script src="https://status.lol/laurel.js?time&amp;link&amp;pretty"></script>
-        
+
 <div class="green">
     <h2 style="font-family: var(--heading); color: var(--text);">connect with me</h2>
     <ul class="connect">
