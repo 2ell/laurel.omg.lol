@@ -65,7 +65,7 @@ Title: Landing Page Template
     </div>
 </div>
 </header>
-
+<main>
 <div class="section">
 <h4 style="font-family: var(--heading); color: var(--text);">connect with me</h4>
 <div class="box-connect-1">
@@ -108,8 +108,6 @@ Title: Landing Page Template
     <h4 style="font-family: var(--heading); color: var(--text);">i am currently . . .</h4>
         <script src="https://status.lol/laurel.js?time&amp;link&amp;pretty"></script>
 </div>
-
-<main>
 <div class="div-2">
     <h2 style="font-family: var(--heading);">read my mind</h2>
 {body}
