@@ -65,16 +65,16 @@ Title: Landing Page Template
     </div>
 </div>
 <div class="green">
-    <h2 style="font-family: var(--heading);">connect with me</h2>
+    <h2 style="font-family: var(--heading); color: var(--text);">connect with me</h2>
     <ul class="connect">
               <li>
-                <span class="fa-li"><i class="fa-brands fa-mastodon"></i></span><a rel="me" href="https://social.lol/@laurel">Mastodon</a>
+                <i class="fa-brands fa-mastodon"></i><a rel="me" href="https://social.lol/@laurel">Mastodon</a>
               </li>
               <li>
-                <span class="fa-li"><i class="fa-brands fa-discord"></i></span><a rel="me" href="https://discordapp.com/users/susurrance">Discord</a>
+                <i class="fa-brands fa-discord"></i> <a rel="me" href="https://discordapp.com/users/susurrance">Discord</a>
               </li>
               <li>
-                <span class="fa-li"><i class="fa-solid fa-camera"></i></span><a rel="me" href="https://pixey.org/laurel">Pixelfed</a>
+                <i class="fa-solid fa-camera"></i> <a rel="me" href="https://pixey.org/laurel">Pixelfed</a>
               </li>
               <li>
                 <span class="fa-li"><i class="fa-brands fa-lastfm"></i></span><a rel="me" href="https://www.last.fm/user/laurel___">Last.fm</a>
@@ -86,7 +86,6 @@ Title: Landing Page Template
                 <span class="fa-li"><i class="fa-solid fa-envelope"></i></span><a rel="me" href="mailto:laurel@omg.lol">Email</a>
               </li>
             </ul>
-    </ul>
 </div>
 </header>
 

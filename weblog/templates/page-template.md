@@ -53,7 +53,7 @@ Title: Page Template
 </header>
 
 <main>
-	<h1 class="heading"><a href="{base-path}">laurel</a>/<span style="text-transform: lowercase;">{post-title}</span></h1>
+<span style="text-transform: lowercase;">{post-title}</span></h1>
 
 <div class="content">
 {body}
@@ -62,12 +62,21 @@ Title: Page Template
 </main>
 
 <footer>
-    <p>created with <i class="fas fa-heart"></i> by laurel
+    <p>created with <i class="fas fa-heart" style="color: var(--accent3);""></i> by laurel
         <br>
-     <i class="fas fas fa-plug" style="color: var(--color1)"></i> powered by the wonderous <a href="https://omg.lol">omg.lol</a></p>
+    <i class="fas fas fa-bolt" style="color: var(--accent)"></i> powered by the wondrous <a href="https://omg.lol">omg.lol</a> <i class="fas fas fa-bolt" style="color: var(--accent)"></i></p>
 </footer>
 
 <script>
+function dropDown() {
+    var x = document.getElementById("navLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  } 
+
 const checkbox =document.getElementById('checkbox')
 
 checkbox.addEventListener('click',checkMode)
