@@ -535,6 +535,10 @@ td, th {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
+    .section {
+        flex-direction: column;
+        justify content: center;
+    }
     .content {
         max-width: 30em;
         margin: auto;
