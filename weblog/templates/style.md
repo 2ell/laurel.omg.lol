@@ -388,6 +388,7 @@ footer a:hover {
         gap: 1rem;
         display: flex;
         max-width: 60em;
+        margin: auto;
     }
 
 .box-connect-1 {
