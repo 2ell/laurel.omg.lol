@@ -53,7 +53,7 @@ Title: Page Template
 </header>
 
 <main>
-<span style="text-transform: lowercase;">{post-title}</span></h1>
+<h1 class="shadow" style="text-align: center;">{post-title}</h1>
 
 <div class="content">
 {body}
