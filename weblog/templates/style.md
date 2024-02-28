@@ -382,6 +382,13 @@ footer a:hover {
     color: var(--text);
 }
 
+.section {
+        padding: 2rem;
+        gap: 1rem;
+        display: flex;
+        max-width: 100%;
+    }
+
 .box-connect {
     flex: 1;
     }
@@ -409,13 +416,7 @@ footer a:hover {
 
 .connect {
     list-style: none;
-    text-align: right;
 }
-
-.connect ul {
-    display: inline-block;
-}
-
 /* .---------------. */
 /* |     POSTS     | */
 /* '---------------' */
