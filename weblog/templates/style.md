@@ -4,6 +4,8 @@ Title: Stylesheet
 Location: /style.css
 
 
+
+
 /* ███████████████████████ */
 /* █▌                   ▐█ */
 /* █▌     VARIABLES     ▐█ */
@@ -41,7 +43,7 @@ Location: /style.css
     --link: #2229af6c;
     --nav-link: #acacff;
     --link-hov: #444c83;
-    --color1: #0d383b;
+    --color1: #42a9b1;
     --color2: rgb(5, 8, 37);
 }
 
@@ -374,7 +376,7 @@ footer a:hover {
 
 .connect {
     list-style: none;
-     text-align: right;
+    text-align: right;
 }
 
 /* .---------------. */
@@ -541,7 +543,7 @@ td, th {
     }
     .weblog-title {
         text-align: center;
-        color: var(--background);
+        color: var(--accent3);
         margin-left: 0em;
     }
     .top {
@@ -559,7 +561,6 @@ td, th {
         top: 0.5rem;
     }
 }
-
 
 
 
