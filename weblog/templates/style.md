@@ -388,6 +388,10 @@ footer a:hover {
     text-align: right;
 }
 
+.connect ul {
+    display: inline-block;
+}
+
 /* .---------------. */
 /* |     POSTS     | */
 /* '---------------' */
@@ -436,7 +440,7 @@ a:hover {
 hr {
 	border: 0;
 	height: 0.04rem;
-	background: var(--accent);
+	background: var(--base);
 	margin: 4em 0;
     max-width: 100%;
 }

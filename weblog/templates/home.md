@@ -61,7 +61,7 @@ Title: Landing Page Template
     <br><i class="fa-solid fa-location-dot"></i> Moh'kinsstis, Earth
     <br><i class="fa-solid fa-graduation-cap"></i> School of Peer Support 2024
     <br><br>
-        <p>Plan[e]t-lovin' visionary type. Literary artist. YIMBY. Unashamedly & unapologetically <i>pedestrian</i>. Grateful to (still) be here.</p>
+        <p class="small">Plan[e]t-lovin' visionary type. Literary artist. YIMBY. Unashamedly & unapologetically <i>pedestrian</i>. Grateful to (still) be here.</p>
     </div>
 </div>
 <div class="green">
