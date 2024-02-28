@@ -76,6 +76,8 @@ Title: Landing Page Template
               <li>
                 <i class="fa-solid fa-camera"></i> <a rel="me" href="https://pixey.org/laurel">Pixelfed</a>
               </li>
+              <li>
+              <i class="fa-solid fa-book"></i> <a href="https://bookrastinating.com/user/laurel"> Bookwyrm</a>
               </li>
               <li>
                 <i class="fa-solid fa-envelope"></i> <a rel="me" href="mailto:laurel@omg.lol">Email</a>
@@ -87,6 +89,9 @@ Title: Landing Page Template
     <ul class="connect">
              <li>
                 <i class="fa-brands fa-lastfm"></i> <a rel="me" href="https://www.last.fm/user/laurel___">Last.fm</a>
+              </li>
+              <li>
+              <i class="fa=brands fa-github"></i> <a href="https://github.com/2ell">Github</a>
               <li>
                 <i class="fa-brands fa-discord"></i> <a rel="me" href="https://discordapp.com/users/susurrance">Discord</a>
               </li>
