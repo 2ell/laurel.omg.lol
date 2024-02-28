@@ -537,7 +537,7 @@ td, th {
     }
     .section {
         flex-direction: column;
-        justify content: center;
+        justify-content: center;
     }
     .content {
         max-width: 30em;
