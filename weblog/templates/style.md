@@ -5,7 +5,6 @@ Location: /style.css
 
 
 
-
 /* ███████████████████████ */
 /* █▌                   ▐█ */
 /* █▌     VARIABLES     ▐█ */
@@ -383,6 +382,31 @@ footer a:hover {
     color: var(--text);
 }
 
+.box-connect {
+    flex: 1;
+    }
+
+.status {
+    flex: 2;
+    flex-grow: 1;
+    border-left: 4px solid var(--accent2);
+    padding-left: 1.8rem;
+}
+
+.statuslol {
+        background-color: var(--background) !important;
+        width: 85%;
+        margin: auto;
+        padding: 0;
+    }
+    .statuslol_content {
+        color: var(--text) !important;
+        font-size: 0.9em;
+    }
+    .statuslol_time a {
+    color: var(--accent3) !important;
+    }
+
 .connect {
     list-style: none;
     text-align: right;
@@ -573,9 +597,6 @@ td, th {
         top: 0.5rem;
     }
 }
-
-
-
 
 
 

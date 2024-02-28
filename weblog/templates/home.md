@@ -64,10 +64,9 @@ Title: Landing Page Template
         <p class="small">Plan[e]t-lovin' visionary type. Literary artist. YIMBY. Unashamedly & unapologetically <i>pedestrian</i>. Grateful to (still) be here.</p>
     </div>
 </div>
-<h2>i am...</h2>
-        <script src="https://status.lol/laurel.js?time&amp;link&amp;pretty"></script>
+</header>
 
-<div class="green">
+<div class="box-connect">
     <h2 style="font-family: var(--heading); color: var(--text);">connect with me</h2>
     <ul class="connect">
               <li>
@@ -89,15 +88,17 @@ Title: Landing Page Template
                 <i class="fa-solid fa-envelope"></i> <a rel="me" href="mailto:laurel@omg.lol">Email</a>
               </li>
             </ul>
+
+<div class="status">
+<h4>i am</h4>
+        <script src="https://status.lol/laurel.js?time&amp;link&amp;pretty"></script>
 </div>
-</header>
+</div>
 
 <main>
-<div class="div-2">
     <h2 style="font-family: var(--heading);">read my mind</h2>
 {body}
 <hr>
-</div>
 </main>
 
 
