@@ -374,6 +374,7 @@ footer a:hover {
 
 .connect {
     list-style: none;
+     text-align: right;
 }
 
 /* .---------------. */
