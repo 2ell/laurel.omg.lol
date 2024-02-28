@@ -103,9 +103,9 @@ Title: Landing Page Template
 
 </div>
 
-
-<div class="status">
     <h4 style="font-family: var(--heading); color: var(--text);">i am currently . . .</h4>
+<div class="status">
+<script src="https://recentfm.rknight.me/now.js?u=laurel___"></script>
         <script src="https://status.lol/laurel.js?time&amp;link&amp;pretty"></script>
 </div>
 <div class="div-2">
