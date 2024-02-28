@@ -89,7 +89,7 @@ Title: Landing Page Template
                 <i class="fa-solid fa-envelope"></i> <a rel="me" href="mailto:laurel@omg.lol">Email</a>
               </li>
             </ul>
-
+            </div>
 <div class="status">
 <h4>i am</h4>
         <script src="https://status.lol/laurel.js?time&amp;link&amp;pretty"></script>
