@@ -552,7 +552,6 @@ td, th {
     }
     .weblog-title {
         text-align: center;
-        color: var(--accent3);
         margin-left: 0em;
     }
     .top {
