@@ -18,24 +18,35 @@ Title: Landing Page Template
 
 <head>
 <span class="hide">proven.lol/8ab7de</span>
-<div class="top">
-    <div class="toggle">
-        <div class="darkmode">
-          <input type="checkbox" class="checkbox" id="checkbox">
-          <label for="checkbox" class="label"></label>
-            <div class="ball"></div>
-          </label>
-        </div>
-      </div>
 
-      <div class="nav"><span class="weblog-title-sm"><a href="/">laurel.omg.lol</a></span>
-        <ul class="nav">
-            <li><a href="/">home</a></li> 
-            <li><a href="/about">about</a></li>
-            <li><a href="/noww">now</a></li>
-            <li><a href="/kudos">kudos</a></li>
-        </ul>
-    </div>
+<div class="top">
+    <div class="title-bar">
+      <span class="weblog-title-sm"><a href="/">laurel.omg.lol</a>/{title}</span>
+    </div>  
+      <div class="dropdown">
+            <a href="javascript:void(0);" class="icon" onclick="dropDown()">
+                <i class="fa fa-bars"></i>
+              </a>
+              <div class="dropdown">
+            <div id="navLinks">
+                <ul>
+                <li><a href="/">home</a></li> 
+                <li><a href="/about">about</a></li>
+                <li><a href="/noww">now</a></li>
+                <li><a href="/kudos">kudos</a></li>
+            </ul>
+            </div>
+            </div>
+          </div> 
+          <div class="toggle">
+            <div class="darkmode">
+              <input type="checkbox" class="checkbox" id="checkbox">
+              <label for="checkbox" class="label"></label>
+                <div class="ball"></div>
+              </label>
+            </div>
+          </div>
+
 </div>
 </head>
 
@@ -53,8 +64,8 @@ Title: Landing Page Template
         <p>Plan[e]t-lovin' visionary type. Literary artist. YIMBY. Unashamedly & unapologetically <i>pedestrian</i>. Grateful to (still) be here.</p>
     </div>
 </div>
-<div class="div-1">
-    <h1 style="font-family: var(--heading);">connect with me</h1>
+<div class="green">
+    <h2 style="font-family: var(--heading);">connect with me</h2>
     <ul class="connect">
               <li>
                 <span class="fa-li"><i class="fa-brands fa-mastodon"></i></span><a rel="me" href="https://social.lol/@laurel">Mastodon</a>
@@ -81,19 +92,30 @@ Title: Landing Page Template
 
 <main>
 <div class="div-2">
-    <h1 style="font-family: var(--heading);">read my mind</h1>
+    <h2 style="font-family: var(--heading);">read my mind</h2>
 {body}
 <hr>
 </div>
 </main>
 
+
 <footer>
-    <p>created with <i class="fas fa-heart"></i> by laurel
+    <p>created with <i class="fas fa-heart" style="color: var(--accent3);""></i> by laurel
         <br>
-    <i class="fas fas fa-plug" style="color: var(--color1)"></i> powered by the wonderous <a href="https://omg.lol">omg.lol</a></p>
+    <i class="fas fas fa-bolt" style="color: var(--accent)"></i> powered by the wondrous <a href="https://omg.lol">omg.lol</a> <i class="fas fas fa-bolt" style="color: var(--accent)"></i></p>
 </footer>
 
+
 <script>
+function dropDown() {
+    var x = document.getElementById("navLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  } 
+
 const checkbox =document.getElementById('checkbox')
 
 checkbox.addEventListener('click',checkMode)

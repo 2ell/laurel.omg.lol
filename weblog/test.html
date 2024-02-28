@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<title>laurel{separator}{post-title}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url('https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css');
+@import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
+@import url('https://static.omg.lol/type/font-md-io.css');
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+
+
+:root {
+    --base:  #FDD6AF;
+    --background: #f5eee6;
+    --text: #333246ff;
+    --accent2: #797897;
+    --accent: #ffe5cc;
+    --link: #ffe5cc;
+    --link-hov:  #FDD6AF;
+    --nav-link: #ffe5cc;
+    --nav-link-hov: #b1a8b9;
+    --color1: #6b9e85;
+    --color2: #414055;
+
+    --grid-unit: 1em;
+    --heading: 'Lily Script One';
+}
+
+.dark-mode {
+    --background: rgb(7, 6, 22);
+    --text: #f5eee6;
+    --subtext: #debc99ff;
+    --subtext2: rgb(73, 72, 114);
+    --accent: rgb(231, 219, 187);
+    --accent2: rgb(23, 35, 139);
+    --base: rgb(12, 20, 85);
+    --base2: rgb(255, 222, 190);
+    --link: #2229af6c;
+    --nav-link: #acacff;
+    --link-hov: #444c83;
+    --color1: #0d383b;
+    --color2: rgb(5, 8, 37);
+}
+
+
+/* Style the navigation menu */
+.top {
+  background-color: var(--accent2);
+  position: sticky;
+  top:0;
+  left: 0;
+  height: 2.5rem;
+  z-index: 9999;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+#navLinks {
+  display: none;
+  position: relative;
+  max-width: 15em;
+  background-color: var(--accent2);
+}
+
+#navLinks ul {
+    list-style: none;
+    padding: 0.5rem;
+}
+
+#navLinks ul li {
+    margin-top: 0.5rem;
+}
+
+#navLinks ul li a {
+    display: block;
+    padding: 0.2rem;
+    padding-left: 1rem;
+    color: var(--accent);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navLinks ul li a:hover {
+    background-color: var(--color2);
+}
+
+/* Add a grey background color on mouse-over */
+#navLinks ul li a:hover {
+  color: #acacff;
+}
+
+/* Style navigation menu links */
+.top a.icon {
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    font-size: 1.5em;
+    color: var(--accent);
+    display: block;
+}
+
+
+/* . toggle --------. */
+
+.toggle {
+    width: 3rem;
+    position: absolute;
+    top: 0.8rem;
+    right: 0.5rem;
+    flex-shrink: 1;
+}
+
+.label {
+    width: 2.5rem;
+    height: 1rem;
+    border-radius: 30px;
+    background: var(--accent);
+    position: absolute;
+    cursor: pointer;
+}
+
+.label:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+}
+
+.label:after {
+    content: '';
+    font-size: 1.5rem;
+    position: absolute;
+    display: inline-block;
+}
+
+#checkbox:checked ~ .ball {
+    transform: translateX(1.4rem);
+}
+
+#checkbox {
+    display: none;
+}
+
+.ball {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: var(--accent2);
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-left: 3px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+</style>
+
+  </head>
+
+
+<div class="top">
+    <div class="toggle">
+        <div class="darkmode">
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="label"></label>
+            <div class="ball"></div>
+          </label>
+        </div>
+      </div>
+      <br>
+        <div class="dropdown">
+            <a href="javascript:void(0);" class="icon" onclick="dropDown()">
+                <i class="fa fa-bars"></i>
+              </a>
+            <div id="navLinks">
+                <ul>
+                <li><a href="/">home</a></li> 
+                <li><a href="/about">about</a></li>
+                <li><a href="/noww">now</a></li>
+                <li><a href="/kudos">kudos</a></li>
+                </ul>
+            </div>
+          </div> 
+    </div>
+</div>
+
+<body>
+    <img class="head-img" src="https://2ell.b-cdn.net/laureldark300.png">
+</body>
+
+<script>
+function dropDown() {
+    var x = document.getElementById("navLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  } 
+</script>
+</html>

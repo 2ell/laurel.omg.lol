@@ -12,18 +12,17 @@ Location: /style.css
 
 
 
-
 :root {
     --base:  #FDD6AF;
     --background: #f5eee6;
-    --text: #333246ff;
-    --accent2: #797897;
+    --text: rgb(50, 49, 87);
     --accent: #ffe5cc;
-    --link: #ffe5cc;
+    --accent2: #797897;
+    --accent3: #acacff;
+    --link: #acacff6b;
     --link-hov:  #FDD6AF;
-    --nav-link: #ffe5cc;
-    --nav-link-hov: #b1a8b9;
-    --color1: #6b9e85;
+    --color-0: #b1a8b9;
+    --color1: #cdfde6;
     --color2: #414055;
 
     --grid-unit: 1em;
@@ -35,7 +34,7 @@ Location: /style.css
     --text: #f5eee6;
     --subtext: #debc99ff;
     --subtext2: rgb(73, 72, 114);
-    --accent: rgb(231, 219, 187);
+    --accent: hsl(51, 100%, 93%);
     --accent2: rgb(23, 35, 139);
     --base: rgb(12, 20, 85);
     --base2: rgb(255, 222, 190);
@@ -45,6 +44,8 @@ Location: /style.css
     --color1: #0d383b;
     --color2: rgb(5, 8, 37);
 }
+
+
 
 /* ██████████████████ */
 /* █▌              ▐█ */
@@ -68,7 +69,6 @@ body {
     display: none;
 }
 
-
 /* ████████████████████████ */
 /* █▌                    ▐█ */
 /* █▌     NAVIGATION     ▐█ */
@@ -76,78 +76,87 @@ body {
 /* ████████████████████████ */
 
 .top {
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 0.5em;
-    padding-bottom: 0;
-    margin: 0;
-    position: sticky;
-    background-color: var(--accent2);
-    display: flex;
-    z-index: 1000;
-    max-height: fit-content;
+  position: sticky;
+  top:0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  height: 4.5rem;
+  background-color: var(--accent2);
+  z-index: 10000;
 }
 
-/* . nav links --------. */
-
-.nav {
-    max-width: 60em;
-    margin: auto;
-    text-align: right;
-    flex-grow: 1;
+.top .weblog-title-sm a {
+    font-size: 1em;
+    color: var(--text);
+    margin-left: 0.5rem;
+    margin-top: 2rem;
 }
 
-    .nav .weblog-title-sm a {
-        font-family: var(--heading);
-        font-size: 1.5em;
-        color: var(--accent);
-        margin-right: 0.5rem;
-    }
+.top #navLinks {
+  display: none;
+  position: relative;
+  padding-top: 2rem;
+  max-width: 20%;
+  background-color: var(--accent2);
+  transition: all 0.5s ease-in-out;
+}
 
-    .nav a { 
-        color: var(--nav-link);
-        font-weight: 300;
-        text-decoration: none;
-        transition: color .3s ease-in-out;
-    }
+.top #navLinks ul {
+    list-style: none;
+    padding: 0.5rem;
+}
 
-    .nav a:hover { 
-        color: var(--link-hov); 
-        transition: color .3s ease-in-out;
-    }
+.top #navLinks ul li {
+    margin-top: 0.5rem;
+}
 
-        .nav ul {
-                list-style-type: none;
-                margin: 0em;
-                margin-right: 0.5rem;
-                padding: 0em;
-            }
+.top #navLinks ul li a {
+    display: block;
+    padding: 0.2rem;
+    padding-left: 1rem;
+    color: var(--accent);
+    text-decoration: none;
+    cursor: pointer;
+}
 
-            .nav li {
-                display: inline-block;
-            }
+.top #navLinks ul li a:hover {
+    background-color: var(--color2);
+    transition: all 0.2s ease-in-out;
+}
 
-            .nav li a {
-                display: block;
-                text-decoration: none;
-                margin-left: 1em;
-            }
+/* Add a grey background color on mouse-over */
+.top #navLinks ul li a:hover {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Style navigation menu links */
+.top a.icon {
+    position: absolute;
+    left: 1.5rem;
+    top: 2rem;
+    font-size: 1.2em;
+    color: var(--nav-link);
+    display: block;
+    z-index: 10;
+}
+
+.top a.icon:hover, .top a.icon:active {
+    color: var(--accent);
+}
 
 
 /* . toggle --------. */
 
 .toggle {
-    width: 3%;
-    top: 0.3rem;
-    left: 0rem;
-    position: relative;
-    margin-bottom: 1rem;
-    flex-shrink: 1;
+    width: 3rem;
+    position: absolute;
+    top: 0.8rem;
+    right: 0.5rem;
 }
 
 .label {
-    width: 2.5rem;
+    width: 2rem;
     height: 1rem;
     border-radius: 30px;
     background: var(--accent);
@@ -169,7 +178,7 @@ body {
 }
 
 #checkbox:checked ~ .ball {
-    transform: translateX(1.4rem);
+    transform: translateX(1rem);
 }
 
 #checkbox {
@@ -177,8 +186,8 @@ body {
 }
 
 .ball {
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 0.7rem;
+    height: 0.7rem;
     background-color: var(--accent2);
     position: absolute;
     border-radius: 50%;
@@ -187,7 +196,6 @@ body {
     cursor: pointer;
     transition: all 250ms ease-in-out;
 }
-
 
 
 /* ████████████████████████ */
@@ -209,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 h2 {
@@ -272,7 +280,7 @@ h6 {
     .weblog-title {
         text-decoration: none;
         font-family: 'Lily Script One';
-        color: var(--text);
+        color: var(--text); 
         font-size: 8em;
         margin-bottom: 0;
         padding-bottom: 0;
@@ -287,26 +295,18 @@ h6 {
     .head-img, .dark-mode .head-img {
         opacity: 1;
         margin-left: 1rem;
-        max-width: 80%;
+        max-width: 90%;
     }
 
     .head-img:hover, .dark-mode .head-img:hover {
         opacity: 1;
     }
 
-    .post-image-sm {
-        display: none;
-    }
-
-
-
 /* ██████████████████████ */
 /* █▌                  ▐█ */
 /* █▌     SECTIONS     ▐█ */
 /* █▌                  ▐█ */
 /* ██████████████████████ */
-
-
 
 header, main {
     max-width: 60em;
@@ -327,6 +327,7 @@ header {
     margin-top: 2em;
     overflow: visible;
     max-height: 35em;
+    margin: auto;
     background-color: var(--base);
     display: flex;
     padding-bottom: 2rem;
@@ -357,7 +358,7 @@ footer a:hover {
     color: var(--nav-link-hov); 
 }
 
-.div-1 {
+.green {
     color: var(--accent);
     background-color: var(--color1);
     min-height: 10em;
@@ -389,7 +390,7 @@ footer a:hover {
     text-align: center;
 }
 
-a { 
+ a { 
     color: var(--text);
     text-decoration: underline;
     text-decoration-color: currentcolor;
@@ -476,7 +477,7 @@ td, th {
         margin-bottom: 0;
         padding-bottom: 0;
         padding-left: 0.5rem;
-        padding-right: 1rem;
+        padding-right: 0.5rem;
     }
     .content {
         max-width: 30em;
@@ -496,8 +497,10 @@ td, th {
     .post-subtitle {
         font-size: 2em;
     }
-    .nav {
+    #navLinks {
         font-size: 1em;
+        margin-top: 0em;
+        padding-top: 2em;
     }
 }
 
@@ -531,15 +534,29 @@ td, th {
         margin-left: 1rem;
         margin-bottom: 1rem;
     }
+    .title-bar {
+        display: none;
+    }
     .weblog-title {
         text-align: center;
         color: var(--background);
         margin-left: 0em;
     }
+    .top {
+        max-height: 2rem;
+    }
+    .top a.icon {
+        top: 0.2rem;
+        left: 1rem;
+    }
+    .top #navLinks {
+        padding-top: 2rem;
+        max-width: 100%;
+    }
+    .toggle {
+        top: 0.5rem;
+    }
 }
-
-
-
 
 
 
