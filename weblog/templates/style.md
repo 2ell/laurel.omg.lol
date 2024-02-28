@@ -71,6 +71,11 @@ body {
     display: none;
 }
 
+.shadow {
+    text-shadow: 3px 1px 1px #f5eee600, 2px 2px 1px var(--accent3), 4px 2px 1px #f5eee6,
+    3px 3px 1px var(--accent3), 5px 3px 1px #f5eee600;
+}
+
 /* ████████████████████████ */
 /* █▌                    ▐█ */
 /* █▌     NAVIGATION     ▐█ */
@@ -216,6 +221,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .heading {
     font-family: var(--heading);
+    text-shadow: 3px 1px 1px #f5eee600, 2px 2px 1px var(--accent2), 4px 2px 1px #f5eee6,
+    3px 3px 1px var(--accent2), 5px 3px 1px #f5eee600;
 }
 
 h1 {
@@ -286,6 +293,8 @@ h6 {
         font-size: 8em;
         margin-bottom: 0;
         padding-bottom: 0;
+        text-shadow: 3px 1px 1px #f5eee600, 2px 2px 1px var(--accent2), 4px 2px 1px #f5eee6,
+    3px 3px 1px var(--accent2), 5px 3px 1px #f5eee600;
     }
 
 /* ████████████████████ */
