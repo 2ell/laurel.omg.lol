@@ -57,7 +57,7 @@ Title: Landing Page Template
     <img class="head-img" src="https://2ell.b-cdn.net/2ell2dark.png">
 </div>
 <div class="title">
-	<h1 class="weblog-title">laurel <i style="color: var(--accent);" class="fas fa-badge-check"></i></h1> 
+	<h1 class="weblog-title">laurel <i style="color: var(--background);" class="fas fa-badge-check"></i></h1> 
     <br><i class="fa-solid fa-location-dot"></i> Moh'kinsstis, Earth
     <br><i class="fa-solid fa-graduation-cap"></i> School of Peer Support 2024
     <br><br>
