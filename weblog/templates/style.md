@@ -330,6 +330,7 @@ header {
     margin: auto;
     background-color: var(--base);
     display: flex;
+    gap: 1rem;
     padding-bottom: 2rem;
 }
 
