@@ -393,9 +393,12 @@ footer a:hover {
     flex: 1;
     }
 
+.box-connect ul {
+    margin-left: 0.5rem;
+}
+
 .status {
-    flex: 2;
-    flex-grow: 1;
+    margin-left: 2rem;
     border-left: 4px solid var(--accent2);
     padding-left: 1.8rem;
 }

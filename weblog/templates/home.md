@@ -66,9 +66,14 @@ Title: Landing Page Template
 </div>
 </header>
 
+<div class="status">
+    <h4 style="font-family: var(--heading); color: var(--text);">laurel is currently . . .</h4>
+        <script src="https://status.lol/laurel.js?time&amp;link&amp;pretty"></script>
+</div>
+
 <div class="section">
 <div class="box-connect">
-    <h4 style="font-family: var(--heading); color: var(--text);">connect with me</h4>
+    <h4 style="font-family: var(--heading); color: var(--text);">socials</h4>
     <ul class="connect">
               <li>
                 <i class="fa-brands fa-mastodon"></i> <a rel="me" href="https://social.lol/@laurel">Mastodon</a>
@@ -90,10 +95,31 @@ Title: Landing Page Template
               </li>
             </ul>
             </div>
-<div class="status">
-    <h4 style="font-family: var(--heading); color: var(--text);">status</h4>
-        <script src="https://status.lol/laurel.js?time&amp;link&amp;pretty"></script>
-</div>
+
+    <div class="box-connect">
+    <h4 style="font-family: var(--heading); color: var(--text);">projects</h4>
+    <ul class="connect">
+              <li>
+                <i class="fa-brands fa-mastodon"></i> <a rel="me" href="https://social.lol/@laurel">Mastodon</a>
+              </li>
+              <li>
+                <i class="fa-brands fa-discord"></i> <a rel="me" href="https://discordapp.com/users/susurrance">Discord</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-camera"></i> <a rel="me" href="https://pixey.org/laurel">Pixelfed</a>
+              </li>
+              <li>
+                <i class="fa-brands fa-lastfm"></i> <a rel="me" href="https://www.last.fm/user/laurel___">Last.fm</a>
+              </li>
+              <li>
+                <i class="fa-brands fa-steam"></i> <a rel="me" href="https://steamcommunity.com/id/2tongued/">Steam</a>
+              </li><br>
+              <li>
+                <i class="fa-solid fa-envelope"></i> <a rel="me" href="mailto:laurel@omg.lol">Email</a>
+              </li>
+            </ul>
+            </div>
+
 </div>
 </div>
 <main>
