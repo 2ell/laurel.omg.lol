@@ -359,7 +359,7 @@ footer a:hover {
 }
 
 .green {
-    color: var(--accent);
+    color: var(--text);
     background-color: var(--color1);
     min-height: 10em;
     padding: 2rem 2rem;
