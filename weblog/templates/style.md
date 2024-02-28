@@ -5,6 +5,7 @@ Location: /style.css
 
 
 
+
 /* ███████████████████████ */
 /* █▌                   ▐█ */
 /* █▌     VARIABLES     ▐█ */
@@ -393,29 +394,39 @@ footer a:hover {
     flex: 1;
     }
 
+
 .box-connect ul {
     margin-left: 0.5rem;
 }
 
+
 .status {
-    margin-left: 2rem;
-    border-left: 4px solid var(--accent2);
-    padding-left: 1.8rem;
+    margin: 2rem;
 }
 
 .statuslol {
-        background-color: var(--background) !important;
-        width: 85%;
+        color: var(--accent3);
+        border: 1px solid var(--color2);
+        width: 90%;
         margin: auto;
-        padding: 0;
+        padding: 1rem;
+    }
+    .statuslol_content::before {
+        content: 'laurel is...';
+        line-height: 4rem;
+        font-size: 0.8rem;
     }
     .statuslol_content {
         color: var(--text) !important;
-        font-size: 0.9em;
+        font-size: 1.2em;
     }
     .statuslol_time a {
-    color: var(--accent3) !important;
-    }
+        color: var(--color2) !important;
+        opacity: 1 !important;
+}
+    .statuslol_emoji_container {
+        font-size: 3em !important;
+}
 
 .connect {
     list-style: none;
@@ -600,8 +611,10 @@ td, th {
     .toggle {
         top: 0.5rem;
     }
+    .status {
+        margin: 0.5rem;
+    }
 }
-
 
 
 
