@@ -428,7 +428,7 @@ a:hover {
 }
 
 .content {
-    max-width: 30em;
+    max-width: 40em;
     margin: auto;
     text-align: justify;
     text-justify: inter-word;
