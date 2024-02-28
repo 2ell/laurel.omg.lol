@@ -17,25 +17,34 @@ Title: Page Template
 <link rel="stylesheet" href="https://laurel.omg.lol/style.css">
 </head>
 <body>
-
 <div class="top">
-    <div class="toggle">
-        <div class="darkmode">
-          <input type="checkbox" class="checkbox" id="checkbox">
-          <label for="checkbox" class="label"></label>
-            <div class="ball"></div>
-          </label>
-        </div>
-      </div>
-      <div class="nav"><span class="weblog-title-sm"><a href="/">laurel.omg.lol</a></span>
-        <ul class="nav">
-            <li><a href="/">home</a></li> 
-            <li><a href="/about">about</a></li>
-            <li><a href="/noww">now</a></li>
-            <li><a href="/kudos">kudos</a></li>
-        </ul>
-    </div>
-</div>
+    <div class="title-bar">
+      <span class="weblog-title-sm"><a href="/">laurel.omg.lol</a>/{title}</span>
+    </div>  
+      <div class="dropdown">
+            <a href="javascript:void(0);" class="icon" onclick="dropDown()">
+                <i class="fa fa-bars"></i>
+              </a>
+              <div class="dropdown">
+            <div id="navLinks">
+                <ul>
+                <li><a href="/">home</a></li> 
+                <li><a href="/about">about</a></li>
+                <li><a href="/noww">now</a></li>
+                <li><a href="/kudos">kudos</a></li>
+            </ul>
+            </div>
+            </div>
+          </div> 
+          <div class="toggle">
+            <div class="darkmode">
+              <input type="checkbox" class="checkbox" id="checkbox">
+              <label for="checkbox" class="label"></label>
+                <div class="ball"></div>
+              </label>
+            </div>
+          </div>
+
 </div>
 </head>
 
