@@ -66,14 +66,10 @@ Title: Landing Page Template
 </div>
 </header>
 
-<div class="status">
-    <h4 style="font-family: var(--heading); color: var(--text);">laurel is currently . . .</h4>
-        <script src="https://status.lol/laurel.js?time&amp;link&amp;pretty"></script>
-</div>
-
 <div class="section">
+<h4 style="font-family: var(--heading); color: var(--text);">connect with me</h4>
 <div class="box-connect">
-    <h4 style="font-family: var(--heading); color: var(--text);">socials</h4>
+  
     <ul class="connect">
               <li>
                 <i class="fa-brands fa-mastodon"></i> <a rel="me" href="https://social.lol/@laurel">Mastodon</a>
@@ -97,7 +93,6 @@ Title: Landing Page Template
             </div>
 
     <div class="box-connect">
-    <h4 style="font-family: var(--heading); color: var(--text);">projects</h4>
     <ul class="connect">
               <li>
                 <i class="fa-brands fa-mastodon"></i> <a rel="me" href="https://social.lol/@laurel">Mastodon</a>
@@ -121,7 +116,13 @@ Title: Landing Page Template
             </div>
 
 </div>
+
+
+<div class="status">
+    <h4 style="font-family: var(--heading); color: var(--text);">i am currently . . .</h4>
+        <script src="https://status.lol/laurel.js?time&amp;link&amp;pretty"></script>
 </div>
+
 <main>
 <div class="div-2">
     <h2 style="font-family: var(--heading);">read my mind</h2>

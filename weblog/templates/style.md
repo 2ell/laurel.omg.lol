@@ -412,7 +412,7 @@ footer a:hover {
         padding: 1rem;
     }
     .statuslol_content::before {
-        content: 'laurel is...';
+        content: 'laurel is:';
         line-height: 4rem;
         font-size: 0.8rem;
     }
