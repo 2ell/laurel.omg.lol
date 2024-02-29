@@ -123,8 +123,11 @@ Title: Landing Page Template
 <footer>
     <p>created with <i class="fas fa-heart" style="color: var(--accent3);""></i> by laurel
         <br>
-    <i class="fas fas fa-bolt" style="color: var(--accent)"></i> powered by the wondrous <a href="https://omg.lol">omg.lol</a> <i class="fas fas fa-bolt" style="color: var(--accent)"></i></p>
+    <i class="fas fas fa-bolt" style="color: var(--link-hov);"></i> powered by the wondrous <a href="https://omg.lol">omg.lol</a> <i class="fas fas fa-bolt" style="color: var(--link-hov);"></i></p>
+    <img src="https://2ell.b-cdn.net/html3.gif"> <img src="https://2ell.b-cdn.net/interoperability-pledge-an.gif"> <img src="https://2ell.b-cdn.net/arch-btn1.png"> <img src="https://2ell.b-cdn.net/furby.gif"> <img src="https://2ell.b-cdn.net/obsidian-btn.png">
+    <img src="https://2ell.b-cdn.net/get_shockwave_grys.gif"> <img src="https://2ell.b-cdn.net/Y2K.gif"> 
 </footer>
+
 
 
 <script>
