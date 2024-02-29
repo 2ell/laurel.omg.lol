@@ -46,13 +46,13 @@ Title: Post Template
   .home-post-img {
     max-height: 5em;
   }
+</style>
 
 <div class="home-post">
         <div class="home-post-image">
         <a href="{permalink}"><img src="{image}"></a>
         </div>
 
-<div>
     <div class="home-post-header">
         <div class="home-post-info">
             <i class="fa-solid fa-clock"></i> <a href="{permalink}">{date}</a>
