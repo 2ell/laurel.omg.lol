@@ -111,6 +111,7 @@ Title: Landing Page Template
         </div>
         </div>
 </div>
+
 <div class="div-1">
 <h4 style="font-family: var(--heading);">read my mind</h4>
 {body}
