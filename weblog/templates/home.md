@@ -91,7 +91,7 @@ Title: Landing Page Template
                 <i class="fa-brands fa-lastfm"></i> <a rel="me" href="https://www.last.fm/user/laurel___">Last.fm</a>
               </li>
               <li>
-              <i class="fa=brands fa-github"></i> <a href="https://github.com/2ell">Github</a>
+              <i class="fa-brands fa-github-alt"></i> <a href="https://github.com/2ell">Github</a>
               <li>
                 <i class="fa-brands fa-discord"></i> <a rel="me" href="https://discordapp.com/users/susurrance">Discord</a>
               </li>
@@ -111,7 +111,7 @@ Title: Landing Page Template
                 <script src="https://status.lol/laurel.js?time&amp;link&amp;pretty"></script>
         </div>
         </div>
-        
+
 <div class="div-2">
     <h2 style="font-family: var(--heading);">read my mind</h2>
 {body}
