@@ -731,6 +731,7 @@ td, th {
   }
   .home-post-image {
     margin: auto;
+    padding: 0.5rem;
   }
   .home-post-img {
     max-height: 6em;
