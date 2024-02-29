@@ -91,7 +91,7 @@ Title: Landing Page Template
                 <i class="fa-brands fa-steam"></i> <a rel="me" href="https://steamcommunity.com/id/2tongued/">Steam</a>
               </li>
               <li>
-                <i class="fa-solid fa-camera"></i> <a rel="me" href="https://laurel.profile.lol/pixey">Pixelfed</a>
+                <i class="fa-solid fa-camera"></i> <a rel="me" href="https://pixey.org/i/portfolio/laurel">Pixelfed</a>
               </li>
               <li>
                 <i class="fa-solid fa-book"></i> <a href="https://bookrastinating.com/user/laurel"> Bookwyrm</a>
