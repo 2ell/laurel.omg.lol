@@ -478,6 +478,7 @@ flex-grow:1;
 
 .recent-played-track::before {
     content: 'listening to: '
+    font-size: 0.8em;
 }
 
 .recent-played-track a {
