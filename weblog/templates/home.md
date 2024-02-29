@@ -74,6 +74,16 @@ Title: Landing Page Template
               <li>
                 <i class="fa-brands fa-mastodon"></i> <a rel="me" href="https://social.lol/@laurel">Mastodon</a>
               </li>
+              <i class="fa-brands fa-lastfm"></i> <a rel="me" href="https://www.last.fm/user/laurel___">Last.fm</a>
+              </li>
+              <li>
+              <i class="fa-brands fa-github-alt"></i> <a href="https://github.com/2ell">Github</a>
+              <li>
+                <i class="fa-brands fa-discord"></i> <a rel="me" href="https://discordapp.com/users/susurrance">Discord</a>
+              </li>
+              <li>
+                <i class="fa-brands fa-steam"></i> <a rel="me" href="https://steamcommunity.com/id/2tongued/">Steam</a>
+              </li><br>
               <li>
                 <i class="fa-solid fa-camera"></i> <a rel="me" href="https://pixey.org/laurel">Pixelfed</a>
               </li>
@@ -87,24 +97,6 @@ Title: Landing Page Template
             </div>
 
     <div class="box-connect-2">
-    <ul class="connect">
-             <li>
-                <i class="fa-brands fa-lastfm"></i> <a rel="me" href="https://www.last.fm/user/laurel___">Last.fm</a>
-              </li>
-              <li>
-              <i class="fa-brands fa-github-alt"></i> <a href="https://github.com/2ell">Github</a>
-              <li>
-                <i class="fa-brands fa-discord"></i> <a rel="me" href="https://discordapp.com/users/susurrance">Discord</a>
-              </li>
-              <li>
-                <i class="fa-brands fa-steam"></i> <a rel="me" href="https://steamcommunity.com/id/2tongued/">Steam</a>
-              </li><br>
-            </ul>
-            </div>
-
-</div>
-</div>
-
         <h4 style="font-family: var(--heading); color: var(--text);">currently</h4>
             <div class="last-fm">
                 <script src="https://recentfm.rknight.me/now.js?u=laurel___"></script>
@@ -113,12 +105,15 @@ Title: Landing Page Template
                 <script src="https://status.lol/laurel.js?time&amp;link&amp;pretty"></script>
         </div>
         </div>
+            </div>
 
-<div class="div-2">
-    <h2 style="font-family: var(--heading);">read my mind</h2>
+</div>
+</div>
+
+<h4 style="font-family: var(--heading);">read my mind</h4>
 {body}
 <hr>
-</div>
+
 </main>
 
 

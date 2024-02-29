@@ -567,10 +567,6 @@ td, th {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
-    .section {
-        flex-direction: column;
-        justify-content: center;
-    }
     .content {
         max-width: 30em;
         margin: auto;
@@ -620,6 +616,10 @@ td, th {
         flex-shrink: 1;
         height: auto;
         margin: auto;
+    }
+    .section {
+        flex-direction: column;
+        justify-content: center;
     }
     .title {
         margin-top: -10em;
