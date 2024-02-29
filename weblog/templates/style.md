@@ -5,12 +5,6 @@ Location: /style.css
 
 
 
-
-
-
-
-
-
 /* ███████████████████████ */
 /* █▌                   ▐█ */
 /* █▌     VARIABLES     ▐█ */
@@ -766,7 +760,7 @@ td, th {
     margin-bottom: 0.5rem;
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 480px) {
   /* For mobile phones: */
   .home-post {
     flex-direction: column;
