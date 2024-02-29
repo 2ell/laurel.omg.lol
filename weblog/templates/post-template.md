@@ -5,30 +5,26 @@ Title: Post Template
     .home-post {
         display: flex;
         align-content: stretch;
-        gap: 1em;
+        gap: 0em;
         width: 100%;
     }
 
     .home-post > div {
-        padding: 0.2rem;
+        padding: 0.1rem;
     }
 
     .home-post-header {
         text-align: left;
-        padding: 1rem;
+        padding: 0.5rem;
         flex-grow: 1;
     }
 
-    .home-post-image {
+    .home-post-image img {
         flex-shrink: 1;
         padding: 1em;
-        align-self: center;
-        height: 10em;
-        width: 22em;
-        background-image: url('{image}');
-        background-size: cover;
-        background-position: center;
-}
+        align-self: flex-start;
+        max-height: 15em;
+    }
 
 .home-post-title {
     padding: 0;
@@ -39,20 +35,21 @@ Title: Post Template
     margin-bottom: 0.5rem;
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 380px) {
   /* For mobile phones: */
   .home-post {
     flex-direction: column;
   }
   .home-post-image {
-    height: 10em;
-    max-width: 25em;
     margin: auto;
   }
-</style>
+  .home-post-img {
+    max-height: 5em;
+  }
 
 <div class="home-post">
-        <div class="home-post-image" href="{permalink}">
+        <div class="home-post-image">
+        <a href="{permalink}"><img src="{image}"></a>
         </div>
 
 <div>
