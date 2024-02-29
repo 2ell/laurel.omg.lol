@@ -5,7 +5,7 @@ Title: Post Template
         <div class="home-post-image">
         <a href="{permalink}"><img src="{image}"></a>
         </div>
-
+        
     <div class="home-post-header">
         <div class="home-post-info">
             <i class="fa-solid fa-clock"></i> <a href="{permalink}">{date}</a>
