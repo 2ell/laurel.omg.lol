@@ -6,6 +6,8 @@ Location: /style.css
 
 
 
+
+
 /* ███████████████████████ */
 /* █▌                   ▐█ */
 /* █▌     VARIABLES     ▐█ */
@@ -367,7 +369,7 @@ footer a {
 }
 
 footer a:hover { 
-    color: var(--nav-link-hov); 
+    color: var(--accent3); 
 }
 
 .green {
@@ -379,13 +381,13 @@ footer a:hover {
 }
 
 .div-2 {
-    padding: 2rem 2rem;
-    color: var(--text);
+    color: var(--color2);
 }
 
 .section {
-        padding: 0.5rem;
-        gap: 0.5rem;
+        padding-top: 0;
+        padding: 2rem;
+        gap: 2rem;
         display: flex;
         flex-direction: row;
         max-width: 60em;
@@ -393,23 +395,30 @@ footer a:hover {
     }
 
 .connection {
-    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+}
+.list1 {
+flex-grow:1;
+}
+.list2 {
+  flex-grow: 1;
 }
 
-.box-connect-1 {
-    flex-grow: 1;
-    }
-
-.box-connect-2 {
-    flex-grow: 1;
+.currently {
+    flex-shrink: 6;
+    padding-left: 4rem;
 }
 
-.box-connect ul {
-    margin-left: 0.2rem;
+.connect ul {
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .connect {
     list-style: none;
+    margin-left: 0;
+    padding-left: 0;;
 }
 
 .statuslol {
@@ -427,13 +436,17 @@ footer a:hover {
         padding-top: 1rem;
         padding-bottom: 0.5rem !important;
     }
+
+    .statuslol_time {
+      text-align: right;
+    }
     .statuslol_time:before {
-        color: var(--color2) !important;
+        color: var(--text) !important;
         font-size: 0.8em;
-        content: 'status updated: '
+        content: 'status updated: ';
 }
     .statuslol_time a {
-        color: var(--color2) !important;
+        color: var(--text) !important;
         opacity: 1 !important;
         font-size: 0.8em;
 }
@@ -444,23 +457,30 @@ footer a:hover {
         padding-right: 0.5rem !important;
         padding-left: 0.5rem;
         padding-top: 0.5rem;
+        margin-top: 0.5rem;
         background-color: var(--color1);
         border-radius: 8em;
 }
 
 .recent-played {
     background: var(--color1);
+    color: var(--text);
     text-align: left;
-    padding: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5em;
     width: 100%;
+}
+
+.recent-played-track {
+  padding: 0.5rem;
 }
 
 .recent-played-track::before {
     content: 'listening to: '
 }
 
-.recent-played-track {
-    font-size: 1em;
+.recent-played-track a {
+    font-size: 0.8em;
 }
     
 /* .---------------. */
@@ -620,6 +640,24 @@ td, th {
     .section {
         flex-direction: column;
         justify-content: center;
+        gap: 0em;
+    }
+    .currently {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .connection {
+      flex-direction: row;
+      align-items:first baseline;
+      justify-content: stretch;
+      justify-items: center;
+      gap: 5rem;
+      padding: 0rem;
+      margin: auto;
+    }
+    .socials {
+      display: none;
     }
     .title {
         margin-top: -10em;
@@ -647,66 +685,5 @@ td, th {
     .toggle {
         top: 0.5rem;
     }
-    .status {
-        margin: 0.5rem;
-    }
 }
 
-
-
-
-
-
-
-
-
-.post {
-  display: flex;
-  align-content: stretch;
-  gap: 1em;
-  margin-bottom: 1rem;
-}
-
-.post > div {
-  padding: 0.2rem;
-}
-
-.post-header {
-    text-align: left;
-    flex-grow: 4;
-}
-
-.post-image {
-    flex-shrink: 3;
-    height: 20em;
-    width: 100%;
-    margin: auto;
-    background-image: url('{image}');
-    background-size: cover;
-    background-position: center;
-}
-
-.post-title {
-    padding: 0;
-}
-
-.post-info {
-    font-size: 0.9em;
-    margin-bottom: 0.5rem;
-}
-
-.post-tags {
-	font-size: 75%;
-	color: var(--accent);
-    margin-top: 2em;
-}
-
-.tag {
-	background: var(--accent);
-	color: var(--background) !important;
-	padding: .3em .4em;
-	margin: .8em 0 0 .4em;
-	border-radius: .5em;
-	text-decoration: none;
-	display: inline-block;
-}

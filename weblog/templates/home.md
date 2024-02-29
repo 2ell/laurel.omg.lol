@@ -66,54 +66,56 @@ Title: Landing Page Template
 </div>
 </header>
 <main>
+
 <div class="section">
-<div class="connection">
-<h4 style="font-family: var(--heading); color: var(--text);">connect with me</h4>
-<div class="box-connect-1">
-<ul class="connect">
+      <div class="connection">
+      <div class="socials"><h4 style="font-family: var(--heading); color: var(--text);">socials</h4></div>
+      <div class="list1">
+            <ul class="connect">
               <li>
                 <i class="fa-brands fa-mastodon"></i> <a rel="me" href="https://social.lol/@laurel">Mastodon</a>
               </li>
-              <i class="fa-brands fa-lastfm"></i> <a rel="me" href="https://www.last.fm/user/laurel___">Last.fm</a>
+              <li>
+                <i class="fa-brands fa-lastfm"></i> <a rel="me" href="https://www.last.fm/user/laurel___">Last.fm</a>
               </li>
               <li>
-              <i class="fa-brands fa-github-alt"></i> <a href="https://github.com/2ell">Github</a>
+                <i class="fa-brands fa-github-alt"></i> <a href="https://github.com/2ell">Github</a>
+              </li>
               <li>
                 <i class="fa-brands fa-discord"></i> <a rel="me" href="https://discordapp.com/users/susurrance">Discord</a>
               </li>
+              </ul>
+            </div>
+              <div class="list2"><ul class="connect">
               <li>
                 <i class="fa-brands fa-steam"></i> <a rel="me" href="https://steamcommunity.com/id/2tongued/">Steam</a>
-              </li><br>
+              </li>
               <li>
                 <i class="fa-solid fa-camera"></i> <a rel="me" href="https://pixey.org/laurel">Pixelfed</a>
               </li>
               <li>
-              <i class="fa-solid fa-book"></i> <a href="https://bookrastinating.com/user/laurel"> Bookwyrm</a>
+                <i class="fa-solid fa-book"></i> <a href="https://bookrastinating.com/user/laurel"> Bookwyrm</a>
               </li>
               <li>
                 <i class="fa-solid fa-envelope"></i> <a rel="me" href="mailto:laurel@omg.lol">Email</a>
               </li>
-            </ul>
-            </div>
-
-    <div class="box-connect-2">
-        <h4 style="font-family: var(--heading); color: var(--text);">currently</h4>
+            </ul></div>
+          </div>
+    <div class="currently">
+        <h4 style="font-family: var(--heading); text-align: right; color: var(--text);">currently</h4>
             <div class="last-fm">
-                <script src="https://recentfm.rknight.me/now.js?u=laurel___"></script>
+            <script src="https://recentfm.rknight.me/now.js?u=laurel___"></script>
             </div>
         <div class="status">
-                <script src="https://status.lol/laurel.js?time&amp;link&amp;pretty"></script>
+        <script src="https://status.lol/laurel.js?time&link&fluent&pretty"></script>
         </div>
         </div>
-            </div>
-
 </div>
-</div>
-
+<div class="div-1">
 <h4 style="font-family: var(--heading);">read my mind</h4>
 {body}
 <hr>
-
+</div>
 </main>
 
 
