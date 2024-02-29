@@ -8,6 +8,7 @@ Location: /style.css
 
 
 
+
 /* ███████████████████████ */
 /* █▌                   ▐█ */
 /* █▌     VARIABLES     ▐█ */
@@ -372,6 +373,12 @@ footer a:hover {
     color: var(--accent3); 
 }
 
+footer .btns {
+    margin: 0.5rem;
+    max-width: 80%;
+    margin: auto;
+}
+
 .green {
     color: var(--text);
     background-color: var(--color1);
@@ -379,7 +386,6 @@ footer a:hover {
     padding: 2rem 2rem;
     text-align: right;
 }
-
 
 .div-1 {
     padding: 2rem;
@@ -477,7 +483,7 @@ flex-grow:1;
 }
 
 .recent-played-track::before {
-    content: 'listening to: '
+    content: 'listening to: ';
     font-size: 0.8em;
 }
 
@@ -691,49 +697,3 @@ td, th {
 
 
 
-
-    .home-post {
-        display: flex;
-        align-content: stretch;
-        gap: 0em;
-        width: 100%;
-    }
-
-    .home-post > div {
-        padding: 0.1rem;
-    }
-
-    .home-post-header {
-        text-align: left;
-        padding: 0.5rem;
-        flex-grow: 1;
-    }
-
-    .home-post-image img {
-        flex-shrink: 1;
-        padding: 1em;
-        align-self: flex-start;
-        max-height: 15em;
-    }
-
-.home-post-title {
-    padding: 0;
-}
-
-.home-post-info {
-    font-size: 0.9em;
-    margin-bottom: 0.5rem;
-}
-
-@media only screen and (max-width: 380px) {
-  /* For mobile phones: */
-  .home-post {
-    flex-direction: column;
-  }
-  .home-post-image {
-    margin: auto;
-    padding: 0.5rem;
-  }
-  .home-post-img {
-    max-height: 6em;
-  }
