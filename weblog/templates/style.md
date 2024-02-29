@@ -6,10 +6,6 @@ Location: /style.css
 
 
 
-
-
-
-
 /* ███████████████████████ */
 /* █▌                   ▐█ */
 /* █▌     VARIABLES     ▐█ */
@@ -396,19 +392,25 @@ footer a:hover {
         margin: auto;
     }
 
+.connection {
+    flex-shrink: 1;
+}
+
 .box-connect-1 {
-    flex: 1;
+    flex-grow: 1;
     }
 
 .box-connect-2 {
-    flex: 1;
+    flex-grow: 1;
 }
-
 
 .box-connect ul {
     margin-left: 0.2rem;
 }
 
+.connect {
+    list-style: none;
+}
 
 .statuslol {
         color: var(--accent3);
@@ -461,9 +463,6 @@ footer a:hover {
     font-size: 1em;
 }
     
-.connect {
-    list-style: none;
-}
 /* .---------------. */
 /* |     POSTS     | */
 /* '---------------' */
@@ -652,6 +651,8 @@ td, th {
         margin: 0.5rem;
     }
 }
+
+
 
 
 

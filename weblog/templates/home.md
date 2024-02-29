@@ -67,6 +67,7 @@ Title: Landing Page Template
 </header>
 <main>
 <div class="section">
+<div class="connection">
 <h4 style="font-family: var(--heading); color: var(--text);">connect with me</h4>
 <div class="box-connect-1">
 <ul class="connect">
@@ -101,6 +102,7 @@ Title: Landing Page Template
             </ul>
             </div>
 
+</div>
 </div>
 
         <h4 style="font-family: var(--heading); color: var(--text);">currently</h4>
