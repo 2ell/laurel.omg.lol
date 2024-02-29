@@ -6,8 +6,8 @@ Title: Post Template
         <a href="{permalink}"><img src="{image}"></a>
         </div>
 
-    <div class="home-post-header">
-        <div class="home-post-info">
+<div class="home-post-header">
+    <div class="home-post-info">
             <i class="fa-solid fa-clock"></i> <a href="{permalink}">{date}</a>
         <div class="home-post-title">
             <h1 class="large"><span style="text-transform: lowercase;">{title}</span></h1>
