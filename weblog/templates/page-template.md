@@ -53,7 +53,7 @@ Title: Page Template
 </header>
 
 <main>
-<h1 class="shadow" style="text-align: center;">{post-title}</h1>
+<h1 class="shadow" style="font-family: var(--heading); text-align: center;">{post-title}</h1>
 
 <div class="content">
 {body}
