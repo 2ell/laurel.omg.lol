@@ -380,8 +380,9 @@ footer a:hover {
     text-align: right;
 }
 
-.div-2 {
-    color: var(--color2);
+
+.div-1 {
+    padding: 2rem;
 }
 
 .section {
