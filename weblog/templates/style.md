@@ -446,9 +446,6 @@ footer a:hover {
         border-radius: 8em;
 }
 
-.last-fm {
-    flex: 1;
-}
 .recent-played {
     background: var(--color1);
     text-align: left;
