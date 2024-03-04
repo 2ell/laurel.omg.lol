@@ -58,7 +58,7 @@ Title: Landing Page Template
 </div>
 <div class="title">
 	<h1 class="weblog-title">laurel <i style="color: var(--background);" class="fas fa-badge-check"></i></h1> 
-    <br><i class="fa-solid fa-location-dot"></i> Moh'kinsstis, Earth
+    <br><i class="fa-solid fa-location-dot"></i> Mohkínstsis, Earth
     <br><i class="fa-solid fa-graduation-cap"></i> School of Peer Support 2024
     <br><br>
         <p class="small">Plan[e]t-lovin' visionary type. Literary artist. YIMBY. Unashamedly & unapologetically <i>pedestrian</i>. Grateful to (still) be here.</p>
