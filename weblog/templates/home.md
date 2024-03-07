@@ -20,6 +20,7 @@ Title: Landing Page Template
     --link-u: #B4BEFE;
     --link-hov:  #74C7EC;
     --background: #D9E0EE;
+    --background-alt: #181825;
     --base: #313244;
     --foreground: #D9E0EE;
     --accent: #B4BEFE;
