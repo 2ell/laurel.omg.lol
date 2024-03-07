@@ -531,11 +531,12 @@ footer .btns {
 
 .home-post-title {
     padding: 0;
+    background-color: var(--base);
 }
 
 .home-post-info {
     font-size: 0.9em;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
 
