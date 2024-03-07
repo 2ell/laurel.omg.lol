@@ -3,13 +3,14 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
-
+    
 :root {
     --text: #313244;
     --link: #B4BEFE;
     --link-u: #B4BEFE;
     --link-hov:  #74C7EC;
-    --background: rgb(255, 248, 239);
+    --background: #D9E0EE;
+    --background-alt: #181825;
     --base: #313244;
     --foreground: #D9E0EE;
     --accent: #B4BEFE;
@@ -18,7 +19,7 @@ Location: /style.css
     --surface:  #313244;
     --faint: #707880;
     --transparent: #00000000;
-    --label: #F9E2AF;
+    --label: #89DCEB;
     --gradient: linear-gradient(60deg, var(--blue), var(--sky), var(--teal));
 
     --rosewater: #F5E0DC;
@@ -37,28 +38,6 @@ Location: /style.css
     --lavender: #B4BEFE;
 }
 
-/* Image Styles */
-.head-img-light {
-    opacity: 1;
-    margin-left: 1rem;
-    max-width: 80%;
-}
-
-.head-img-dark {
-    display: none;
-}
-
-.dark-mode .head-img-light {
-    display: none;
-}
-
-.dark-mode .head-img-dark {
-    display: block;
-    max-width: 80%;
-    margin-left: 1rem;
-    opacity: 1;
-}
-
 .dark-mode {
     --link: #B4BEFE;
     --link-u: #B4BEFE33;
@@ -75,7 +54,7 @@ Location: /style.css
     --subtext1: #BAC2DE;
     --faint: #707880;
     --transparent: #00000000;
-    --label: #B9B4FA;
+    --label: #F9E2AF;
     --gradient: linear-gradient(60deg, var(--yellow), var(--pink), var(--peach));
 
     --rosewater: #F5E0DC;
@@ -201,7 +180,7 @@ a:hover {
   left: 1.5rem;
   top: 2rem;
   font-size: 1.2em;
-  color: var(--label);
+  color: var(--background);
   display: block;
   z-index: 10;
 }
@@ -341,10 +320,8 @@ flex-grow:1;
     width: 100%;
     padding: 0;
 }
-
 .recent-played-track {
     padding-left: -1rem;
-    margin: 0;
 }
 
 .recent-played-track a {
@@ -393,12 +370,26 @@ header {
 #location, #education {
     display: inline;
     padding: 0.5rem;
+    background-color: var(--background);
 }
 
 .dark-mode #location, .dark-mode #education {
     background-color: var(--transparent);
 }
 
+/* Image Styles */
+.head-img,
+.dark-mode .head-img {
+    opacity: 1;
+    margin-left: 1rem;
+    max-width: 80%;
+}
+
+/* Hover Styles for Image */
+.head-img:hover,
+.dark-mode .head-img:hover {
+    opacity: 1;
+}
 
 .status, .last-fm {
     margin: 1rem;
@@ -501,4 +492,3 @@ footer .btns {
         top: 0.5rem;
     }
 }
-
