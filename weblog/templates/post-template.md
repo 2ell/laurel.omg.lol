@@ -54,7 +54,7 @@ Title: Post Template
 }
 
 .home-post-type::before {
-    font-family: 'Font Awesome 6 Free';
+    font-family: 'Font Awesome 5 Free';
     content: '{font-awesome}';
     margin-right: .2rem;
     padding-left: .5rem;
@@ -82,7 +82,7 @@ Title: Post Template
 
 <div class="home-post">
     <div class="home-post-image">
-        <span class="home-post-type">{p-type}</span>
+        <span class="home-post-type">{post-type}</span>
     <a href="{permalink}"><img src={image}></a>
     </div>
 
