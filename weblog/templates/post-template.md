@@ -3,7 +3,7 @@ Title: Post Template
 
 <div class="home-post">
     <div class="home-post-image">
-        <span class="home-post-type">{p-type}</span>
+        <span class="home-post-type"><i class="fa-{fa}"></i>{p-type}</span>
     <a href="{permalink}"><img src={image}></a>
     </div>
 
