@@ -7,11 +7,16 @@ Title: Post Template
 .home-post {
     display: flex;
     background-color: var(--background-alt);
-    color: var(--text);
+    color: var(--foreground);
     align-items: stretch;
     gap: 0;
     padding: 1rem;
     margin: 1rem;
+}
+
+.home-post a {
+    color: var(--foreground);
+    text-decoration: none;
 }
 
 .home-post > div {
@@ -82,7 +87,7 @@ Title: Post Template
 <div class="home-post-info">
         <i class="fa-solid fa-clock"></i> <a href="{permalink}">{date}</a>
     <div class="home-post-title">
-        <h1><span style="text-transform: lowercase; color: var(--{color});">{title}</span></h1>
+        <h1><span style="text-transform: lowercase; color: var(--{color});"><a href="{permalink}" style="color: var(--{color});">{title}</a></span></h1>
         <p>{description}</p>
         </div>
     </div>
