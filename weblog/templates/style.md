@@ -2,6 +2,7 @@ Type: File
 Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
+
 :root {
     --text: #313244;
     --link: #B4BEFE;
