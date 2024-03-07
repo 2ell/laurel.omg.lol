@@ -20,7 +20,7 @@ Title: Landing Page Template
 
 <div class="top">
     <div class="title-bar">
-      <span class="weblog-title-sm"><a href="/">laurel.omg.lol</a>/{title}</span>
+      <span class="weblog-title-sm"><a href="/"> </a>/{title}</span>
     </div>  
       <div class="dropdown">
             <a href="javascript:void(0);" class="icon" onclick="dropDown()">

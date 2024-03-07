@@ -10,6 +10,7 @@ Location: /style.css
     --link-hov:  #74C7EC;
     --background: #cec7db;
     --background-alt: #73738a;
+        --subtext1: #BAC2DE;
     --base: #313244;
     --foreground: #D9E0EE;
     --accent: #B4BEFE;
@@ -137,11 +138,10 @@ a:hover {
 /* Weblog Title Styles */
 .top .weblog-title-sm a {
   font-size: 1em;
-  color: var(--accent);
+  color: var(--subtext1);
   margin-left: 0.5rem;
   margin-top: 2rem;
   text-decoration-color: var(--transparent);
-  font-family: 'Lily Script One';
 }
 
 /* Navigation Links Styles */
