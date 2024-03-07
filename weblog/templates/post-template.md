@@ -48,7 +48,7 @@ Title: Post Template
     padding-left: .5rem;
 }
 
-.home-tag {
+.home-post-type {
     display: block;
     margin-bottom: 1rem;
     font-size: 0.8rem;
@@ -79,7 +79,7 @@ Title: Post Template
 </style>
 <div class="home-post">
     <div class="home-post-image">
-        <span class="home-tag">tag</span>
+        <span class="home-post-type">{p-type}</span>
     <a href="{permalink}"><img src={image}></a>
     </div>
 
