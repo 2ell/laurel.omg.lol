@@ -544,7 +544,7 @@ footer .btns {
     text-align: right;
 }
 
-.home-tag::before {
+.home-post-type::before {
     font-family: 'Font Awesome 5 Free';
     content: '\{fa} ';
     margin-right: .2rem;
@@ -579,7 +579,6 @@ footer .btns {
         margin: auto;
     }
 }
-
 </style>
 
 <head>
