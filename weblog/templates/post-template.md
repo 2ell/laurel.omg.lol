@@ -32,7 +32,6 @@ Title: Post Template
 
 .home-post-title {
     padding: 1rem;
-    color: var(--{color});
     text-align: left;
 }
 
