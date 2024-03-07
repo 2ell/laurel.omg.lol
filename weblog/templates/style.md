@@ -10,7 +10,7 @@ Location: /style.css
     --link-hov:  #74C7EC;
     --background: #cec7db;
     --background-alt: #73738a;
-        --subtext1: #BAC2DE;
+    --subtext1: #BAC2DE;
     --base: #313244;
     --foreground: #D9E0EE;
     --accent: #B4BEFE;
