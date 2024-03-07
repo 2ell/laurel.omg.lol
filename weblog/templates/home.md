@@ -535,6 +535,7 @@ footer .btns {
 
 .home-post-info {
     font-size: 0.9em;
+    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
