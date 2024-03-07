@@ -9,8 +9,8 @@ Location: /style.css
     --link: #B4BEFE;
     --link-u: #B4BEFE;
     --link-hov:  #74C7EC;
-    --background: #D9E0EE;
-    --background-alt: #181825;
+    --background: #cec7db;
+    --background-alt: #73738a;
     --base: #313244;
     --foreground: #D9E0EE;
     --accent: #B4BEFE;

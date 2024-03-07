@@ -19,8 +19,8 @@ Title: Landing Page Template
     --link: #B4BEFE;
     --link-u: #B4BEFE;
     --link-hov:  #74C7EC;
-    --background: #D9E0EE;
-    --background-alt: #181825;
+    --background: #cec7db;
+    --background-alt: #73738a;
     --base: #313244;
     --foreground: #D9E0EE;
     --accent: #B4BEFE;
@@ -587,15 +587,15 @@ footer .btns {
                 </li>
               </ul></div>
             </div>
+
+<h4 style="font-family: var(--heading);">latest posts</h4>
     <div class="status">
         <script src="https://status.lol/laurel.js?time&link"></script>
     </div>    
         <div class="last-fm">
             <script src="https://recentfm.rknight.me/now.js?u=laurel___"></script>
             </div>
-
 <div class="div-1">
-<h4 style="font-family: var(--heading);">latest posts</h4>
 {body}
 <hr>
 </div>
