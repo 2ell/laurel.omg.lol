@@ -7,7 +7,7 @@ Title: Post Template
 .home-post {
     display: flex;
     background-color: var(--background-alt);
-    border-left: 4px solid {color};
+    border-left: 4px solid var(--{color});
     align-items: stretch;
     gap: 0;
     padding: 1rem;
@@ -32,7 +32,7 @@ Title: Post Template
 
 .home-post-title {
     padding: 1rem;
-    color: {color};
+    color: var(--{color});
     text-align: left;
 }
 
@@ -47,7 +47,7 @@ Title: Post Template
     display: block;
     margin-bottom: 1rem;
     font-size: 0.8rem;
-    color: {color};
+    color: var(--{color});
     border-radius: 10px;
     max-width: fit-content;
     padding: .2rem;
