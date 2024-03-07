@@ -7,6 +7,7 @@ Title: Post Template
 .home-post {
     display: flex;
     background-color: var(--background-alt);
+    color: var(--foreground);
     align-items: stretch;
     gap: 0;
     padding: 1rem;
