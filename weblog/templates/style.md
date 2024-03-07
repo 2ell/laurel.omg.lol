@@ -2,7 +2,6 @@ Type: File
 Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
-
 :root {
     --text: #313244;
     --link: #B4BEFE;
@@ -400,6 +399,11 @@ header {
     border: 1px dotted #444;
     padding: 1rem;
 }
+
+.content {
+    margin-bottom: 2em;
+}
+
 /* Footer Styles */
 footer {
     background: var(--base);
