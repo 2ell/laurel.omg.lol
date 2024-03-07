@@ -7,7 +7,6 @@ Title: Post Template
 .home-post {
     display: flex;
     background-color: var(--background-alt);
-    border-left: 4px solid var(--{color});
     align-items: stretch;
     gap: 0;
     padding: 1rem;
@@ -47,17 +46,15 @@ Title: Post Template
     display: block;
     margin-bottom: 1rem;
     font-size: 0.8rem;
-    color: var(--{color});
     border-radius: 10px;
     max-width: fit-content;
     padding: .2rem;
 }
 
-.home-post-type::before {
-    font-family: 'Font Awesome 5 Free';
-    content: '{font-awesome}';
+.home-post-fa {
     margin-right: .2rem;
     padding-left: .5rem;
+    display: block;
 }
 
 @media only screen and (max-width: 480px) {
@@ -80,9 +77,10 @@ Title: Post Template
 }
 </style>
 
-<div class="home-post">
+<div class="home-post" style="border-left: 4px solid var(--{color});">
     <div class="home-post-image">
-        <span class="home-post-type">{post-type}</span>
+    <span class="home-post-fa" style="color: var(--{color});">{font-awesome}</span>
+        <span class="home-post-type" style="color: var(--{color});">{post-type}</span>
     <a href="{permalink}"><img src={image}></a>
     </div>
 
@@ -90,7 +88,7 @@ Title: Post Template
 <div class="home-post-info">
         <i class="fa-solid fa-clock"></i> <a href="{permalink}">{date}</a>
     <div class="home-post-title">
-        <h1><span style="text-transform: lowercase;">{title}</span></h1>
+        <h1><span style="text-transform: lowercase; color: var(--{color});">{title}</span></h1>
         <p>{description}</p>
         </div>
     </div>
