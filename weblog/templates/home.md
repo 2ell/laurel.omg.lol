@@ -587,7 +587,7 @@ footer .btns {
                 </li>
               </ul></div>
             </div>
-
+<div class="div-1">
 <h4 style="font-family: var(--heading);">latest posts</h4>
     <div class="status">
         <script src="https://status.lol/laurel.js?time&link"></script>
@@ -595,7 +595,7 @@ footer .btns {
         <div class="last-fm">
             <script src="https://recentfm.rknight.me/now.js?u=laurel___"></script>
             </div>
-<div class="div-1">
+
 {body}
 <hr>
 </div>
