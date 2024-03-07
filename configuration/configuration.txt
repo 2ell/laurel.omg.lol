@@ -84,7 +84,7 @@ Multiple posts format: <<[
 Recent posts count: 5
 Recent posts format: <<[
 <ul>
-[post:begin]<li><a href="$location">$title</a><br><span class="small">posted <b>$relative_date</b><br>$subtitle</span></li>[post:end]
+[post:begin]<li><a href="$location">$title</a><span class="small">posted <b>$relative_date</b></span></li>[post:end]
 </ul>]>>
 
 
