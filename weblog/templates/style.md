@@ -144,6 +144,10 @@ a:hover {
   text-decoration-color: var(--transparent);
 }
 
+.top .title-bar {
+    color: var(--subtext1);
+}
+
 /* Navigation Links Styles */
 .top #navLinks {
   display: none;
