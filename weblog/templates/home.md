@@ -544,7 +544,7 @@ footer .btns {
 
 .home-tag::before {
     font-family: 'Font Awesome 5 Free';
-    content: '\f007 ';
+    content: '\{FA} ';
     margin-right: .2rem;
     padding-left: .5rem;
 }

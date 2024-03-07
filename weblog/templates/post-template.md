@@ -4,7 +4,7 @@ Title: Post Template
 <div class="home-post">
     <div class="home-post-image">
         <span class="home-tag">tag</span>
-    <a href="{permalink}"><img src="https://2ell.b-cdn.net/illustrations/cityhall.webp"></a>
+    <a href="{permalink}"><img src={image}></a>
     </div>
 
 <div class="home-post-header">
