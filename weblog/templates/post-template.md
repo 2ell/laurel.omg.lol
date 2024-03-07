@@ -51,11 +51,6 @@ Title: Post Template
     padding: .2rem;
 }
 
-.home-post-fa {
-    margin-right: .2rem;
-    padding-left: .5rem;
-    display: inline-block;
-}
 
 @media only screen and (max-width: 480px) {
     /* For mobile phones: */
@@ -79,8 +74,7 @@ Title: Post Template
 
 <div class="home-post" style="border-left: 4px solid var(--{color});">
     <div class="home-post-image">
-    <span class="home-post-fa" style="color: var(--{color});">{font-awesome}</span>
-        <span class="home-post-type" style="color: var(--{color});">{post-type}</span>
+        <span class="home-post-type" style="color: var(--{color});">{font-awesome} {post-type}</span>
     <a href="{permalink}"><img src={image}></a>
     </div>
 
