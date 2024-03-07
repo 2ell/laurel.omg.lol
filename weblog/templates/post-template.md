@@ -55,7 +55,7 @@ Title: Post Template
 .home-post-fa {
     margin-right: .2rem;
     padding-left: .5rem;
-    display: block;
+    display: inline-block;
 }
 
 @media only screen and (max-width: 480px) {
