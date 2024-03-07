@@ -3,7 +3,6 @@ Content-Type: text/css
 Title: Stylesheet
 Location: /style.css
 
-    
 :root {
     --text: #313244;
     --link: #B4BEFE;
@@ -131,6 +130,10 @@ a:hover {
   z-index: 10000;
 }
 
+.top .dropdown {
+  display: none;
+}
+
 /* Weblog Title Styles */
 .top .weblog-title-sm a {
   font-size: 1em;
@@ -173,6 +176,7 @@ a:hover {
   background-color: var(--background-alt);
   transition: all 0.2s ease-in-out;
 }
+
 
 /* Navigation Icon Styles */
 .top a.icon {
@@ -449,6 +453,11 @@ footer .btns {
     }
     #location, #education {
         display: block;
+        background: var(--background);
+    }
+
+    .dark-mode #location, .dark-mode #education {
+        background: var(--transparent);
     }
     .head-img, .dark-mode .head-img {
         max-width: 15em;
@@ -473,6 +482,9 @@ footer .btns {
     .title-bar {
         display: none;
     }
+        .top .dropdown {
+    display: block;
+}
     .weblog-title {
         text-align: center;
         margin-left: 0em;
