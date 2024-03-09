@@ -2,8 +2,6 @@ Type: Template
 Title: Landing Page Template
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,6 +39,7 @@ body {
     position: sticky;
     background-color:#F5E0DC;
     max-width: 100%;
+    height: 3.5rem;
 }
 
 .container {
@@ -73,8 +72,6 @@ body {
 .center {
     text-align: center
 }
-
-@use postcss-nested;
 
 nav ul {
   padding-top: 1rem;
