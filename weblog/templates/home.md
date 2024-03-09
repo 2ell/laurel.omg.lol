@@ -1,163 +1,154 @@
 Type: Template
 Title: Landing Page Template
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>laurel{separator}omg{separator}lol</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{feeds}
+
 <style>
 @import url('https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css');
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 @import url('https://static.omg.lol/type/font-md-io.css');
 @import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+
+:root {
+    --text:  #555;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Iosevka Web'
+}
+
+body {
+    color: var(--text);
+    size: 1em;
+    background-color: #F5E0DC;
+    max-width: 30em;
+    margin: auto;
+}
+
+.top {
+    top: 0;
+    left: 0;
+    position: sticky;
+    background-color:#F5E0DC;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 30em;
+    margin: auto;
+}
+
+.div {
+    padding: 2rem;
+    margin: 2rem;
+    font-size: 0.9rem;
+    background-color: white;
+    border: 1px solid #000;
+    z-index: 9999;
+    box-shadow: 10px 10px;
+}
+
+.div-mini {
+    border-top:4px solid #F5E0DC;
+    border-top-style:dotted;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.message {
+    background-color: white;
+    border: 1px solid #000;
+}
+
+.center {
+    text-align: center
+}
+
+@use postcss-nested;
+
+nav ul {
+  padding-top: 1rem;
+  margin-left: -1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2.5vmin;
+  
+  & > li {
+    color: #313244;
+    display: inline-flex;
+    background:  #555;
+
+    &:is(:hover, :focus-within) > button:not(:active) {
+      --distance: -4px;
+    }
+  }
+  
+  & button {
+    color: #777786;
+    background-color: white;
+    appearance: none;
+    outline: none;
+    font-size: 1rem;
+    border: 1px solid #313244;
+
+    --distance: 0;
+    transform: translateX(var(--distance)) translateY(var(--distance));
+    
+    @media (prefers-reduced-motion: no-preference) {
+      will-change: transform;
+      transition: transform .2s ease ;
+    }
+  }
+}
+
+@media screen {
+    .div {
+        margin: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
 </style>
-<link rel="stylesheet" href="https://laurel.omg.lol/style.css">
-<head>
-<span class="hide">proven.lol/8ab7de</span>
-
 <div class="top">
-    <div class="title-bar">
-      <span class="weblog-title-sm"><a href="/"> </a></span>
-    </div>  
-      <div class="dropdown">
-            <a href="javascript:void(0);" class="icon" onclick="dropDown()">
-                <i class="fa fa-bars"></i>
-              </a>
-              <div class="dropdown">
-            <div id="navLinks">
-                <ul>
-                <li><a href="/">home</a></li> 
-                <li><a href="/about">about</a></li>
-                <li><a href="/noww">now</a></li>
-                <li><a href="/kudos">kudos</a></li>
-            </ul>
-            </div>
-            </div>
-          </div> 
-          <div class="toggle">
-            <div class="darkmode">
-              <input type="checkbox" class="checkbox" id="checkbox">
-              <label for="checkbox" class="label"></label>
-                <div class="ball"></div>
-              </label>
-            </div>
-          </div>
-
+    <nav class="links">
+        <ul>
+            <li><button>home</button></li>
+            <li><button>posts</button></li>
+            <li><button>now</button></li>
+            <li><button>kudos</button></li>
+        </ul>
+    </nav>
 </div>
-</head>
 
 <body>
-<header>
-    <div class="head-div">
-        <div class="head-img">
-    <img class="head-img" src="https://2ell.b-cdn.net/2ell2dark.png">
-</div>
-<div class="title">
-	<h1 class="weblog-title">laurel</h1>  
-    <div id="location" class="small"><i class="fa-solid fa-location-dot"></i> Mohkínstsis, Earth</div>
-    <div id="education" class="small"><i class="fa-solid fa-graduation-cap"></i>
-        School of Peer Support 2024</div>
-    <br><br>
-        <p class="small"><i class="fa-solid fa-seedling"></i> Plant-lovin' visionary type. Literary artist. YIMBY.  Unashamedly & unapologetically <i>pedestrian</i>. Answers promptly to the call of the afternoon daydream, the whistle of the tea kettle, or - sometimes - even the name Laurel. Grateful to /still/ be here. <i class="fa-regular fa-face-smile-beam"></i></p>
+    <div class="container">
+    <div class="div">
+        <div class="div-mini">
+            <h2>@laurel</h2>
+        </div>
+        <div class="about">
+            <div id="location" class="small"><i class="fa-solid fa-location-dot"></i> Mohkínstsis, Earth</div>
+            <div id="education" class="small"><i class="fa-solid fa-graduation-cap"></i>
+            School of Peer Support 2024</div>
+            <br><br>
+            <p>Plant-lovin' visionary type. Literary artist. YIMBY.  Unashamedly & unapologetically <i>pedestrian</i>. Answers promptly to the call of the afternoon daydream, the whistle of the tea kettle, or - sometimes - even the name Laurel. </p>
+        </div>    
+    </div>
+    <div class="div">
+        <div class="div-mini"></div>
+        <p class="center">still adjusting some things around here - pls check back soon <i class="fa-regular fa-face-smile-beam"></i></p>
     </div>
 </div>
-</header>
-<main>
-    <div class="connection">
-        <div class="list1">
-              <ul class="connect">
-                <li>
-                  <i class="fa-brands fa-mastodon"></i> <a rel="me" href="https://social.lol/@laurel">Mastodon</a>
-                </li>
-                <li>
-                  <i class="fa-brands fa-lastfm"></i> <a rel="me" href="https://www.last.fm/user/laurel___">Last.fm</a>
-                </li>
-                <li>
-                  <i class="fa-brands fa-github-alt"></i> <a href="https://github.com/2ell">Github</a>
-                </li>
-                <li>
-                  <i class="fa-brands fa-discord"></i> <a rel="me" href="https://discordapp.com/users/susurrance">Discord</a>
-                </li>
-                </ul>
-              </div>
-                <div class="list2"><ul class="connect">
-                <li>
-                  <i class="fa-brands fa-steam"></i> <a rel="me" href="https://steamcommunity.com/id/2tongued/">Steam</a>
-                </li>
-                <li>
-                  <i class="fa-solid fa-camera"></i> <a rel="me" href="https://pixey.org/i/portfolio/laurel">Pixelfed</a>
-                </li>
-                <li>
-                  <i class="fa-solid fa-book"></i> <a href="https://bookrastinating.com/user/laurel"> Bookwyrm</a>
-                </li>
-                <li>
-                  <i class="fa-solid fa-envelope"></i> <a rel="me" href="mailto:laurel@omg.lol">Email</a>
-                </li>
-              </ul></div>
-            </div>
-<div class="div-1">
-<h4 style="font-family: var(--heading);">latest posts</h4>
-    <div class="status">
-        <script src="https://status.lol/laurel.js?time&link"></script>
-    </div>    
-        <div class="last-fm">
-            <script src="https://recentfm.rknight.me/now.js?u=laurel___"></script>
-            </div>
-
-{body}
-<hr>
-</div>
-</main>
-
-
-<footer>
-    <p>created with <i class="fas fa-heart" style="color: var(--pink);""></i> by laurel
-        <br>
-    <i class="fas fas fa-bolt" style="color: var(--yellow);"></i> powered by the wondrous <a href="https://omg.lol">omg.lol</a> <i class="fas fas fa-bolt" style="color: var(--yellow);"></i></p>
-<div class="btns">
-    <a href="https://ko-fi.com/s/4662b19f61"><img src="https://2ell.b-cdn.net/MadeByAHuman_08.png"></a> <a href="https://ko-fi.com/s/4662b19f61"><img src="https://2ell.b-cdn.net/NeverByAi_04.png"></a><br>
-<img src="https://2ell.b-cdn.net/interoperability-pledge-an.gif"> <a href="https://archlinux.org/"><img src="https://2ell.b-cdn.net/arch-btn1.png"></a> <img src="https://2ell.b-cdn.net/furby.gif">
-</div>
-</footer>
-
-
-
-<script>
-function dropDown() {
-    var x = document.getElementById("navLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  } 
-
-const checkbox =document.getElementById('checkbox')
-
-checkbox.addEventListener('click',checkMode)
-
-                      function checkMode() {
-                            if (localStorage.getItem('isDarkMode')=='true'){
-                                localStorage.setItem('isDarkMode', false)} 
-                                else 
-                                {localStorage.setItem('isDarkMode', true)}
-                                toggle();
-                        };
-
-                        function toggle(){
-                            if (localStorage.getItem('isDarkMode')=='true'){
-                            
-                                document.body.classList.add('dark-mode');
-                        }
-                        if (localStorage.getItem('isDarkMode') === 'false'){
-                                
-                            document.body.classList.remove('dark-mode');
-                            };
-                        }
-                        toggle()
-</script>
 </body>
 </html>
