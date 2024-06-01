@@ -12,24 +12,47 @@ Title: Landing Page Template
 <style>
 @import url('https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css');
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
-@import url('https://static.omg.lol/type/font-md-io.css');
-@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap');
 
 :root {
-    --text:  #555;
+    --text: #cdd6f4;
+    --subtext: #bac2de;
+    --subtext0: #a6adc8;
+    --subtext1: #9399b2;
+    --surface: #7f849c;
+    --surface0: #6c7086;
+    --surface1: #585b70;
+    --overlay: #45475a;
+    --overlay0: #313244;
+    --base: #1e1e2e;
+    --crust: #181825;
+    --rosewater: #F5E0DC;
+    --flamingo: #F2CDCD;
+    --pink: #F5C2E7;
+    --mauve: #CBA6F7;
+    --red: #F38BA8;
+    --maroon: #EBA0AC;
+    --peach: #FAB387;
+    --yellow: #F9E2AF;
+    --green: #A6E3A1;
+    --teal: #94E2D5;
+    --sapphire: #89DCEB;
+    --sky: #74C7EC;
+    --blue: #89B4FA;
+    --lavender: #B4BEFE;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Iosevka Web'
+    font-family: 'Inclusive Sans'
 }
 
 body {
-    color: var(--text);
-    size: 1em;
-    background-color: #F5E0DC;
-    max-width: 30em;
+    color: var(--overlay0);
+    size: 1.2em;
+    background-color: #cdd6f4;
+    max-width: 40em;
     margin: auto;
 }
 
@@ -37,7 +60,7 @@ body {
     top: 0;
     left: 0;
     position: sticky;
-    background-color:#F5E0DC;
+    background-color: transparent;
     max-width: 100%;
     height: 3.5rem;
 }
@@ -50,23 +73,56 @@ body {
 .div {
     padding: 2rem;
     margin: 2rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     background-color: white;
     border: 1px solid #000;
     z-index: 9999;
-    box-shadow: 10px 10px;
+    box-shadow: 10px 10px var(--base);
 }
 
-.div-mini {
-    border-top:4px solid #F5E0DC;
-    border-top-style:dotted;
+.div-solid {
+    border-top:4px solid #B4BEFE;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
+.div-dotted {
+    border-top:4px dotted #B4BEFE;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.pink {
+    color: var(--pink);
+}
+
+.peach {
+    color: var(--peach);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.lavender {
+    color: var(--lavender);
+}
+
+
+.about {
+    text-align: center;
+}
+
+#education,
+#location,
+#occupation {
+    display: inline-block;
+    padding: 0 .5em .2em .5em;
+}
+
 .message {
     background-color: white;
-    border: 1px solid #000;
+    border: 1px solid var(--base);
 }
 
 .center {
@@ -117,6 +173,7 @@ nav ul {
 }
 
 </style>
+<!--->
 <div class="top">
     <nav class="links">
         <ul>
@@ -127,24 +184,27 @@ nav ul {
         </ul>
     </nav>
 </div>
-
+<--->
 <body>
     <div class="container">
     <div class="div">
-        <div class="div-mini">
-            <h2>@laurel</h2>
+        <div class="div-solid">
+        <div class="intro">
+            <h2 class="center">hi, i'm <span style="border-bottom: 3px solid var(--lavender);">laurel</span> <span class="lavender"><i class="fa-solid fa-circle-check"></i></span></h2>
         </div>
+        </div><!-->
         <div class="about">
             <div id="location" class="small"><i class="fa-solid fa-location-dot"></i> Mohkínstsis, Earth</div>
-            <div id="education" class="small"><i class="fa-solid fa-graduation-cap"></i>
-            School of Peer Support 2024</div>
+            <div id="occupation" class="small"><i class="fa-solid fa-briefcase"></i> PSW</div>
+            <div id="education" class="small"><i class="fa-solid fa-graduation-cap"></i> School of Peer Support</div>
             <br><br>
-            <p>Plant-lovin' visionary type. Literary artist. YIMBY.  Unashamedly & unapologetically <i>pedestrian</i>. Answers promptly to the call of the afternoon daydream, the whistle of the tea kettle, or - sometimes - even the name Laurel. </p>
+            <p></p>
         </div>    
     </div>
+    <--->
     <div class="div">
-        <div class="div-mini"></div>
-        <p class="center">still adjusting some things around here - pls check back soon <i class="fa-regular fa-face-smile-beam"></i></p>
+        <div class="div-dotted"></div>
+        <p class="center"> still adjusting things around here <i class="fa-regular fa-face-smile-beam"></i></p>
     </div>
 </div>
 </body>
