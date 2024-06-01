@@ -5,7 +5,7 @@ Title: Landing Page Template
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>laurel{separator}omg{separator}lol</title>
+<title>laurel{separator}omglol</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
