@@ -8,7 +8,7 @@ Weblog description:
 Author: laurel
 Canonical domain: laurel.omg.lol
 // Landing page: /
-Landing page template: Page Template
+Landing page template: Landing Page Template
 
 
 ;; General config stuff
