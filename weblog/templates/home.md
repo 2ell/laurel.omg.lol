@@ -5,7 +5,7 @@ Title: Landing Page Template
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>laurel{separator}omglol</title>
+<title>user</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -51,7 +51,7 @@ Title: Landing Page Template
 body {
     color: var(--overlay0);
     size: 1.2em;
-    background-color: #cdd6f4;
+    background-color: var(--text);
     max-width: 40em;
     margin: auto;
 }
@@ -75,9 +75,9 @@ body {
     margin: 2rem;
     font-size: 1rem;
     background-color: white;
-    border: 1px solid #000;
+    border: 0px solid #000;
     z-index: 9999;
-    box-shadow: 10px 10px var(--base);
+    box-shadow: 2px 2px var(--subtext);
 }
 
 .div-solid {
@@ -108,7 +108,9 @@ body {
     color: var(--lavender);
 }
 
-
+.intro {
+    padding: 1em 0 0 0;
+}
 .about {
     text-align: center;
 }
@@ -122,7 +124,7 @@ body {
 
 .message {
     background-color: white;
-    border: 1px solid var(--base);
+    border: 0px solid var(--base);
 }
 
 .center {
