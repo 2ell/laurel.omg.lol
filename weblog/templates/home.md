@@ -173,10 +173,9 @@ nav ul {
 }
 
 </style>
-<!--->
 <div class="top">
     <nav class="links">
-        <ul>
+        <!--ul>
             <li><button>home</button></li>
             <li><button>posts</button></li>
             <li><button>now</button></li>
@@ -184,7 +183,7 @@ nav ul {
         </ul>
     </nav>
 </div>
-<--->
+<-->
 <body>
     <div class="container">
     <div class="div">
@@ -192,8 +191,8 @@ nav ul {
         <div class="intro">
             <h2 class="center">hi, i'm <span style="border-bottom: 3px solid var(--lavender);">laurel</span> <span class="lavender"><i class="fa-solid fa-circle-check"></i></span></h2>
         </div>
-        </div><!-->
-        <div class="about">
+        </div>
+        <!--div class="about">
             <div id="location" class="small"><i class="fa-solid fa-location-dot"></i> Mohkínstsis, Earth</div>
             <div id="occupation" class="small"><i class="fa-solid fa-briefcase"></i> PSW</div>
             <div id="education" class="small"><i class="fa-solid fa-graduation-cap"></i> School of Peer Support</div>
@@ -201,7 +200,7 @@ nav ul {
             <p></p>
         </div>    
     </div>
-    <--->
+
     <div class="div">
         <div class="div-dotted"></div>
         <p class="center"> still adjusting things around here <i class="fa-regular fa-face-smile-beam"></i></p>
