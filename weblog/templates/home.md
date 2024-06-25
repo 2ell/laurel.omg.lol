@@ -194,7 +194,7 @@ nav ul {
             <h2 class="center">hi, i'm <span style="border-bottom: 3px solid var(--lavender);">laurel</span> <span class="lavender"><i class="fa-solid fa-circle-check"></i></span></h2>
         </div>
         </div>
-        <!--div class="about">
+        <div class="about">
             <div id="location" class="small"><i class="fa-solid fa-location-dot"></i> Mohkínstsis, Earth</div>
             <div id="occupation" class="small"><i class="fa-solid fa-briefcase"></i> PSW</div>
             <div id="education" class="small"><i class="fa-solid fa-graduation-cap"></i> School of Peer Support</div>
