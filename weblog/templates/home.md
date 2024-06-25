@@ -12,6 +12,7 @@ Title: Landing Page Template
 <style>
 @import url('https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css');
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
+@import url('https://static.omg.lol/type/font-md-io.css');
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap');
 
 :root {
@@ -176,7 +177,7 @@ nav ul {
 
 </style>
 <div class="top">
-    <nav class="links">
+    <nav>
         <ul>
             <li><button>home</button></li>
             <li><button>posts</button></li>
@@ -185,7 +186,6 @@ nav ul {
         </ul>
     </nav>
 </div>
-<-->
 <body>
     <div class="container">
     <div class="div">
@@ -196,7 +196,7 @@ nav ul {
         </div>
         <div class="about">
             <div id="location" class="small"><i class="fa-solid fa-location-dot"></i> Mohkínstsis, Earth</div>
-            <div id="occupation" class="small"><i class="fa-solid fa-briefcase"></i> PSW</div>
+            <div id="occupation" class="small"><i class="fa-solid fa-briefcase"></i> Peer Support</div>
             <div id="education" class="small"><i class="fa-solid fa-graduation-cap"></i> School of Peer Support</div>
             <br><br>
             <p></p>
@@ -205,7 +205,11 @@ nav ul {
 
     <div class="div">
         <div class="div-dotted"></div>
-        <p class="center"> still adjusting things around here <i class="fa-regular fa-face-smile-beam"></i></p>
+        <ul class="links">
+                <li>
+                <span class="fa-li"><i class="fa-brands fa-mastodon"></i></span><a rel="me" href="https://social.lol/@laurel">Mastodon</a>
+              </li>
+              </ul>
     </div>
 </div>
 </body>
