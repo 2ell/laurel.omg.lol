@@ -1,6 +1,5 @@
 Type: Template
 Title: Landing Page Template
----
 
 <!DOCTYPE html>
 <html lang="en">
