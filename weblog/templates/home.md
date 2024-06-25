@@ -177,7 +177,7 @@ nav ul {
 </style>
 <div class="top">
     <nav class="links">
-        <!--ul>
+        <ul>
             <li><button>home</button></li>
             <li><button>posts</button></li>
             <li><button>now</button></li>
