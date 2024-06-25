@@ -10,7 +10,6 @@ Title: Landing Page Template
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-@import url('https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css');
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 @import url('https://static.omg.lol/type/font-md-io.css');
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap');
