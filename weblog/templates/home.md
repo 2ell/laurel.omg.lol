@@ -17,7 +17,7 @@ Title: Landing Page Template
 @import url('https://static.omg.lol/type/font-md-io.css');
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap');
-@import url('https://cdn.cache.lol//profiles/icons/omg.lol-icons.css?v=2024-01-09d');
+@import url('https://cdn.cache.lol/profiles/icons/omg.lol-icons.css?v=2024-01-09d');
 
 :root {
     --text: #cdd6f4;
