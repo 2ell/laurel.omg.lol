@@ -6,12 +6,16 @@ Title: Landing Page Template
 <html lang="en">
 <head>
 <title>user</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="@laurel">
+    <meta property="og:description" content="human connection is rad">
+    <meta property="og:image" content="https://profiles.cache.lol/laurel/picture?v=1703197383.6555">
+    <meta name="viewport" content="width=device-width">
 
 <style>
-@import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 @import url('https://static.omg.lol/type/font-md-io.css');
+@import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap');
 
 :root {
