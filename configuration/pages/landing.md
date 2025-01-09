@@ -244,6 +244,10 @@ li:hover {
 .li-lavender {
   color: var(--lavender);
 }
+
+.li-muted {
+  color: var(--muted);
+}
 }
 
 body {
@@ -286,7 +290,7 @@ body {
 
 #profile-items {
 	padding: .5em 0 0 0;
-	margin: 1.5em 0 0 0;
+	margin: 0.5em 0 0 0;
 }
 
 #profile-items :is(h1, h2, h3, h4, h5, h6) {
@@ -338,7 +342,7 @@ body {
 }
 
 #location, #occupation {
-	margin: .5em;
+	margin: 1.5em .5em 0.5em .5em;
 	padding: 0 .5em;
 }
 
@@ -422,8 +426,9 @@ hr {
 #last-fm {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.2em;
-  margin: 0.5em 0 0 0;
+  margin: 0.2em 0 0 0;
 }
 
 .recent-played-track {
@@ -644,11 +649,11 @@ hr {
       <div class="p-locality" id="location">
         <i class="fa-solid fa-fw fa-location-dot"></i> Mohkínstsis
       </div>
-      <div id="last-fm">
-        <i class="fa-solid fa-fw fa-music"></i><script src="https://recentfm.rknight.me/now.js?u=laurel___&e=%20"></script>
-      </div>
       <div id="status"><i class="fa-solid fa-fw fa-heart"></i>
         <script src="https://status.lol/laurel.js?time"></script>
+      </div>
+      <div id="last-fm">
+        <i class="fa-solid fa-fw fa-music"></i><script src="https://recentfm.rknight.me/now.js?u=laurel___&e=%20"></script>
       </div>
       <div id="bio">
       </div>
@@ -687,7 +692,7 @@ hr {
       <h4></h4>
       <ul class="fa-ul">
         <li>
-          <span class="fa-li"><i class="fa-brands fa-instagram"></i></span><a rel="me"
+          <span class="fa-li li-muted"><i class="fa-brands fa-instagram"></i></span><a class="li-muted" rel="me"
             href="https://instagram.com/susurrance">Instagram</a><span class="li-description"><i>still exists (for now)</i></span>
         </li>
       </ul>
