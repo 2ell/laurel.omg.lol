@@ -138,6 +138,114 @@ Title: Landing Page Template
     }
   }
 
+.rosewater {
+  color: var(--rosewater);
+}
+
+.flamingo {
+  color: var(--flamingo);
+}
+
+.pink {
+  color: var(--pink);
+}
+
+.red {
+  color: var(--red);
+}
+
+.peach {
+  color: var(--peach);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.green {
+  color: var(--green);
+}
+
+.teal {
+  color: var(--teal);
+}
+
+.sky {
+  color: var(--sky);
+}
+
+.sapphire {
+  color: var(--sapphire);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.mauve {
+  color: var(--mauve);
+}
+
+.lavender {
+  color: var(--lavender);
+}
+
+
+li:hover {
+  
+.li-rosewater {
+  color: var(--rosewater);
+}
+
+.li-flamingo {
+  color: var(--flamingo);
+}
+
+.li-pink {
+  color: var(--pink);
+}
+
+.li-red {
+  color: var(--red);
+}
+
+.li-peach {
+  color: var(--peach);
+}
+
+.li-yellow {
+  color: var(--yellow);
+}
+
+.li-green {
+  color: var(--green);
+}
+
+.li-teal {
+  color: var(--teal);
+}
+
+.li-sky {
+  color: var(--sky);
+}
+
+.li-sapphire {
+  color: var(--sapphire);
+}
+
+.li-blue {
+  color: var(--blue);
+}
+
+.li-mauve {
+  color: var(--mauve);
+}
+
+.li-lavender {
+  color: var(--lavender);
+}
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -173,6 +281,7 @@ body {
 
 .p-name {
   margin: 0;
+  padding-left: 0.3em;
 }
 
 #profile-items {
@@ -183,9 +292,10 @@ body {
 #profile-items :is(h1, h2, h3, h4, h5, h6) {
 	text-align: left;
 	margin: 0;
+  padding: 0;
 }
 
-#profile-items h1 { font-size: 1.2em; }
+#profile-items h1 { font-size: 1.2em; margin: 0;}
 #profile-items h2 { font-size: 1.2em; }
 #profile-items h3 { font-size: 1.2em; }
 #profile-items h4 { font-size: 1em; }
@@ -215,7 +325,8 @@ body {
 }
 
 #details {
-	margin: 0.5em 0;
+  line-height: 0em;
+	margin: 0;
 }
 
 #location {
@@ -257,9 +368,13 @@ body {
 	width: 2em;
 }
 
+.link-header {
+  margin: 3em 0 0 0;
+}
+
 ul {
 	text-align: left;
-  margin-bottom: 2em;
+  margin: 0 0 2em 0;
 }
 
 li {
@@ -304,15 +419,61 @@ hr {
 	}
 }
 
+#last-fm {
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+  margin: 0.5em 0 0 0;
+}
+
 .recent-played-track {
   font-size: 0.9em;
   border-bottom: 0;
+  margin: 0.2em 0 0 0;
+  &::before {
+    content: 'Listening to';
+  }
+  & a {
+  line-height: 1.5em;
+}
 }
 
-.recent-played-track::before {
-  content: 'playing ';
+#status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
+.statuslol {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.9em;
+  gap: 0.2em;
+  margin: 0 0.2em 0 0.2em;
+  &::before {
+    content: 'Feeling';
+  }
+}
+
+.statuslol_content {
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.statuslol_time {
+    font-weight: 400;
+    color: var(--muted);
+    &::before {
+      content: '(';
+    }
+    &::after {
+      content: ')';
+    }
+}
 
   #dark-light-toggle {
   align-self: flex-start;
@@ -342,33 +503,6 @@ hr {
 
 .icon-sun:hover {
   color: var(--peach);
-}
-
-h1 {
-  font-weight: 900;
-  font-family: Bhineka Script;
-  text-transform: lowercase;
-  letter-spacing: -0.12rem;
-  font-size: 3em;
-}
-
-
-.statuslol {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: baseline;
-  font-size: 0.9em;
-  gap: 0.2em;
-  margin-bottom: 0;
-}
-
-.statuslol::before {
-  content: 'feeling ';
-}
-
-.statuslol_content {
-  font-weight: 900;
 }
 
 #prami {
@@ -498,9 +632,8 @@ h1 {
         <img class="u-photo" alt="laurel" id="profile-picture"
           src="https://profiles.cache.lol/laurel/picture?v=1719328234">
       </div>
-      <h1 id="name" class="p-name p-nickname">
-        laurel <a id="verification" style="text-decoration: none; border: 0; font-size: 0.6em;"
-          href="https://home.omg.lol/lookup/laurel"> <i class="icon-medium omg-icon omg-verified provenfb3e00"></i></a>
+      <h1 id="name" class="p-name p-nickname"><img src="https://2ell.b-cdn.net/laureldark.svg" class="dark"><img src="https://2ell.b-cdn.net/laurellight.svg" class="light"><a id="verification" style="text-decoration: none; border: 0; font-size: 0.7em;"
+          href="https://home.omg.lol/lookup/laurel"> <i class="omg-icon omg-verified provenfb3e00"></i></a>
       </h1>
       <div class="p-gender-identity" id="pronouns">
         she/they
@@ -511,55 +644,56 @@ h1 {
       <div class="p-locality" id="location">
         <i class="fa-solid fa-fw fa-location-dot"></i> Mohkínstsis
       </div>
-      <div id="details">
-        <script src="https://status.lol/laurel.js"></script>
-        <script src="https://recentfm.rknight.me/now.js?u=laurel___&e=🎶"></script>
+      <div id="last-fm">
+        <i class="fa-solid fa-fw fa-music"></i><script src="https://recentfm.rknight.me/now.js?u=laurel___&e=%20"></script>
+      </div>
+      <div id="status"><i class="fa-solid fa-fw fa-heart"></i>
+        <script src="https://status.lol/laurel.js?time"></script>
       </div>
       <div id="bio">
       </div>
     </div>
+    <div class="link-header">
+    <img src="https://2ell.b-cdn.net/findme-dark.svg" class="dark"><img src="https://2ell.b-cdn.net/findme-light.svg" class="light">
+    </div>
     <div id="profile-items">
-
-      <h4>decentralized</h4>
       <ul class="fa-ul">
         <li>
-          <span class="fa-li"><i class="fa-solid fa-fw fa-pen-nib"></i></span><a rel="me"
-            href="https://aww.baby">Blog</a><span class="li-description"><i>personal posts, eventual manifesto probably</i></span>
+          <span class="fa-li li-lavender"><i class="fa-solid fa-fw fa-pen-nib"></i></span><a class="li-lavender" rel="me"
+            href="https://aww.baby">aww.baby</a><span class="li-description"><i>personal blog</i></span>
         </li>
         <li>
-          <span class="fa-li"><i class="fa-brands fa-mastodon"></i></span><a rel="me"
-            href="https://social.lol/@laurel">Mastodon</a><span class="li-description"><i>social micro-blogging</i></span>
+          <span class="fa-li li-mauve"><i class="fa-brands fa-mastodon"></i></span><a class="li-mauve" rel="me"
+            href="https://social.lol/@laurel">Mastodon</a><span class="li-description"><i>primary social networking</i></span>
         </li>
         <li>
-          <span class="fa-li"><i class="omg-icon omg-pixelfed"></i></span><a rel="me"
-            href="https://pixey.org/laurel">Pixelfed</a><span class="li-description"><i>curated camera roll</i></span>
+          <span class="fa-li li-peach"><i class="omg-icon omg-pixelfed"></i></span><a class="li-peach" rel="me"
+            href="https://pixey.org/laurel">Pixelfed</a><span class="li-description"><i>photo log</i></span>
         </li>
-      </ul>
-
-      <h4>centralized</h4>
-  <ul class="fa-ul">
     <li>
-      <span class="fa-li"><i class="fa-brands fa-lastfm"></i></span><a rel="me"
+      <span class="fa-li li-red"><i class="fa-brands fa-lastfm"></i></span><a class="li-red" rel="me"
         href="https://www.last.fm/user/laurel___">last.fm</a>
         <span class="li-description"><i>music tracking & discovery</i></span>
     </li>
     <li>
-      <span class="fa-li"><i class="fa-brands fa-steam"></i></span><a rel="me"
+      <span class="fa-li li-blue"><i class="fa-brands fa-steam"></i></span><a class="li-blue" rel="me"
         href="https://steamcommunity.com/id/2tongued/">Steam</a><span class="li-description"><i>PC gaming</i></span>
     </li>
       <li>
-        <span class="fa-li"><i class="fa-brands fa-discord"></i></span><a rel="me"
+        <span class="fa-li li-sky"><i class="fa-brands fa-discord"></i></span><a class="li-sky" rel="me"
           href="https://discordapp.com/users/susurrance">Discord</a><span class="li-description"><i>chat communities</i></span>
       </li>
   </ul>
-      <h4>this just exists still</h4>
+      <h4></h4>
       <ul class="fa-ul">
         <li>
           <span class="fa-li"><i class="fa-brands fa-instagram"></i></span><a rel="me"
-            href="https://instagram.com/susurrance">Instagram</a><span class="li-description"><i>waiting for ppl to move to better platforms still</i></span>
+            href="https://instagram.com/susurrance">Instagram</a><span class="li-description"><i>still exists (for now)</i></span>
         </li>
       </ul>
     </div>
+
+
     <div id="footer">
       <a href="https://home.omg.lol/referred-by/laurel"><span class="logotype">omg<span class="logotype dot"
             style="color: #f06595;">.</span>lol</span><br>
