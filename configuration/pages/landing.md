@@ -421,6 +421,10 @@ hr {
 	main {
 		padding: 1.5em;
 	}
+  #location {
+	margin: .5em;
+	padding: 0 .5em;
+}
 }
 
 #last-fm {
