@@ -500,7 +500,7 @@ h1 {
       </div>
       <h1 id="name" class="p-name p-nickname">
         laurel <a id="verification" style="text-decoration: none; border: 0; font-size: 0.6em;"
-          href="https://home.omg.lol/lookup/laurel"><i class="icon-medium omg-icon omg-verified provenfb3e00"></i></a>
+          href="https://home.omg.lol/lookup/laurel"> <i class="icon-medium omg-icon omg-verified provenfb3e00"></i></a>
       </h1>
       <div class="p-gender-identity" id="pronouns">
         she/they
