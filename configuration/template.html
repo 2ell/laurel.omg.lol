@@ -212,7 +212,7 @@ body {
 }
 
 #details {
-	margin: 1em 0;
+	margin: 0.5em 0;
 }
 
 #location {
@@ -301,6 +301,15 @@ hr {
 	}
 }
 
+.recent-played-track {
+  font-size: 0.9em;
+  border-bottom: 0;
+}
+
+.recent-played-track::before {
+  content: 'playing ';
+}
+
 
   #dark-light-toggle {
   align-self: flex-start;
@@ -338,6 +347,25 @@ h1 {
   text-transform: lowercase;
   letter-spacing: -0.12rem;
   font-size: 3em;
+}
+
+
+.statuslol {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 0.9em;
+  gap: 0.2em;
+  margin-bottom: 0;
+}
+
+.statuslol::before {
+  content: 'feeling ';
+}
+
+.statuslol_content {
+  font-weight: 900;
 }
 
 #prami {
@@ -480,10 +508,11 @@ h1 {
       <div class="p-locality" id="location">
         <i class="fa-solid fa-fw fa-location-dot"></i> Mohkínstsis
       </div>
-      <div id="details"></div>
+      <div id="details">
+        <script src="https://status.lol/laurel.js"></script>
+        <script src="https://recentfm.rknight.me/now.js?u=laurel___&e=🎶"></script>
+      </div>
       <div id="bio">
-        <p>
-        </p>
       </div>
     </div>
     <div id="profile-items">
