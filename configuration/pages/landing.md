@@ -43,7 +43,7 @@ Title: Landing Page Template
       <div id="details"></div>
       <div id="bio">
         <p>
-          Plan(e)t-lovin' visionary type. Literary artist. YIMBY. <a rel="me" href="https://obsidian.md">Obsidian</a>/PKM hobbyist & tinkerer. Dedicated, weather-resistant pedestrian (<i>car-free in YYC since '93</i>). Answers promptly to the call of the afternoon daydream, the whistle of the tea kettle, or - sometimes - the name Laurel.
+          c:
         </p>
       </div>
       <div id="profile-items">
