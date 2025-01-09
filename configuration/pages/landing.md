@@ -1,6 +1,5 @@
 Type: Template
 Title: Landing Page Template
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -678,6 +677,10 @@ hr {
         <li>
           <span class="fa-li li-peach"><i class="omg-icon omg-pixelfed"></i></span><a class="li-peach" rel="me"
             href="https://pixey.org/laurel">Pixelfed</a><span class="li-description"><i>photo log</i></span>
+        </li>
+        <li>
+          <span class="fa-li li-green"><i class="omg-icon omg-bookwyrm"></i></span><a class="li-green" rel="me"
+            href="https://bookrastinating.com/user/laurel">Bookwyrm</a><span class="li-description"><i>reading list & book reviews</i></span>
         </li>
     <li>
       <span class="fa-li li-red"><i class="fa-brands fa-lastfm"></i></span><a class="li-red" rel="me"
