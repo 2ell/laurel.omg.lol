@@ -185,9 +185,7 @@ body {
 #profile-items h1 { font-size: 1.2em; }
 #profile-items h2 { font-size: 1.2em; }
 #profile-items h3 { font-size: 1.2em; }
-#profile-items h4 { font-size: 1.1em; }
-#profile-items h5 { font-size: 1.1em; }
-#profile-items h6 { font-size: 1.1em; }
+#profile-items h4 { font-size: 1em; }
 
 #profile-picture-container {
 	margin: auto;
@@ -258,10 +256,17 @@ body {
 
 ul {
 	text-align: left;
+  margin-bottom: 2em;
 }
 
 li {
 	line-height: 170%;
+}
+
+.li-description {
+  color: var(--muted);
+  font-size: 0.9em;
+  margin-left: 0.8em;
 }
 
 .logotype {
@@ -483,39 +488,43 @@ h1 {
     </div>
     <div id="profile-items">
 
-      <h6>decentralized</h6>
+      <h4>decentralized</h4>
       <ul class="fa-ul">
         <li>
+          <span class="fa-li"><i class="fa-solid fa-fw fa-pen-nib"></i></span><a rel="me"
+            href="https://aww.baby">Blog</a><span class="li-description"><i>personal posts, eventual manifesto probably</i></span>
+        </li>
+        <li>
           <span class="fa-li"><i class="fa-brands fa-mastodon"></i></span><a rel="me"
-            href="https://social.lol/@laurel">Mastodon</a>
+            href="https://social.lol/@laurel">Mastodon</a><span class="li-description"><i>social micro-blogging</i></span>
         </li>
         <li>
           <span class="fa-li"><i class="omg-icon omg-pixelfed"></i></span><a rel="me"
-            href="https://pixey.org/laurel">Pixelfed</a>
-        </li>
-        <li>
-          <span class="fa-li"><i class="fa-brands fa-lastfm"></i></span><a rel="me"
-            href="https://www.last.fm/user/laurel___">last.fm</a>
-        </li>
-        <li>
-          <span class="fa-li"><i class="fa-brands fa-steam"></i></span><a rel="me"
-            href="https://steamcommunity.com/id/2tongued/">Steam</a>
+            href="https://pixey.org/laurel">Pixelfed</a><span class="li-description"><i>curated camera roll</i></span>
         </li>
       </ul>
 
-      <h6>centralized</h6>
+      <h4>centralized</h4>
   <ul class="fa-ul">
+    <li>
+      <span class="fa-li"><i class="fa-brands fa-lastfm"></i></span><a rel="me"
+        href="https://www.last.fm/user/laurel___">last.fm</a>
+        <span class="li-description"><i>music tracking & discovery</i></span>
+    </li>
+    <li>
+      <span class="fa-li"><i class="fa-brands fa-steam"></i></span><a rel="me"
+        href="https://steamcommunity.com/id/2tongued/">Steam</a><span class="li-description"><i>PC gaming</i></span>
+    </li>
       <li>
         <span class="fa-li"><i class="fa-brands fa-discord"></i></span><a rel="me"
-          href="https://discordapp.com/users/susurrance">Discord</a>
+          href="https://discordapp.com/users/susurrance">Discord</a><span class="li-description"><i>chat communities</i></span>
       </li>
   </ul>
-
-      <h6>still exists for now</h6>
+      <h4>this just exists still</h4>
       <ul class="fa-ul">
         <li>
           <span class="fa-li"><i class="fa-brands fa-instagram"></i></span><a rel="me"
-            href="https://instagram.com/susurrance">Instagram</a>
+            href="https://instagram.com/susurrance">Instagram</a><span class="li-description"><i>waiting for ppl to move to better platforms still</i></span>
         </li>
       </ul>
     </div>
@@ -569,7 +578,7 @@ h1 {
           </g>
         </svg></a>
     </div>
-  </main> <!--container-->
+  </main> 
 </body>
 
 </html>
