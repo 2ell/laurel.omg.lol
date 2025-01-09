@@ -188,74 +188,11 @@
 }
 
 
-li:hover {
-  
-.li-rosewater {
-  color: var(--rosewater);
-}
-
-.li-flamingo {
-  color: var(--flamingo);
-}
-
-.li-pink {
-  color: var(--pink);
-}
-
-.li-red {
-  color: var(--red);
-}
-
-.li-peach {
-  color: var(--peach);
-}
-
-.li-yellow {
-  color: var(--yellow);
-}
-
-.li-green {
-  color: var(--green);
-}
-
-.li-teal {
-  color: var(--teal);
-}
-
-.li-sky {
-  color: var(--sky);
-}
-
-.li-sapphire {
-  color: var(--sapphire);
-}
-
-.li-blue {
-  color: var(--blue);
-}
-
-.li-mauve {
-  color: var(--mauve);
-}
-
-.li-lavender {
-  color: var(--lavender);
-}
-
-.li-muted {
-  color: var(--muted);
-}
-}
-
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    /*transition: background 0.2s linear;*/
-  }
-
-  body {
     background: var(--crust);
     color: var(--text);
         & a {
@@ -310,6 +247,81 @@ body {
 #profile-picture {
 	border-radius: 50%;
 	height: 10em;
+}
+
+#verification {
+	font-size: 80%;
+	color: var(--blue);
+  line-height: 2em;
+}
+
+#last-fm {
+  display: flex;
+  align-items: first baseline;
+  justify-content: center;
+  margin: 0.2em 0 0 0;
+  max-width: fit-content;
+  gap: 0;
+  & .last-fm-icon {
+    margin: 0;
+    padding: 0;
+    justify-self: flex-end;
+}
+}
+.recent-played {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.recent-played-track {
+  font-size: 1em;
+  border-bottom: 0;
+  margin: 0em 0em 0em 0em;
+  padding: 0;
+  &::before {
+    margin-left: 0em;
+    content: 'Playing';
+  }
+  & a {
+  line-height: 1.5em;
+}
+}
+
+#status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.statuslol {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1em;
+  gap: 0.2em;
+  margin: 0 0.2em 0 0.2em;
+  &::before {
+    content: 'Feeling';
+  }
+}
+
+.statuslol_content {
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.statuslol_time {
+    font-weight: 400;
+    color: var(--muted);
+    &::before {
+      content: '(';
+    }
+    &::after {
+      content: ')';
+    }
 }
 
 #pronouns {
@@ -382,6 +394,52 @@ li {
 	line-height: 170%;
 }
 
+li:hover {
+    .li-rosewater {
+      color: var(--rosewater);
+    }
+    .li-flamingo {
+      color: var(--flamingo);
+    }
+    .li-pink {
+      color: var(--pink);
+    }
+    .li-red {
+      color: var(--red);
+    }
+    .li-peach {
+      color: var(--peach);
+    }
+    .li-yellow {
+      color: var(--yellow);
+    }
+    .li-green {
+      color: var(--green);
+    }
+    .li-teal {
+      color: var(--teal);
+    }
+    .li-sky {
+      color: var(--sky);
+    }
+    .li-sapphire {
+      color: var(--sapphire);
+    }
+    .li-blue {
+      color: var(--blue);
+    }
+    .li-mauve {
+      color: var(--mauve);
+    }
+    .li-lavender {
+      color: var(--lavender);
+    }
+    .li-muted {
+      color: var(--muted);
+    }
+}
+
+
 .li-description {
   color: var(--muted);
   font-size: 0.9em;
@@ -393,93 +451,7 @@ li {
 	font-family: 'omg.lol';
 }
 
-#verification {
-	font-size: 80%;
-	color: var(--blue);
-}
 
-#now {
-	margin-top: 2em;
-	text-align: left !important;
-}
-
-hr {
-	border: 0;
-	height: 1px;
-	background: #333;
-	margin: 1.5em 0;
-}
-
-@media (max-width: 500px) {
-	body {
-		font-size: 1em;
-		padding: 1em;
-	}
-	main {
-		padding: 1.5em;
-	}
-  #location {
-	margin: .5em;
-	padding: 0 .5em;
-}
-}
-
-#last-fm {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.2em;
-  margin: 0.2em 0 0 0;
-}
-
-.recent-played-track {
-  font-size: 0.9em;
-  border-bottom: 0;
-  margin: 0.2em 0 0 0;
-  &::before {
-    content: 'Listening to';
-  }
-  & a {
-  line-height: 1.5em;
-}
-}
-
-#status {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.statuslol {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-size: 0.9em;
-  gap: 0.2em;
-  margin: 0 0.2em 0 0.2em;
-  &::before {
-    content: 'Feeling';
-  }
-}
-
-.statuslol_content {
-  font-weight: 900;
-  display: flex;
-  align-items: center;
-  gap: 0.2em;
-}
-
-.statuslol_time {
-    font-weight: 400;
-    color: var(--muted);
-    &::before {
-      content: '(';
-    }
-    &::after {
-      content: ')';
-    }
-}
 
   #dark-light-toggle {
   align-self: flex-start;
@@ -537,6 +509,28 @@ hr {
     .prami-mouth {
       stroke: #461036;
     }
+
+
+@media (max-width: 500px) {
+	body {
+		font-size: 0.9em;
+		padding: 1em;
+	}
+	main {
+		padding: 1.5em;
+	}
+  #location {
+	margin: .5em;
+	padding: 0 .5em;
+}
+
+@media (max-width: 400px) {
+  .statuslol_time {
+    display: none;
+  }
+}
+
+}
   </style>
 </head>
 
@@ -654,7 +648,8 @@ hr {
         <script src="https://status.lol/laurel.js?time"></script>
       </div>
       <div id="last-fm">
-        <i class="fa-solid fa-fw fa-music"></i><script src="https://recentfm.rknight.me/now.js?u=laurel___&e=%20"></script>
+        <div class="last-fm-icon"><i class="fa-solid fa-fw fa-music"></i></div>
+          <div><script src="https://recentfm.rknight.me/now.js?u=laurel___&e=%20"></script></div>
       </div>
       <div id="bio">
       </div>
