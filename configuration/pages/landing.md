@@ -726,7 +726,7 @@ li:hover{
         <li>
           <a class="li-pink rel="me"
             href="https://aww.baby"><span class="fa-li li-pink"><i class="fa-solid fa-fw fa-pen-nib"></i></span></a><a class="li-pink rel="me"
-            href="https://aww.baby"><span class="li-description li-pink">blog</span></a>
+            href="https://aww.baby"><span class="li-description li-pink">my blog</span></a>
         </li>
         <li>
           <a class="li-mauve" rel="me"
