@@ -269,7 +269,8 @@ body {
   & .last-fm-icon {
     margin: 0;
     padding: 0 4px 0 0;
-    justify-self:first baseline;
+    justify-self: first baseline;
+    align-self:flex-start;
 }
 }
 .recent-played {
@@ -558,7 +559,7 @@ li:hover{
 		padding: 1em;
 	}
 	main {
-		padding: 1.5em;
+		padding: 2em;
 	}
   #location {
 	margin: .5em;
@@ -571,12 +572,22 @@ li:hover{
   }
   ul {
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .link-header img {
+    display: inline-block;
+    margin-top: 2em;
   }
   .li-description {
   display: inline-flex;
+  color: var(--text);
   width: fit-content;
-  font-size: 0.9em;
+  font-size: 1em;
   margin: 0 0.2em 0 0;
+}
+#prami {
+  display: none;
 }
 }
 
