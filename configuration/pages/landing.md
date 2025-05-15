@@ -1,5 +1,6 @@
 Type: Template
-Title: Landing Page Template<!DOCTYPE html>
+Title: Landing Page Template
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -218,6 +219,18 @@ body {
 	padding: 2em;
 }
 
+hr {
+  margin-top: 3em;
+  border-top: 0;
+  border-bottom: 0.01em solid var(--text);
+  max-width: 150px;
+}
+
+.spacer {
+  border-bottom: 0;
+  margin: 0.7em 0 0 0;
+}
+
 .p-name {
   margin: 0;
   padding-left: 0.3em;
@@ -369,7 +382,7 @@ body {
 
 #footer {
 	margin: 0;
-	margin-top: 5em;
+	margin-top: 3em;
 	color: #555;
 	text-align: center;
 }
@@ -398,18 +411,6 @@ body {
   margin: 0;
 }
 
-hr {
-  margin-top: 3em;
-  border-top: 0;
-  border-bottom: 0.01em solid var(--text);
-  max-width: 150px;
-}
-
-.spacer {
-  border-bottom: 0;
-  margin: 0.7em 0 0 0;
-}
-
 ul {
 	text-align: center;
   margin-left: -6em;
@@ -423,7 +424,6 @@ ul {
 
 li {
 	margin: 0 0 0 2em;
-  line-height: 2em;
   align-self: center;
   justify-self: center;
   text-align: center;
@@ -566,6 +566,13 @@ li:hover{
 	margin: .5em;
 	padding: 0 .5em;
 }
+  #last-fm {
+    & .last-fm-icon {
+      padding: 0;
+      padding-right: 4px;
+    }
+  }
+}
 
 @media (max-width: 400px) {
   .statuslol_time {
@@ -587,11 +594,9 @@ li:hover{
   font-size: 1em;
   margin: 0 0.2em 0 0;
 }
-#prami {
-  display: none;
-}
-}
-
+  #prami {
+    display: none;
+  }
 }
   </style>
 </head>
@@ -685,8 +690,6 @@ li:hover{
         currentThemeSetting = newTheme;
       }); 
     </script>
-  
-<hr>
 
 <body>
   <main>
