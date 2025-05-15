@@ -225,10 +225,13 @@ body {
 #profile-items {
 	padding: .5em 0 0 0;
 	margin: 0.5em 0 0 0;
+  & a {
+    border-bottom: 0;
+  }
 }
 
 #profile-items :is(h1, h2, h3, h4, h5, h6) {
-	text-align: left;
+	text-align: center;
 	margin: 0;
   padding: 0;
 }
@@ -250,22 +253,23 @@ body {
 }
 
 #verification {
-	font-size: 80%;
+	font-size: 100%;
 	color: var(--blue);
   line-height: 2em;
 }
 
 #last-fm {
   display: flex;
-  align-items: first baseline;
+  align-items: normal;
   justify-content: center;
-  margin: 0.2em 0 0 0;
-  max-width: fit-content;
+  margin: 0, auto;
+  padding: 0;
+  max-width: 100%;
   gap: 0;
   & .last-fm-icon {
     margin: 0;
-    padding: 0;
-    justify-self: flex-end;
+    padding: 0 4px 0 0;
+    justify-self:first baseline;
 }
 }
 .recent-played {
@@ -276,14 +280,14 @@ body {
 .recent-played-track {
   font-size: 1em;
   border-bottom: 0;
-  margin: 0em 0em 0em 0em;
+  margin: 0;
   padding: 0;
   &::before {
     margin-left: 0em;
     content: 'Playing';
   }
   & a {
-  line-height: 1.5em;
+  line-height: 1em;
 }
 }
 
@@ -383,15 +387,44 @@ body {
 
 .link-header {
   margin: 3em 0 0 0;
+  & img {
+      display: none;
+  }
+}
+
+.fa-ul {
+  margin: 0;
+}
+
+hr {
+  margin-top: 3em;
+  border-top: 0;
+  border-bottom: 0.01em solid var(--text);
+  max-width: 
+}
+
+.spacer {
+  border-bottom: 0;
+  margin: 0.7em 0 0 0;
 }
 
 ul {
-	text-align: left;
-  margin: 0 0 2em 0;
+	text-align: center;
+  margin-left: -6em;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 li {
-	line-height: 170%;
+	margin: 0 0 0 2em;
+  line-height: 2em;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
 }
 
 li:hover {
@@ -441,9 +474,17 @@ li:hover {
 
 
 .li-description {
-  color: var(--muted);
-  font-size: 0.9em;
-  margin-left: 0.8em;
+  color: transparent;
+  font-size: 0;
+}
+
+li:hover{
+& .li-description {
+  display: inline-flex;
+  width: fit-content;
+  font-size: 1em;
+  margin: 0 0.2em 0 0;
+}
 }
 
 .logotype {
@@ -624,6 +665,7 @@ li:hover {
       }); 
     </script>
   
+<hr>
 
 <body>
   <main>
@@ -642,11 +684,12 @@ li:hover {
         <i class="fa-solid fa-fw fa-briefcase"></i> Peer Support
       </div>
       <div class="p-locality" id="location">
-        <i class="fa-solid fa-fw fa-location-dot"></i> Mohkínstsis
+        <i class="fa-solid fa-fw fa-location-dot"></i> Mohkínstsis/Calgary
       </div>
       <div id="status"><i class="fa-solid fa-fw fa-heart"></i>
         <script src="https://status.lol/laurel.js?time"></script>
       </div>
+      <hr class="spacer">
       <div id="last-fm">
         <div class="last-fm-icon"><i class="fa-solid fa-fw fa-music"></i></div>
           <div><script src="https://recentfm.rknight.me/now.js?u=laurel___&e=%20"></script></div>
@@ -660,44 +703,56 @@ li:hover {
     <div id="profile-items">
       <ul class="fa-ul">
         <li>
-          <span class="fa-li li-lavender"><i class="fa-solid fa-fw fa-pen-nib"></i></span><a class="li-lavender" rel="me"
-            href="https://aww.baby">aww.baby</a><span class="li-description"><i>personal blog</i></span>
+          <a class="li-pink rel="me"
+            href="https://aww.baby"><span class="fa-li li-pink"><i class="fa-solid fa-fw fa-pen-nib"></i></span></a><a class="li-pink rel="me"
+            href="https://aww.baby"><span class="li-description li-pink">Blog</span></a>
         </li>
         <li>
-          <span class="fa-li li-mauve"><i class="fa-brands fa-mastodon"></i></span><a class="li-mauve" rel="me"
-            href="https://social.lol/@laurel">Mastodon</a><span class="li-description"><i>primary social networking</i></span>
+          <a class="li-mauve" rel="me"
+            href="https://social.lol/@laurel">
+          <span class="fa-li li-mauve"><i class="fa-brands fa-mastodon"></i></span></a> <a class="li-mauve" rel="me"
+            href="https://social.lol/@laurel"><span class="li-description li-mauve">Mastodon</span></a>
         </li>
         <li>
-          <span class="fa-li li-peach"><i class="omg-icon omg-pixelfed"></i></span><a class="li-peach" rel="me"
-            href="https://pixey.org/laurel">Pixelfed</a><span class="li-description"><i>photo log</i></span>
-        </li>
-        <li>
-          <span class="fa-li li-green"><i class="omg-icon omg-bookwyrm"></i></span><a class="li-green" rel="me"
-            href="https://bookrastinating.com/user/laurel">Bookwyrm</a><span class="li-description"><i>reading list & book reviews</i></span>
+          <a class="li-green" rel="me"
+            href="https://bookrastinating.com/user/laurel">
+          <span class="fa-li li-green"><i class="fa-solid fa-fw fa-book"></i></span></a>
+          <a class="li-green" rel="me"
+            href="https://bookrastinating.com/user/laurel"><span class="li-description li-green">Bookwyrm</span></a>
         </li>
     <li>
-      <span class="fa-li li-red"><i class="fa-brands fa-lastfm"></i></span><a class="li-red" rel="me"
-        href="https://www.last.fm/user/laurel___">last.fm</a>
-        <span class="li-description"><i>music tracking & discovery</i></span>
+      <a class="li-red" rel="me"
+        href="https://www.last.fm/user/laurel___">
+      <span class="fa-li li-red"><i class="fa-brands fa-lastfm"></i></span></a>
+      <a class="li-red" rel="me"
+        href="https://www.last.fm/user/laurel___">
+        <span class="li-description li-red">last.fm</span></a>
     </li>
     <li>
-      <span class="fa-li li-blue"><i class="fa-brands fa-steam"></i></span><a class="li-blue" rel="me"
-        href="https://steamcommunity.com/id/2tongued/">Steam</a><span class="li-description"><i>PC gaming</i></span>
+      <a class="li-blue" rel="me"
+        href="https://steamcommunity.com/id/2tongued/">
+      <span class="fa-li li-blue"><i class="fa-brands fa-steam"></i></span></a>
+            <a class="li-blue" rel="me"
+        href="https://steamcommunity.com/id/2tongued/">
+      <span class="li-description li-blue">Steam</span></a>
     </li>
       <li>
-        <span class="fa-li li-sky"><i class="fa-brands fa-discord"></i></span><a class="li-sky" rel="me"
-          href="https://discordapp.com/users/susurrance">Discord</a><span class="li-description"><i>chat communities</i></span>
+        <a class="li-sky" rel="me"
+          href="https://discordapp.com/users/susurrance">
+        <span class="fa-li li-sky"><i class="fa-brands fa-discord"></i></span></a>
+                <a class="li-sky" rel="me"
+          href="https://discordapp.com/users/susurrance"><span class="li-description li-sky">Discord</span></a>
       </li>
-  </ul>
-      <h4></h4>
-      <ul class="fa-ul">
         <li>
-          <span class="fa-li li-muted"><i class="fa-brands fa-instagram"></i></span><a class="li-muted" rel="me"
-            href="https://instagram.com/susurrance">Instagram</a><span class="li-description"><i>still exists (for now)</i></span>
+          <a class="li-muted" rel="me"
+            href="https://instagram.com/susurrance">
+          <span class="fa-li li-muted"><i class="fa-brands fa-instagram"></i></span></a>          <a class="li-muted" rel="me"
+            href="https://instagram.com/susurrance"><span class="li-description li-muted">IG</span></a>
         </li>
       </ul>
     </div>
 
+    <hr>
 
     <div id="footer">
       <a href="https://home.omg.lol/referred-by/laurel"><span class="logotype">omg<span class="logotype dot"
