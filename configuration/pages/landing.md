@@ -571,8 +571,8 @@ li:hover{
   .statuslol_time {
     display: none;
   }
-  .li-description {
-    font-size: 0.8em;
+  ul {
+    flex-direction: column;
   }
 }
 
