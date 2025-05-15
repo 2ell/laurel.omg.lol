@@ -574,6 +574,12 @@ li:hover{
   ul {
     flex-direction: column;
   }
+  .li-description {
+  display: inline-flex;
+  width: fit-content;
+  font-size: 0.9em;
+  margin: 0 0.2em 0 0;
+}
 }
 
 }
